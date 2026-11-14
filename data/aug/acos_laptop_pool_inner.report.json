@@ -1,0 +1,9 @@
+{
+ "syn": "data/aug/acos_laptop_infill.jsonl",
+ "train_path": "data/acos/laptop/inner_train.jsonl",
+ "stats": {
+  "kept": 16941,
+  "source outside train": 7851,
+  "overlaps a review outside train": 2708
+ }
+}

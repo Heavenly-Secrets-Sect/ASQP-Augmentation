@@ -18,7 +18,7 @@ from pathlib import Path
 import torch
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from asqp_common import load_jsonl, score  # noqa: E402
+from asqp_common import load_jsonl, score, set_label_words  # noqa: E402
 from train_paraphrase import predict, single_view, write_jsonl  # noqa: E402
 from aug.st_scorer import load  # noqa: E402
 
@@ -41,6 +41,7 @@ def main():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     ckpts = [Path(c) for c in a.ckpts.split(",")]
     cfg = json.load(open(ckpts[0].parent / "run_config.json"))
+    set_label_words(cfg["args"].get("lang", "vi"), cfg["args"].get("label_categories") or ())  # the runs' label words
     args = argparse.Namespace(**{**cfg["args"], "eval_batch_size": a.eval_batch_size, "target_orders": None})
     args.view_orders = cfg["view_orders"]
     data = {"dev": load_jsonl(a.dev_path)[:a.limit or None], "test": load_jsonl(a.test_path)[:a.limit or None]}
