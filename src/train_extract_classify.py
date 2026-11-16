@@ -19,7 +19,8 @@ Faithful to the released code (github.com/NUSTM/ACOS, Extract-Classify-ACOS):
 - AdamW, weight decay 0.01 except bias/LayerNorm, linear warmup 10 % then linear decay (BertAdam's schedule);
   max 128 subword tokens (en, as released) / 256 (vi).
 Differences (none changes the model): HF tokenizers on the dataset's words instead of pre-tokenised files; early
-stopping after --patience epochs without dev gain (default 5, as our Paraphrase protocol); fp16 autocast on GPU
+stopping after --patience epochs without dev gain (default 5, as our Paraphrase protocol; counted only once the dev
+score is above 0, Laptop step 2 predicts nothing for ~6 epochs); fp16 autocast on GPU
 (--fp32 to disable); the label inventory is the categories of train + dev + test (as our Paraphrase --lang en).
 Vietnamese: PhoBERT-base-v2 expects word-segmented input. pyvi segments the review; adjacent syllables are merged
 into one word only where pyvi's word covers exactly those whole syllables (character alignment), so every span stays
@@ -436,7 +437,7 @@ def train_step1(a, items, dev, enc, device, seed):
         if f > best:
             best, bad = f, 0
             best_state = {k: v.detach().to("cpu", copy=True) for k, v in model.state_dict().items()}
-        else:
+        elif best > 0:  # count only after the model predicts something (Laptop step 2 needs ~6 epochs to leave 0)
             bad += 1
             if bad >= a.patience:
                 break
@@ -490,7 +491,7 @@ def train_step2(a, items, dev, enc, labels, device, seed):
         if f > best:
             best, bad = f, 0
             best_state = {k: v.detach().to("cpu", copy=True) for k, v in model.state_dict().items()}
-        else:
+        elif best > 0:  # count only after the model predicts something (Laptop step 2 needs ~6 epochs to leave 0)
             bad += 1
             if bad >= a.patience:
                 break
