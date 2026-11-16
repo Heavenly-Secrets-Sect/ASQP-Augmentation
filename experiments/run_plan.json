@@ -1,405 +1,129 @@
 {
- "round": "p9",
+ "round": "ec0",
  "rounds": [
-  "p9"
+  "ec0"
  ],
  "budget_hours": 9.0,
  "gpus": 2,
  "min_per_example": 0.017012538837421508,
  "n_calibrated": 230,
- "created": "2026-11-16 10:00",
+ "created": "2026-11-16 10:36",
  "sessions": [
   {
-   "session": 4,
+   "session": 1,
    "jobs": [
-    "dv_mvpt_full_ada_pos:s42",
-    "dv_mvpt_full_ada_pos:s123",
-    "dv_mvpt_full_ada_pos:s2024",
-    "dv_mvpt_full_ada_pos_soup",
-    "pm_rest_mvpt_pos:s42",
-    "pm_rest_mvpt_pos:s123",
-    "pm_rest_mvpt_pos:s2024",
-    "pm_rest_mvpt_pos_soup"
+    "ec0_laptop_none:s42",
+    "ec0_laptop_none:s123",
+    "ec0_laptop_none:s2024",
+    "ec0_vi_none:s42",
+    "ec0_vi_none:s123",
+    "ec0_vi_none:s2024",
+    "ec0_rest_none:s42",
+    "ec0_rest_none:s123",
+    "ec0_rest_none:s2024"
    ],
-   "est_hours": 10.0
-  },
-  {
-   "session": 5,
-   "jobs": [
-    "dv_mvpt_full_pos:s42",
-    "dv_mvpt_full_pos:s123",
-    "dv_mvpt_full_pos:s2024",
-    "dv_mvpt_full_pos_soup"
-   ],
-   "est_hours": 8.0
-  },
-  {
-   "session": 6,
-   "jobs": [
-    "pm_laptop_mvpt_ada_pos:s42",
-    "pm_laptop_mvpt_ada_pos:s123",
-    "pm_laptop_mvpt_ada_pos:s2024",
-    "pm_laptop_mvpt_ada_pos_soup",
-    "pm_laptop_mvpt_pos:s42",
-    "pm_laptop_mvpt_pos:s123",
-    "pm_laptop_mvpt_pos:s2024",
-    "pm_laptop_mvpt_pos_soup"
-   ],
-   "est_hours": 8.32
-  },
-  {
-   "session": 7,
-   "jobs": [
-    "pm_rest_mvpt_ada_pos:s42",
-    "pm_rest_mvpt_ada_pos:s123",
-    "pm_rest_mvpt_ada_pos:s2024",
-    "pm_rest_mvpt_ada_pos_soup"
-   ],
-   "est_hours": 3.37
+   "est_hours": 4.0
   }
  ],
  "jobs": {
-  "pm_rest_mvpt_pos:s42": {
-   "id": "pm_rest_mvpt_pos:s42",
-   "run": "pm_rest_mvpt_pos",
-   "seed": 42,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/pm_rest_mvpt_pos --seeds 42 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/rest/inner_train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/inner_dev.jsonl --aug_path data/aug/pm_rest_mvpt.jsonl --tuple_order text --keep_ckpt",
-   "examples": null,
-   "est_min": 66,
-   "after": [],
+  "ec0_vi_none:s42": {
+   "id": "ec0_vi_none:s42",
+   "command": "python -u src/train_extract_classify.py --output_dir outputs/ec0_vi_none --seeds 42 --lang vi --train_path data/restaurant_v1/inner_train.jsonl --dev_path data/restaurant_v1/dev.jsonl --test_path data/restaurant_v1/inner_dev.jsonl",
+   "est_min": 50,
    "outputs": [
-    "outputs/pm_rest_mvpt_pos/seed_42"
+    "outputs/ec0_vi_none/seed_42"
    ],
-   "done": "outputs/pm_rest_mvpt_pos/seed_42/test_predictions.jsonl"
+   "done": "outputs/ec0_vi_none/seed_42/test_predictions.jsonl",
+   "examples": null,
+   "after": []
   },
-  "pm_rest_mvpt_pos:s123": {
-   "id": "pm_rest_mvpt_pos:s123",
-   "run": "pm_rest_mvpt_pos",
-   "seed": 123,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/pm_rest_mvpt_pos --seeds 123 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/rest/inner_train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/inner_dev.jsonl --aug_path data/aug/pm_rest_mvpt.jsonl --tuple_order text --keep_ckpt",
-   "examples": null,
-   "est_min": 66,
-   "after": [],
+  "ec0_vi_none:s123": {
+   "id": "ec0_vi_none:s123",
+   "command": "python -u src/train_extract_classify.py --output_dir outputs/ec0_vi_none --seeds 123 --lang vi --train_path data/restaurant_v1/inner_train.jsonl --dev_path data/restaurant_v1/dev.jsonl --test_path data/restaurant_v1/inner_dev.jsonl",
+   "est_min": 50,
    "outputs": [
-    "outputs/pm_rest_mvpt_pos/seed_123"
+    "outputs/ec0_vi_none/seed_123"
    ],
-   "done": "outputs/pm_rest_mvpt_pos/seed_123/test_predictions.jsonl"
+   "done": "outputs/ec0_vi_none/seed_123/test_predictions.jsonl",
+   "examples": null,
+   "after": []
   },
-  "pm_rest_mvpt_pos:s2024": {
-   "id": "pm_rest_mvpt_pos:s2024",
-   "run": "pm_rest_mvpt_pos",
-   "seed": 2024,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/pm_rest_mvpt_pos --seeds 2024 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/rest/inner_train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/inner_dev.jsonl --aug_path data/aug/pm_rest_mvpt.jsonl --tuple_order text --keep_ckpt",
-   "examples": null,
-   "est_min": 66,
-   "after": [],
+  "ec0_vi_none:s2024": {
+   "id": "ec0_vi_none:s2024",
+   "command": "python -u src/train_extract_classify.py --output_dir outputs/ec0_vi_none --seeds 2024 --lang vi --train_path data/restaurant_v1/inner_train.jsonl --dev_path data/restaurant_v1/dev.jsonl --test_path data/restaurant_v1/inner_dev.jsonl",
+   "est_min": 50,
    "outputs": [
-    "outputs/pm_rest_mvpt_pos/seed_2024"
+    "outputs/ec0_vi_none/seed_2024"
    ],
-   "done": "outputs/pm_rest_mvpt_pos/seed_2024/test_predictions.jsonl"
+   "done": "outputs/ec0_vi_none/seed_2024/test_predictions.jsonl",
+   "examples": null,
+   "after": []
   },
-  "pm_rest_mvpt_pos_soup": {
-   "id": "pm_rest_mvpt_pos_soup",
-   "command": "python -u src/soup.py --ckpts outputs/pm_rest_mvpt_pos/seed_42/checkpoint,outputs/pm_rest_mvpt_pos/seed_123/checkpoint,outputs/pm_rest_mvpt_pos/seed_2024/checkpoint --out_dir outputs/pm_rest_mvpt_pos_soup --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/inner_dev.jsonl && rm -rf outputs/pm_rest_mvpt_pos/seed_42/checkpoint outputs/pm_rest_mvpt_pos/seed_123/checkpoint outputs/pm_rest_mvpt_pos/seed_2024/checkpoint",
-   "est_min": 6,
+  "ec0_rest_none:s42": {
+   "id": "ec0_rest_none:s42",
+   "command": "python -u src/train_extract_classify.py --output_dir outputs/ec0_rest_none --seeds 42 --lang en --train_path data/acos/rest/inner_train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/inner_dev.jsonl",
+   "est_min": 40,
    "outputs": [
-    "outputs/pm_rest_mvpt_pos_soup"
+    "outputs/ec0_rest_none/seed_42"
    ],
-   "done": "outputs/pm_rest_mvpt_pos_soup/greedy/metrics.json",
+   "done": "outputs/ec0_rest_none/seed_42/test_predictions.jsonl",
    "examples": null,
-   "after": [
-    "pm_rest_mvpt_pos:s42",
-    "pm_rest_mvpt_pos:s123",
-    "pm_rest_mvpt_pos:s2024"
-   ]
+   "after": []
   },
-  "pm_rest_mvpt_ada_pos:s42": {
-   "id": "pm_rest_mvpt_ada_pos:s42",
-   "run": "pm_rest_mvpt_ada_pos",
-   "seed": 42,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/pm_rest_mvpt_ada_pos --seeds 42 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/rest/inner_train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/inner_dev.jsonl --aug_path data/aug/pm_rest_mvpt.jsonl --aug_path data/aug/acos_rest_ada_joint_inner.jsonl --tuple_order text --keep_ckpt --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 101,
-   "after": [],
+  "ec0_rest_none:s123": {
+   "id": "ec0_rest_none:s123",
+   "command": "python -u src/train_extract_classify.py --output_dir outputs/ec0_rest_none --seeds 123 --lang en --train_path data/acos/rest/inner_train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/inner_dev.jsonl",
+   "est_min": 40,
    "outputs": [
-    "outputs/pm_rest_mvpt_ada_pos/seed_42"
+    "outputs/ec0_rest_none/seed_123"
    ],
-   "done": "outputs/pm_rest_mvpt_ada_pos/seed_42/test_predictions.jsonl"
+   "done": "outputs/ec0_rest_none/seed_123/test_predictions.jsonl",
+   "examples": null,
+   "after": []
   },
-  "pm_rest_mvpt_ada_pos:s123": {
-   "id": "pm_rest_mvpt_ada_pos:s123",
-   "run": "pm_rest_mvpt_ada_pos",
-   "seed": 123,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/pm_rest_mvpt_ada_pos --seeds 123 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/rest/inner_train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/inner_dev.jsonl --aug_path data/aug/pm_rest_mvpt.jsonl --aug_path data/aug/acos_rest_ada_joint_inner.jsonl --tuple_order text --keep_ckpt --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 101,
-   "after": [],
+  "ec0_rest_none:s2024": {
+   "id": "ec0_rest_none:s2024",
+   "command": "python -u src/train_extract_classify.py --output_dir outputs/ec0_rest_none --seeds 2024 --lang en --train_path data/acos/rest/inner_train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/inner_dev.jsonl",
+   "est_min": 40,
    "outputs": [
-    "outputs/pm_rest_mvpt_ada_pos/seed_123"
+    "outputs/ec0_rest_none/seed_2024"
    ],
-   "done": "outputs/pm_rest_mvpt_ada_pos/seed_123/test_predictions.jsonl"
+   "done": "outputs/ec0_rest_none/seed_2024/test_predictions.jsonl",
+   "examples": null,
+   "after": []
   },
-  "pm_rest_mvpt_ada_pos:s2024": {
-   "id": "pm_rest_mvpt_ada_pos:s2024",
-   "run": "pm_rest_mvpt_ada_pos",
-   "seed": 2024,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/pm_rest_mvpt_ada_pos --seeds 2024 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/rest/inner_train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/inner_dev.jsonl --aug_path data/aug/pm_rest_mvpt.jsonl --aug_path data/aug/acos_rest_ada_joint_inner.jsonl --tuple_order text --keep_ckpt --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 101,
-   "after": [],
+  "ec0_laptop_none:s42": {
+   "id": "ec0_laptop_none:s42",
+   "command": "python -u src/train_extract_classify.py --output_dir outputs/ec0_laptop_none --seeds 42 --lang en --train_path data/acos/laptop/inner_train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/inner_dev.jsonl",
+   "est_min": 60,
    "outputs": [
-    "outputs/pm_rest_mvpt_ada_pos/seed_2024"
+    "outputs/ec0_laptop_none/seed_42"
    ],
-   "done": "outputs/pm_rest_mvpt_ada_pos/seed_2024/test_predictions.jsonl"
+   "done": "outputs/ec0_laptop_none/seed_42/test_predictions.jsonl",
+   "examples": null,
+   "after": []
   },
-  "pm_rest_mvpt_ada_pos_soup": {
-   "id": "pm_rest_mvpt_ada_pos_soup",
-   "command": "python -u src/soup.py --ckpts outputs/pm_rest_mvpt_ada_pos/seed_42/checkpoint,outputs/pm_rest_mvpt_ada_pos/seed_123/checkpoint,outputs/pm_rest_mvpt_ada_pos/seed_2024/checkpoint --out_dir outputs/pm_rest_mvpt_ada_pos_soup --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/inner_dev.jsonl && rm -rf outputs/pm_rest_mvpt_ada_pos/seed_42/checkpoint outputs/pm_rest_mvpt_ada_pos/seed_123/checkpoint outputs/pm_rest_mvpt_ada_pos/seed_2024/checkpoint",
-   "est_min": 6,
+  "ec0_laptop_none:s123": {
+   "id": "ec0_laptop_none:s123",
+   "command": "python -u src/train_extract_classify.py --output_dir outputs/ec0_laptop_none --seeds 123 --lang en --train_path data/acos/laptop/inner_train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/inner_dev.jsonl",
+   "est_min": 60,
    "outputs": [
-    "outputs/pm_rest_mvpt_ada_pos_soup"
+    "outputs/ec0_laptop_none/seed_123"
    ],
-   "done": "outputs/pm_rest_mvpt_ada_pos_soup/greedy/metrics.json",
+   "done": "outputs/ec0_laptop_none/seed_123/test_predictions.jsonl",
    "examples": null,
-   "after": [
-    "pm_rest_mvpt_ada_pos:s42",
-    "pm_rest_mvpt_ada_pos:s123",
-    "pm_rest_mvpt_ada_pos:s2024"
-   ]
+   "after": []
   },
-  "pm_laptop_mvpt_pos:s42": {
-   "id": "pm_laptop_mvpt_pos:s42",
-   "run": "pm_laptop_mvpt_pos",
-   "seed": 42,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/pm_laptop_mvpt_pos --seeds 42 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/laptop/inner_train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/inner_dev.jsonl --aug_path data/aug/pm_laptop_mvpt.jsonl --tuple_order text --keep_ckpt",
-   "examples": null,
-   "est_min": 109,
-   "after": [],
+  "ec0_laptop_none:s2024": {
+   "id": "ec0_laptop_none:s2024",
+   "command": "python -u src/train_extract_classify.py --output_dir outputs/ec0_laptop_none --seeds 2024 --lang en --train_path data/acos/laptop/inner_train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/inner_dev.jsonl",
+   "est_min": 60,
    "outputs": [
-    "outputs/pm_laptop_mvpt_pos/seed_42"
+    "outputs/ec0_laptop_none/seed_2024"
    ],
-   "done": "outputs/pm_laptop_mvpt_pos/seed_42/test_predictions.jsonl"
-  },
-  "pm_laptop_mvpt_pos:s123": {
-   "id": "pm_laptop_mvpt_pos:s123",
-   "run": "pm_laptop_mvpt_pos",
-   "seed": 123,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/pm_laptop_mvpt_pos --seeds 123 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/laptop/inner_train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/inner_dev.jsonl --aug_path data/aug/pm_laptop_mvpt.jsonl --tuple_order text --keep_ckpt",
+   "done": "outputs/ec0_laptop_none/seed_2024/test_predictions.jsonl",
    "examples": null,
-   "est_min": 109,
-   "after": [],
-   "outputs": [
-    "outputs/pm_laptop_mvpt_pos/seed_123"
-   ],
-   "done": "outputs/pm_laptop_mvpt_pos/seed_123/test_predictions.jsonl"
-  },
-  "pm_laptop_mvpt_pos:s2024": {
-   "id": "pm_laptop_mvpt_pos:s2024",
-   "run": "pm_laptop_mvpt_pos",
-   "seed": 2024,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/pm_laptop_mvpt_pos --seeds 2024 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/laptop/inner_train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/inner_dev.jsonl --aug_path data/aug/pm_laptop_mvpt.jsonl --tuple_order text --keep_ckpt",
-   "examples": null,
-   "est_min": 109,
-   "after": [],
-   "outputs": [
-    "outputs/pm_laptop_mvpt_pos/seed_2024"
-   ],
-   "done": "outputs/pm_laptop_mvpt_pos/seed_2024/test_predictions.jsonl"
-  },
-  "pm_laptop_mvpt_pos_soup": {
-   "id": "pm_laptop_mvpt_pos_soup",
-   "command": "python -u src/soup.py --ckpts outputs/pm_laptop_mvpt_pos/seed_42/checkpoint,outputs/pm_laptop_mvpt_pos/seed_123/checkpoint,outputs/pm_laptop_mvpt_pos/seed_2024/checkpoint --out_dir outputs/pm_laptop_mvpt_pos_soup --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/inner_dev.jsonl && rm -rf outputs/pm_laptop_mvpt_pos/seed_42/checkpoint outputs/pm_laptop_mvpt_pos/seed_123/checkpoint outputs/pm_laptop_mvpt_pos/seed_2024/checkpoint",
-   "est_min": 6,
-   "outputs": [
-    "outputs/pm_laptop_mvpt_pos_soup"
-   ],
-   "done": "outputs/pm_laptop_mvpt_pos_soup/greedy/metrics.json",
-   "examples": null,
-   "after": [
-    "pm_laptop_mvpt_pos:s42",
-    "pm_laptop_mvpt_pos:s123",
-    "pm_laptop_mvpt_pos:s2024"
-   ]
-  },
-  "pm_laptop_mvpt_ada_pos:s42": {
-   "id": "pm_laptop_mvpt_ada_pos:s42",
-   "run": "pm_laptop_mvpt_ada_pos",
-   "seed": 42,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/pm_laptop_mvpt_ada_pos --seeds 42 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/laptop/inner_train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/inner_dev.jsonl --aug_path data/aug/pm_laptop_mvpt.jsonl --aug_path data/aug/acos_laptop_ada_joint_inner.jsonl --tuple_order text --keep_ckpt --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 195,
-   "after": [],
-   "outputs": [
-    "outputs/pm_laptop_mvpt_ada_pos/seed_42"
-   ],
-   "done": "outputs/pm_laptop_mvpt_ada_pos/seed_42/test_predictions.jsonl"
-  },
-  "pm_laptop_mvpt_ada_pos:s123": {
-   "id": "pm_laptop_mvpt_ada_pos:s123",
-   "run": "pm_laptop_mvpt_ada_pos",
-   "seed": 123,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/pm_laptop_mvpt_ada_pos --seeds 123 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/laptop/inner_train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/inner_dev.jsonl --aug_path data/aug/pm_laptop_mvpt.jsonl --aug_path data/aug/acos_laptop_ada_joint_inner.jsonl --tuple_order text --keep_ckpt --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 195,
-   "after": [],
-   "outputs": [
-    "outputs/pm_laptop_mvpt_ada_pos/seed_123"
-   ],
-   "done": "outputs/pm_laptop_mvpt_ada_pos/seed_123/test_predictions.jsonl"
-  },
-  "pm_laptop_mvpt_ada_pos:s2024": {
-   "id": "pm_laptop_mvpt_ada_pos:s2024",
-   "run": "pm_laptop_mvpt_ada_pos",
-   "seed": 2024,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/pm_laptop_mvpt_ada_pos --seeds 2024 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/laptop/inner_train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/inner_dev.jsonl --aug_path data/aug/pm_laptop_mvpt.jsonl --aug_path data/aug/acos_laptop_ada_joint_inner.jsonl --tuple_order text --keep_ckpt --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 195,
-   "after": [],
-   "outputs": [
-    "outputs/pm_laptop_mvpt_ada_pos/seed_2024"
-   ],
-   "done": "outputs/pm_laptop_mvpt_ada_pos/seed_2024/test_predictions.jsonl"
-  },
-  "pm_laptop_mvpt_ada_pos_soup": {
-   "id": "pm_laptop_mvpt_ada_pos_soup",
-   "command": "python -u src/soup.py --ckpts outputs/pm_laptop_mvpt_ada_pos/seed_42/checkpoint,outputs/pm_laptop_mvpt_ada_pos/seed_123/checkpoint,outputs/pm_laptop_mvpt_ada_pos/seed_2024/checkpoint --out_dir outputs/pm_laptop_mvpt_ada_pos_soup --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/inner_dev.jsonl && rm -rf outputs/pm_laptop_mvpt_ada_pos/seed_42/checkpoint outputs/pm_laptop_mvpt_ada_pos/seed_123/checkpoint outputs/pm_laptop_mvpt_ada_pos/seed_2024/checkpoint",
-   "est_min": 6,
-   "outputs": [
-    "outputs/pm_laptop_mvpt_ada_pos_soup"
-   ],
-   "done": "outputs/pm_laptop_mvpt_ada_pos_soup/greedy/metrics.json",
-   "examples": null,
-   "after": [
-    "pm_laptop_mvpt_ada_pos:s42",
-    "pm_laptop_mvpt_ada_pos:s123",
-    "pm_laptop_mvpt_ada_pos:s2024"
-   ]
-  },
-  "dv_mvpt_full_pos:s42": {
-   "id": "dv_mvpt_full_pos:s42",
-   "run": "dv_mvpt_full_pos",
-   "seed": 42,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/dv_mvpt_full_pos --seeds 42 --train_path data/restaurant_v1/inner_train.jsonl --test_path data/restaurant_v1/inner_dev.jsonl --lr 1e-4 --aug_path data/aug/dv_mvpt_full.jsonl --tuple_order text --keep_ckpt",
-   "examples": null,
-   "est_min": 240,
-   "after": [],
-   "outputs": [
-    "outputs/dv_mvpt_full_pos/seed_42"
-   ],
-   "done": "outputs/dv_mvpt_full_pos/seed_42/test_predictions.jsonl"
-  },
-  "dv_mvpt_full_pos:s123": {
-   "id": "dv_mvpt_full_pos:s123",
-   "run": "dv_mvpt_full_pos",
-   "seed": 123,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/dv_mvpt_full_pos --seeds 123 --train_path data/restaurant_v1/inner_train.jsonl --test_path data/restaurant_v1/inner_dev.jsonl --lr 1e-4 --aug_path data/aug/dv_mvpt_full.jsonl --tuple_order text --keep_ckpt",
-   "examples": null,
-   "est_min": 240,
-   "after": [],
-   "outputs": [
-    "outputs/dv_mvpt_full_pos/seed_123"
-   ],
-   "done": "outputs/dv_mvpt_full_pos/seed_123/test_predictions.jsonl"
-  },
-  "dv_mvpt_full_pos:s2024": {
-   "id": "dv_mvpt_full_pos:s2024",
-   "run": "dv_mvpt_full_pos",
-   "seed": 2024,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/dv_mvpt_full_pos --seeds 2024 --train_path data/restaurant_v1/inner_train.jsonl --test_path data/restaurant_v1/inner_dev.jsonl --lr 1e-4 --aug_path data/aug/dv_mvpt_full.jsonl --tuple_order text --keep_ckpt",
-   "examples": null,
-   "est_min": 240,
-   "after": [],
-   "outputs": [
-    "outputs/dv_mvpt_full_pos/seed_2024"
-   ],
-   "done": "outputs/dv_mvpt_full_pos/seed_2024/test_predictions.jsonl"
-  },
-  "dv_mvpt_full_pos_soup": {
-   "id": "dv_mvpt_full_pos_soup",
-   "command": "python -u src/soup.py --ckpts outputs/dv_mvpt_full_pos/seed_42/checkpoint,outputs/dv_mvpt_full_pos/seed_123/checkpoint,outputs/dv_mvpt_full_pos/seed_2024/checkpoint --out_dir outputs/dv_mvpt_full_pos_soup --dev_path data/restaurant_v1/dev.jsonl --test_path data/restaurant_v1/inner_dev.jsonl && rm -rf outputs/dv_mvpt_full_pos/seed_42/checkpoint outputs/dv_mvpt_full_pos/seed_123/checkpoint outputs/dv_mvpt_full_pos/seed_2024/checkpoint",
-   "est_min": 6,
-   "outputs": [
-    "outputs/dv_mvpt_full_pos_soup"
-   ],
-   "done": "outputs/dv_mvpt_full_pos_soup/greedy/metrics.json",
-   "examples": null,
-   "after": [
-    "dv_mvpt_full_pos:s42",
-    "dv_mvpt_full_pos:s123",
-    "dv_mvpt_full_pos:s2024"
-   ]
-  },
-  "dv_mvpt_full_ada_pos:s42": {
-   "id": "dv_mvpt_full_ada_pos:s42",
-   "run": "dv_mvpt_full_ada_pos",
-   "seed": 42,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/dv_mvpt_full_ada_pos --seeds 42 --train_path data/restaurant_v1/inner_train.jsonl --test_path data/restaurant_v1/inner_dev.jsonl --lr 1e-4 --aug_path data/aug/dv_mvpt_full.jsonl --aug_path data/aug/dv_ada_joint.jsonl --tuple_order text --keep_ckpt --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 300,
-   "after": [],
-   "outputs": [
-    "outputs/dv_mvpt_full_ada_pos/seed_42"
-   ],
-   "done": "outputs/dv_mvpt_full_ada_pos/seed_42/test_predictions.jsonl"
-  },
-  "dv_mvpt_full_ada_pos:s123": {
-   "id": "dv_mvpt_full_ada_pos:s123",
-   "run": "dv_mvpt_full_ada_pos",
-   "seed": 123,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/dv_mvpt_full_ada_pos --seeds 123 --train_path data/restaurant_v1/inner_train.jsonl --test_path data/restaurant_v1/inner_dev.jsonl --lr 1e-4 --aug_path data/aug/dv_mvpt_full.jsonl --aug_path data/aug/dv_ada_joint.jsonl --tuple_order text --keep_ckpt --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 300,
-   "after": [],
-   "outputs": [
-    "outputs/dv_mvpt_full_ada_pos/seed_123"
-   ],
-   "done": "outputs/dv_mvpt_full_ada_pos/seed_123/test_predictions.jsonl"
-  },
-  "dv_mvpt_full_ada_pos:s2024": {
-   "id": "dv_mvpt_full_ada_pos:s2024",
-   "run": "dv_mvpt_full_ada_pos",
-   "seed": 2024,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/dv_mvpt_full_ada_pos --seeds 2024 --train_path data/restaurant_v1/inner_train.jsonl --test_path data/restaurant_v1/inner_dev.jsonl --lr 1e-4 --aug_path data/aug/dv_mvpt_full.jsonl --aug_path data/aug/dv_ada_joint.jsonl --tuple_order text --keep_ckpt --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 300,
-   "after": [],
-   "outputs": [
-    "outputs/dv_mvpt_full_ada_pos/seed_2024"
-   ],
-   "done": "outputs/dv_mvpt_full_ada_pos/seed_2024/test_predictions.jsonl"
-  },
-  "dv_mvpt_full_ada_pos_soup": {
-   "id": "dv_mvpt_full_ada_pos_soup",
-   "command": "python -u src/soup.py --ckpts outputs/dv_mvpt_full_ada_pos/seed_42/checkpoint,outputs/dv_mvpt_full_ada_pos/seed_123/checkpoint,outputs/dv_mvpt_full_ada_pos/seed_2024/checkpoint --out_dir outputs/dv_mvpt_full_ada_pos_soup --dev_path data/restaurant_v1/dev.jsonl --test_path data/restaurant_v1/inner_dev.jsonl && rm -rf outputs/dv_mvpt_full_ada_pos/seed_42/checkpoint outputs/dv_mvpt_full_ada_pos/seed_123/checkpoint outputs/dv_mvpt_full_ada_pos/seed_2024/checkpoint",
-   "est_min": 6,
-   "outputs": [
-    "outputs/dv_mvpt_full_ada_pos_soup"
-   ],
-   "done": "outputs/dv_mvpt_full_ada_pos_soup/greedy/metrics.json",
-   "examples": null,
-   "after": [
-    "dv_mvpt_full_ada_pos:s42",
-    "dv_mvpt_full_ada_pos:s123",
-    "dv_mvpt_full_ada_pos:s2024"
-   ]
+   "after": []
   }
  }
 }

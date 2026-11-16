@@ -4,3 +4,4 @@ transformers>=4.44,<5
 sentencepiece>=0.1.99
 protobuf
 numpy
+pyvi>=0.1.1            # Vietnamese word segmentation for PhoBERT (src/train_extract_classify.py)
