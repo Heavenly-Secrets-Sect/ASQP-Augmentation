@@ -170,6 +170,8 @@ def cmd_plan(a):
     mpe, n = calibrate()
     rids = a.round.split(",")
     jobs = {k: v for r in rids for k, v in expand(r, rounds).items() if not (v["done"] and (ROOT / v["done"]).exists())}
+    if a.only:  # e.g. re-send only the jobs of one dataset while other sessions of the round are still running
+        jobs = {k: v for k, v in jobs.items() if any(k.startswith(x) for x in a.only.split(","))}
     for j in jobs.values():
         j["est_min"] = estimate(j, mpe)
     cap = a.budget_hours * 60
@@ -396,6 +398,7 @@ def main():
     p = sub.add_parser("list"); p.add_argument("--round")
     p = sub.add_parser("plan"); p.add_argument("--round", required=True)
     p.add_argument("--budget-hours", type=float, default=10.5); p.add_argument("--gpus", type=int, default=2)
+    p.add_argument("--only", default="", help="comma-separated job id prefixes to plan (others are left out)")
     p = sub.add_parser("run"); p.add_argument("--session", type=int, required=True)
     p.add_argument("--budget-hours", type=float, default=0)
     sub.add_parser("ingest")
