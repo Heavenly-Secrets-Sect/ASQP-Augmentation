@@ -1,0 +1,21 @@
+{
+ "in": "data/aug/cv_mvpt/vi_s42.jsonl,data/aug/cv_mvpt/vi_s123.jsonl,data/aug/cv_mvpt/vi_s2024.jsonl,data/aug/cv_mvpt/vi_s7.jsonl,data/aug/cv_mvpt/vi_s99.jsonl",
+ "vote_min": "majority",
+ "consensus": false,
+ "n_max": 100000,
+ "n_views": 25,
+ "n_out": 15716,
+ "quads_out": 39611,
+ "stats": {
+  "n": 15907,
+  "no grounded majority quad": 191,
+  "kept": 15716
+ },
+ "implicit_types": {
+  "EA-EO": 36740,
+  "EA-IO": 1420,
+  "IA-EO": 1160,
+  "IA-IO": 291
+ },
+ "seed": 13
+}
