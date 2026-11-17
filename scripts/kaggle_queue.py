@@ -14,7 +14,7 @@ A round may define "vars" ({"lr": null}); a target whose args use {name} of a va
 planned, shown by `list`) until the value is filled in, e.g. an lr chosen from an earlier session of the round.
 A target may name jobs it must wait for ("after": [job ids]); `plan` keeps such a group in one session and `run`
 starts a job only after all its predecessors in the session finished with rc 0 (a failed or deferred predecessor
-skips it). `plan --round r6,r8` packs several rounds into one plan (session tag r6+r8_s<N>).
+skips it). `plan --round r6,r8` packs several rounds into one plan (session tag r6_r8_s<N>; r6+r8 before 2026-11-17).
 `run` binds one worker to each GPU, starts the longest ready jobs first, never starts a job whose estimate no longer fits
 the budget (it stays for the next session), streams every job's output with a prefix, writes it to
 outputs/_logs/<job>.log, appends `job  minutes  rc  session` to outputs/_job_times/<round>_s<N>.tsv and re-packs
@@ -193,7 +193,7 @@ def cmd_plan(a):
                 s["jobs"] += [j["id"] for j in g]
                 break
     # number after the sessions this round already used (zips ingested, job times), so a tag is never reused
-    tag = "+".join(rids)
+    tag = "_".join(rids)  # "_": the Kaggle bot accepts only letters, digits and . _ / - in a tag
     ledger = ROOT / "outputs/_ingested.txt"
     used = re.findall(rf"(?:^|\s)results_{re.escape(tag)}_s(\d+)\.zip", ledger.read_text() if ledger.exists() else "")
     used += [p.stem.rsplit("_s", 1)[1] for p in TIMES.glob(f"{tag}_s*.tsv") if p.stem.rsplit("_s", 1)[0] == tag]

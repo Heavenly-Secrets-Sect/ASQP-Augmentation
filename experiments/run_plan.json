@@ -1,5 +1,5 @@
 {
- "round": "cv+ecm",
+ "round": "cv_ecm",
  "rounds": [
   "cv",
   "ecm"
@@ -8,7 +8,7 @@
  "gpus": 2,
  "min_per_example": 0.017012538837421508,
  "n_calibrated": 230,
- "created": "2026-11-17 18:25",
+ "created": "2026-11-17 18:27",
  "sessions": [
   {
    "session": 1,
