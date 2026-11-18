@@ -1,0 +1,49 @@
+{
+ "train_path": "data/acos/rest/train.jsonl",
+ "seed": 13,
+ "n_train": 1530,
+ "subsets": {
+  "1": {
+   "n": 16,
+   "quads": 28,
+   "categories_present": 8,
+   "categories_in_train": 12,
+   "tv_distance_to_train": 0.0671
+  },
+  "2": {
+   "n": 31,
+   "quads": 49,
+   "categories_present": 10,
+   "categories_in_train": 12,
+   "tv_distance_to_train": 0.082
+  },
+  "5": {
+   "n": 77,
+   "quads": 127,
+   "categories_present": 12,
+   "categories_in_train": 12,
+   "tv_distance_to_train": 0.06
+  },
+  "10": {
+   "n": 153,
+   "quads": 260,
+   "categories_present": 12,
+   "categories_in_train": 12,
+   "tv_distance_to_train": 0.0345
+  },
+  "20": {
+   "n": 306,
+   "quads": 516,
+   "categories_present": 12,
+   "categories_in_train": 12,
+   "tv_distance_to_train": 0.0151
+  },
+  "50": {
+   "n": 765,
+   "quads": 1240,
+   "categories_present": 12,
+   "categories_in_train": 12,
+   "tv_distance_to_train": 0.0106
+  }
+ }
+}

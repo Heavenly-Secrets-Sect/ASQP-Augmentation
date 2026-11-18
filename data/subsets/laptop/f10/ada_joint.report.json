@@ -1,0 +1,513 @@
+{
+ "strategy": "joint",
+ "gamma": 0.05,
+ "eta": 0.4,
+ "kappa": 2.0,
+ "seed": 13,
+ "max_passes": 20,
+ "n_train": 294,
+ "n_aug": 815,
+ "quads_aug": 3394,
+ "passes": [
+  {
+   "pass": 1,
+   "augmentable": 294,
+   "made": 254
+  },
+  {
+   "pass": 2,
+   "augmentable": 64,
+   "made": 61
+  },
+  {
+   "pass": 3,
+   "augmentable": 64,
+   "made": 64
+  },
+  {
+   "pass": 4,
+   "augmentable": 45,
+   "made": 44
+  },
+  {
+   "pass": 5,
+   "augmentable": 45,
+   "made": 45
+  },
+  {
+   "pass": 6,
+   "augmentable": 45,
+   "made": 39
+  },
+  {
+   "pass": 7,
+   "augmentable": 36,
+   "made": 35
+  },
+  {
+   "pass": 8,
+   "augmentable": 36,
+   "made": 36
+  },
+  {
+   "pass": 9,
+   "augmentable": 36,
+   "made": 34
+  },
+  {
+   "pass": 10,
+   "augmentable": 36,
+   "made": 32
+  },
+  {
+   "pass": 11,
+   "augmentable": 30,
+   "made": 21
+  },
+  {
+   "pass": 12,
+   "augmentable": 24,
+   "made": 24
+  },
+  {
+   "pass": 13,
+   "augmentable": 24,
+   "made": 22
+  },
+  {
+   "pass": 14,
+   "augmentable": 21,
+   "made": 20
+  },
+  {
+   "pass": 15,
+   "augmentable": 21,
+   "made": 15
+  },
+  {
+   "pass": 16,
+   "augmentable": 18,
+   "made": 17
+  },
+  {
+   "pass": 17,
+   "augmentable": 18,
+   "made": 15
+  },
+  {
+   "pass": 18,
+   "augmentable": 15,
+   "made": 15
+  },
+  {
+   "pass": 19,
+   "augmentable": 15,
+   "made": 13
+  },
+  {
+   "pass": 20,
+   "augmentable": 15,
+   "made": 9
+  }
+ ],
+ "n_pattern_classes": 16,
+ "category_counts": {
+  "LAPTOP#GENERAL": {
+   "raw": 93,
+   "final": 253,
+   "pos": 1
+  },
+  "LAPTOP#OPERATION_PERFORMANCE": {
+   "raw": 53,
+   "final": 244,
+   "pos": 2
+  },
+  "LAPTOP#DESIGN_FEATURES": {
+   "raw": 33,
+   "final": 236,
+   "pos": 3
+  },
+  "LAPTOP#QUALITY": {
+   "raw": 16,
+   "final": 227,
+   "pos": 4
+  },
+  "LAPTOP#PRICE": {
+   "raw": 15,
+   "final": 126,
+   "pos": 5
+  },
+  "DISPLAY#DESIGN_FEATURES": {
+   "raw": 13,
+   "final": 214,
+   "pos": 6
+  },
+  "DISPLAY#OPERATION_PERFORMANCE": {
+   "raw": 13,
+   "final": 206,
+   "pos": 7
+  },
+  "SOFTWARE#OPERATION_PERFORMANCE": {
+   "raw": 13,
+   "final": 200,
+   "pos": 8
+  },
+  "DISPLAY#GENERAL": {
+   "raw": 12,
+   "final": 193,
+   "pos": 9
+  },
+  "KEYBOARD#GENERAL": {
+   "raw": 11,
+   "final": 188,
+   "pos": 10
+  },
+  "KEYBOARD#DESIGN_FEATURES": {
+   "raw": 10,
+   "final": 159,
+   "pos": 11
+  },
+  "KEYBOARD#OPERATION_PERFORMANCE": {
+   "raw": 9,
+   "final": 139,
+   "pos": 12
+  },
+  "LAPTOP#USABILITY": {
+   "raw": 9,
+   "final": 104,
+   "pos": 13
+  },
+  "SUPPORT#GENERAL": {
+   "raw": 9,
+   "final": 100,
+   "pos": 14
+  },
+  "BATTERY#OPERATION_PERFORMANCE": {
+   "raw": 8,
+   "final": 28,
+   "pos": 15
+  },
+  "BATTERY#GENERAL": {
+   "raw": 5,
+   "final": 95,
+   "pos": 16
+  },
+  "COMPANY#GENERAL": {
+   "raw": 5,
+   "final": 15,
+   "pos": 17
+  },
+  "DISPLAY#QUALITY": {
+   "raw": 5,
+   "final": 83,
+   "pos": 18
+  },
+  "HARDWARE#GENERAL": {
+   "raw": 5,
+   "final": 15,
+   "pos": 19
+  },
+  "MULTIMEDIA_DEVICES#OPERATION_PERFORMANCE": {
+   "raw": 5,
+   "final": 86,
+   "pos": 20
+  },
+  "OS#OPERATION_PERFORMANCE": {
+   "raw": 5,
+   "final": 15,
+   "pos": 21
+  },
+  "CPU#OPERATION_PERFORMANCE": {
+   "raw": 4,
+   "final": 39,
+   "pos": 22
+  },
+  "HARDWARE#DESIGN_FEATURES": {
+   "raw": 4,
+   "final": 116,
+   "pos": 23
+  },
+  "HARDWARE#OPERATION_PERFORMANCE": {
+   "raw": 4,
+   "final": 12,
+   "pos": 24
+  },
+  "LAPTOP#PORTABILITY": {
+   "raw": 4,
+   "final": 22,
+   "pos": 25
+  },
+  "OS#GENERAL": {
+   "raw": 4,
+   "final": 46,
+   "pos": 26
+  },
+  "KEYBOARD#QUALITY": {
+   "raw": 3,
+   "final": 48,
+   "pos": 27
+  },
+  "MEMORY#GENERAL": {
+   "raw": 3,
+   "final": 8,
+   "pos": 28
+  },
+  "MULTIMEDIA_DEVICES#GENERAL": {
+   "raw": 3,
+   "final": 22,
+   "pos": 29
+  },
+  "MULTIMEDIA_DEVICES#QUALITY": {
+   "raw": 3,
+   "final": 87,
+   "pos": 30
+  },
+  "POWER_SUPPLY#OPERATION_PERFORMANCE": {
+   "raw": 3,
+   "final": 17,
+   "pos": 31
+  },
+  "SOFTWARE#GENERAL": {
+   "raw": 3,
+   "final": 30,
+   "pos": 32
+  },
+  "BATTERY#QUALITY": {
+   "raw": 2,
+   "final": 11,
+   "pos": 33
+  },
+  "CPU#GENERAL": {
+   "raw": 2,
+   "final": 6,
+   "pos": 34
+  },
+  "HARD_DISC#GENERAL": {
+   "raw": 2,
+   "final": 11,
+   "pos": 35
+  },
+  "HARD_DISC#OPERATION_PERFORMANCE": {
+   "raw": 2,
+   "final": 44,
+   "pos": 36
+  },
+  "KEYBOARD#USABILITY": {
+   "raw": 2,
+   "final": 21,
+   "pos": 37
+  },
+  "MEMORY#OPERATION_PERFORMANCE": {
+   "raw": 2,
+   "final": 41,
+   "pos": 38
+  },
+  "OS#DESIGN_FEATURES": {
+   "raw": 2,
+   "final": 74,
+   "pos": 39
+  },
+  "PORTS#GENERAL": {
+   "raw": 2,
+   "final": 5,
+   "pos": 40
+  },
+  "PORTS#OPERATION_PERFORMANCE": {
+   "raw": 2,
+   "final": 69,
+   "pos": 41
+  },
+  "SOFTWARE#USABILITY": {
+   "raw": 2,
+   "final": 7,
+   "pos": 42
+  },
+  "SUPPORT#QUALITY": {
+   "raw": 2,
+   "final": 7,
+   "pos": 43
+  },
+  "BATTERY#DESIGN_FEATURES": {
+   "raw": 1,
+   "final": 3,
+   "pos": 44
+  },
+  "DISPLAY#USABILITY": {
+   "raw": 1,
+   "final": 2,
+   "pos": 45
+  },
+  "FANS&COOLING#OPERATION_PERFORMANCE": {
+   "raw": 1,
+   "final": 4,
+   "pos": 46
+  },
+  "GRAPHICS#GENERAL": {
+   "raw": 1,
+   "final": 4,
+   "pos": 47
+  },
+  "GRAPHICS#OPERATION_PERFORMANCE": {
+   "raw": 1,
+   "final": 2,
+   "pos": 48
+  },
+  "HARDWARE#QUALITY": {
+   "raw": 1,
+   "final": 4,
+   "pos": 49
+  },
+  "HARDWARE#USABILITY": {
+   "raw": 1,
+   "final": 3,
+   "pos": 50
+  },
+  "HARD_DISC#DESIGN_FEATURES": {
+   "raw": 1,
+   "final": 18,
+   "pos": 51
+  },
+  "LAPTOP#CONNECTIVITY": {
+   "raw": 1,
+   "final": 10,
+   "pos": 52
+  },
+  "LAPTOP#MISCELLANEOUS": {
+   "raw": 1,
+   "final": 2,
+   "pos": 53
+  },
+  "MEMORY#DESIGN_FEATURES": {
+   "raw": 1,
+   "final": 36,
+   "pos": 54
+  },
+  "MULTIMEDIA_DEVICES#DESIGN_FEATURES": {
+   "raw": 1,
+   "final": 2,
+   "pos": 55
+  },
+  "OS#USABILITY": {
+   "raw": 1,
+   "final": 3,
+   "pos": 56
+  },
+  "PORTS#CONNECTIVITY": {
+   "raw": 1,
+   "final": 2,
+   "pos": 57
+  },
+  "PORTS#DESIGN_FEATURES": {
+   "raw": 1,
+   "final": 16,
+   "pos": 58
+  },
+  "POWER_SUPPLY#DESIGN_FEATURES": {
+   "raw": 1,
+   "final": 2,
+   "pos": 59
+  },
+  "POWER_SUPPLY#GENERAL": {
+   "raw": 1,
+   "final": 2,
+   "pos": 60
+  },
+  "POWER_SUPPLY#QUALITY": {
+   "raw": 1,
+   "final": 3,
+   "pos": 61
+  },
+  "SHIPPING#GENERAL": {
+   "raw": 1,
+   "final": 25,
+   "pos": 62
+  },
+  "SHIPPING#OPERATION_PERFORMANCE": {
+   "raw": 1,
+   "final": 1,
+   "pos": 63
+  },
+  "SHIPPING#QUALITY": {
+   "raw": 1,
+   "final": 2,
+   "pos": 64
+  },
+  "SOFTWARE#DESIGN_FEATURES": {
+   "raw": 1,
+   "final": 3,
+   "pos": 65
+  },
+  "SUPPORT#OPERATION_PERFORMANCE": {
+   "raw": 1,
+   "final": 3,
+   "pos": 66
+  },
+  "WARRANTY#GENERAL": {
+   "raw": 1,
+   "final": 4,
+   "pos": 67
+  }
+ },
+ "pattern_counts_top": {
+  "[[[1, [1]]], [1]]": {
+   "raw": 205,
+   "final": 555
+  },
+  "[[[2, [1, 1]]], [1, 1]]": {
+   "raw": 28,
+   "final": 471
+  },
+  "[[[1, [1]], [1, [1]]], [1, 1]]": {
+   "raw": 18,
+   "final": 252
+  },
+  "[[[1, [2]], [1, [2]]], [2]]": {
+   "raw": 15,
+   "final": 295
+  },
+  "[[[1, [1]], [2, [1, 1]]], [1, 1, 1]]": {
+   "raw": 5,
+   "final": 54
+  },
+  "[[[3, [1, 1, 1]]], [1, 1, 1]]": {
+   "raw": 5,
+   "final": 81
+  },
+  "[[[1, [1]], [1, [1]], [1, [1]]], [1, 1, 1]]": {
+   "raw": 4,
+   "final": 45
+  },
+  "[[[1, [1]], [1, [2]], [1, [2]]], [1, 2]]": {
+   "raw": 4,
+   "final": 66
+  },
+  "[[[1, [1]], [3, [1, 1, 1]]], [1, 1, 1, 1]]": {
+   "raw": 2,
+   "final": 19
+  },
+  "[[[4, [1, 1, 1, 1]]], [1, 1, 1, 1]]": {
+   "raw": 2,
+   "final": 9
+  },
+  "[[[1, [1]], [1, [1]], [1, [1]], [1, [1]], [1, [3]], [1, [3]], [1, [3]]], [1, 1, 1, 1, 3]]": {
+   "raw": 1,
+   "final": 4
+  },
+  "[[[1, [1]], [1, [1]], [1, [2]], [1, [2]], [2, [1, 1]]], [1, 1, 1, 1, 2]]": {
+   "raw": 1,
+   "final": 10
+  },
+  "[[[1, [1]], [1, [1]], [1, [2]], [1, [2]]], [1, 1, 2]]": {
+   "raw": 1,
+   "final": 41
+  },
+  "[[[1, [1]], [2, [1, 1]], [3, [1, 1, 1]]], [1, 1, 1, 1, 1, 1]]": {
+   "raw": 1,
+   "final": 18
+  },
+  "[[[1, [4]], [1, [4]], [1, [4]], [1, [4]]], [4]]": {
+   "raw": 1,
+   "final": 2
+  }
+ }
+}

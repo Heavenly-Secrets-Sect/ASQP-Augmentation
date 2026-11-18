@@ -1,0 +1,9 @@
+{
+ "syn": "data/aug/syn_infill.jsonl",
+ "train_path": "data/subsets/vi/f10/train.jsonl",
+ "stats": {
+  "source outside train": 18101,
+  "overlaps a review outside train": 519,
+  "kept": 1380
+ }
+}

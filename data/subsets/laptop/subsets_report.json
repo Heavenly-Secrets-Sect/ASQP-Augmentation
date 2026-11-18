@@ -1,0 +1,49 @@
+{
+ "train_path": "data/acos/laptop/train.jsonl",
+ "seed": 13,
+ "n_train": 2934,
+ "subsets": {
+  "1": {
+   "n": 30,
+   "quads": 37,
+   "categories_present": 19,
+   "categories_in_train": 114,
+   "tv_distance_to_train": 0.2908
+  },
+  "2": {
+   "n": 59,
+   "quads": 82,
+   "categories_present": 30,
+   "categories_in_train": 114,
+   "tv_distance_to_train": 0.2006
+  },
+  "5": {
+   "n": 147,
+   "quads": 216,
+   "categories_present": 51,
+   "categories_in_train": 114,
+   "tv_distance_to_train": 0.1321
+  },
+  "10": {
+   "n": 294,
+   "quads": 431,
+   "categories_present": 67,
+   "categories_in_train": 114,
+   "tv_distance_to_train": 0.0842
+  },
+  "20": {
+   "n": 587,
+   "quads": 856,
+   "categories_present": 79,
+   "categories_in_train": 114,
+   "tv_distance_to_train": 0.0458
+  },
+  "50": {
+   "n": 1467,
+   "quads": 2089,
+   "categories_present": 99,
+   "categories_in_train": 114,
+   "tv_distance_to_train": 0.0209
+  }
+ }
+}

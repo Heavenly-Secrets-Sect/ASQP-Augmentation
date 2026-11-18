@@ -1,0 +1,238 @@
+{
+ "strategy": "joint",
+ "gamma": 0.05,
+ "eta": 0.4,
+ "kappa": 2.0,
+ "seed": 13,
+ "max_passes": 20,
+ "n_train": 214,
+ "n_aug": 320,
+ "quads_aug": 2015,
+ "passes": [
+  {
+   "pass": 1,
+   "augmentable": 214,
+   "made": 183
+  },
+  {
+   "pass": 2,
+   "augmentable": 63,
+   "made": 46
+  },
+  {
+   "pass": 3,
+   "augmentable": 39,
+   "made": 7
+  },
+  {
+   "pass": 4,
+   "augmentable": 7,
+   "made": 6
+  },
+  {
+   "pass": 5,
+   "augmentable": 7,
+   "made": 7
+  },
+  {
+   "pass": 6,
+   "augmentable": 7,
+   "made": 6
+  },
+  {
+   "pass": 7,
+   "augmentable": 7,
+   "made": 7
+  },
+  {
+   "pass": 8,
+   "augmentable": 7,
+   "made": 5
+  },
+  {
+   "pass": 9,
+   "augmentable": 7,
+   "made": 7
+  },
+  {
+   "pass": 10,
+   "augmentable": 7,
+   "made": 7
+  },
+  {
+   "pass": 11,
+   "augmentable": 7,
+   "made": 7
+  },
+  {
+   "pass": 12,
+   "augmentable": 7,
+   "made": 5
+  },
+  {
+   "pass": 13,
+   "augmentable": 7,
+   "made": 7
+  },
+  {
+   "pass": 14,
+   "augmentable": 7,
+   "made": 2
+  },
+  {
+   "pass": 15,
+   "augmentable": 4,
+   "made": 3
+  },
+  {
+   "pass": 16,
+   "augmentable": 4,
+   "made": 3
+  },
+  {
+   "pass": 17,
+   "augmentable": 4,
+   "made": 4
+  },
+  {
+   "pass": 18,
+   "augmentable": 4,
+   "made": 4
+  },
+  {
+   "pass": 19,
+   "augmentable": 4,
+   "made": 3
+  },
+  {
+   "pass": 20,
+   "augmentable": 4,
+   "made": 1
+  }
+ ],
+ "n_pattern_classes": 25,
+ "category_counts": {
+  "FOOD#QUALITY": {
+   "raw": 148,
+   "final": 400,
+   "pos": 1
+  },
+  "SERVICE#GENERAL": {
+   "raw": 138,
+   "final": 389,
+   "pos": 2
+  },
+  "AMBIENCE#GENERAL": {
+   "raw": 104,
+   "final": 377,
+   "pos": 3
+  },
+  "FOOD#STYLE&OPTIONS": {
+   "raw": 66,
+   "final": 221,
+   "pos": 4
+  },
+  "RESTAURANT#GENERAL": {
+   "raw": 56,
+   "final": 271,
+   "pos": 5
+  },
+  "RESTAURANT#PRICES": {
+   "raw": 56,
+   "final": 168,
+   "pos": 6
+  },
+  "FOOD#PRICES": {
+   "raw": 36,
+   "final": 122,
+   "pos": 7
+  },
+  "RESTAURANT#MISCELLANEOUS": {
+   "raw": 32,
+   "final": 179,
+   "pos": 8
+  },
+  "LOCATION#GENERAL": {
+   "raw": 29,
+   "final": 121,
+   "pos": 9
+  },
+  "DRINKS#QUALITY": {
+   "raw": 23,
+   "final": 191,
+   "pos": 10
+  },
+  "DRINKS#PRICES": {
+   "raw": 14,
+   "final": 131,
+   "pos": 11
+  },
+  "DRINKS#STYLE&OPTIONS": {
+   "raw": 11,
+   "final": 158,
+   "pos": 12
+  }
+ },
+ "pattern_counts_top": {
+  "[[[1, [1]], [1, [1]], [1, [1]]], [1, 1, 1]]": {
+   "raw": 60,
+   "final": 163
+  },
+  "[[[1, [1]], [1, [1]]], [1, 1]]": {
+   "raw": 46,
+   "final": 157
+  },
+  "[[[1, [1]], [2, [1, 1]]], [1, 1, 1]]": {
+   "raw": 21,
+   "final": 153
+  },
+  "[[[1, [1]], [1, [1]], [1, [1]], [1, [1]]], [1, 1, 1, 1]]": {
+   "raw": 19,
+   "final": 55
+  },
+  "[[[1, [1]], [1, [1]], [2, [1, 1]]], [1, 1, 1, 1]]": {
+   "raw": 14,
+   "final": 70
+  },
+  "[[[1, [1]], [1, [1]], [1, [1]], [2, [1, 1]]], [1, 1, 1, 1, 1]]": {
+   "raw": 10,
+   "final": 27
+  },
+  "[[[1, [1]], [1, [1]], [1, [1]], [1, [1]], [1, [1]]], [1, 1, 1, 1, 1]]": {
+   "raw": 9,
+   "final": 27
+  },
+  "[[[1, [1]], [1, [1]], [1, [2]], [1, [2]]], [1, 1, 2]]": {
+   "raw": 5,
+   "final": 15
+  },
+  "[[[1, [1]], [1, [2]], [1, [2]]], [1, 2]]": {
+   "raw": 5,
+   "final": 18
+  },
+  "[[[2, [1, 1]]], [1, 1]]": {
+   "raw": 4,
+   "final": 45
+  },
+  "[[[1, [1]], [1, [1]], [1, [1]], [1, [1]], [1, [1]], [1, [1]]], [1, 1, 1, 1, 1, 1]]": {
+   "raw": 3,
+   "final": 10
+  },
+  "[[[1, [1]], [2, [1, 1]], [2, [1, 1]]], [1, 1, 1, 1, 1]]": {
+   "raw": 3,
+   "final": 5
+  },
+  "[[[3, [1, 1, 1]]], [1, 1, 1]]": {
+   "raw": 3,
+   "final": 44
+  },
+  "[[[1, [1]], [1, [1]], [1, [1]], [1, [1]], [1, [1]], [1, [1]], [1, [1]]], [1, 1, 1, 1, 1, 1, 1]]": {
+   "raw": 1,
+   "final": 2
+  },
+  "[[[1, [1]], [1, [1]], [1, [1]], [1, [1]], [1, [1]], [2, [1, 1]]], [1, 1, 1, 1, 1, 1, 1]]": {
+   "raw": 1,
+   "final": 3
+  }
+ }
+}

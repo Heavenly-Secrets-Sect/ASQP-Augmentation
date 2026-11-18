@@ -1,0 +1,49 @@
+{
+ "train_path": "data/restaurant_v1/train.jsonl",
+ "seed": 13,
+ "n_train": 2135,
+ "subsets": {
+  "1": {
+   "n": 22,
+   "quads": 71,
+   "categories_present": 12,
+   "categories_in_train": 12,
+   "tv_distance_to_train": 0.1168
+  },
+  "2": {
+   "n": 43,
+   "quads": 142,
+   "categories_present": 12,
+   "categories_in_train": 12,
+   "tv_distance_to_train": 0.0617
+  },
+  "5": {
+   "n": 107,
+   "quads": 353,
+   "categories_present": 12,
+   "categories_in_train": 12,
+   "tv_distance_to_train": 0.0289
+  },
+  "10": {
+   "n": 214,
+   "quads": 713,
+   "categories_present": 12,
+   "categories_in_train": 12,
+   "tv_distance_to_train": 0.0342
+  },
+  "20": {
+   "n": 427,
+   "quads": 1418,
+   "categories_present": 12,
+   "categories_in_train": 12,
+   "tv_distance_to_train": 0.0183
+  },
+  "50": {
+   "n": 1068,
+   "quads": 3477,
+   "categories_present": 12,
+   "categories_in_train": 12,
+   "tv_distance_to_train": 0.01
+  }
+ }
+}
