@@ -49,6 +49,9 @@ from torch import nn
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from asqp_common import NULL, clean_span, load_jsonl, quad_tuple, score  # noqa: E402
 
+sys.path.insert(0, str(Path(__file__).resolve().parent / "aug"))
+from quadra import relocate  # noqa: E402
+
 TAGS = ["[CLS]", "O", "I-A", "B-A", "I-O", "B-O"]
 T = {t: i for i, t in enumerate(TAGS)}
 POL = ["negative", "neutral", "positive"]
@@ -268,6 +271,27 @@ def gold_spans(item, syl):
 
 
 # ---------------------------------------------------------------- data
+
+def with_offsets(items):
+    """Pseudo-labelled sets (src/aug/mvd.py select) give span strings without character offsets; this model tags
+    character spans, so each explicit span is located in the text (whole-word occurrences, closest aspect-opinion
+    pair: quadra.relocate, the same rule as the vote's grounding check). Items that cannot be located are dropped.
+    Without this, every such span was read as implicit (bug of ecm's v1 / v2 arms, fixed 2026-11-18)."""
+    out, moved, dropped = [], 0, 0
+    for x in items:
+        if all(q.get(f + "_offsets") or q[f] == NULL for q in x["quads"] for f in ("aspect", "opinion")):
+            out.append(x)
+            continue
+        y = relocate(x["text"], {"quads": [{k: q[k] for k in ("category", "aspect", "opinion", "polarity")} for q in x["quads"]]})
+        if y is None:
+            dropped += 1
+            continue
+        out.append({**x, "quads": y["quads"]})
+        moved += 1
+    if moved or dropped:
+        log.info(f"aug: {moved} items given span offsets, {dropped} dropped (span not found)")
+    return out, moved, dropped
+
 
 def step1_rows(items, enc):
     rows, lost = [], 0
@@ -655,7 +679,7 @@ def main():
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(message)s", stream=sys.stdout)
     device = torch.device("cuda" if torch.cuda.is_available() and not a.cpu else "cpu")
     data = {k: load_jsonl(getattr(a, f"{k}_path")) for k in ("train", "dev", "test")}
-    data["aug"] = [x for p in a.aug_path for x in load_jsonl(p)]
+    data["aug"], a.aug_relocated, a.aug_dropped = with_offsets([x for p in a.aug_path for x in load_jsonl(p)])
     a.label_categories = sorted({q["category"] for k in ("train", "dev", "test") for x in data[k] for q in x["quads"]})
     if a.limit:
         data = {k: v[:a.limit] for k, v in data.items()}
