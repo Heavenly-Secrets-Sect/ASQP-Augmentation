@@ -1,0 +1,21 @@
+{
+ "in": "data/subsets/laptop/f50/labels/s42.jsonl,data/subsets/laptop/f50/labels/s123.jsonl,data/subsets/laptop/f50/labels/s2024.jsonl,data/subsets/laptop/f50/labels/s7.jsonl,data/subsets/laptop/f50/labels/s99.jsonl",
+ "vote_min": "majority",
+ "consensus": false,
+ "n_max": 100000,
+ "n_views": 25,
+ "n_out": 8793,
+ "quads_out": 12253,
+ "stats": {
+  "n": 10175,
+  "no grounded majority quad": 1382,
+  "kept": 8793
+ },
+ "implicit_types": {
+  "EA-EO": 7752,
+  "IA-EO": 1875,
+  "EA-IO": 2309,
+  "IA-IO": 317
+ },
+ "seed": 13
+}

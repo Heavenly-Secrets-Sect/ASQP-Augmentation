@@ -1,0 +1,21 @@
+{
+ "in": "data/subsets/vi/f20/labels/s42.jsonl,data/subsets/vi/f20/labels/s123.jsonl,data/subsets/vi/f20/labels/s2024.jsonl,data/subsets/vi/f20/labels/s7.jsonl,data/subsets/vi/f20/labels/s99.jsonl",
+ "vote_min": "majority",
+ "consensus": false,
+ "n_max": 100000,
+ "n_views": 25,
+ "n_out": 2804,
+ "quads_out": 6860,
+ "stats": {
+  "n": 2846,
+  "no grounded majority quad": 42,
+  "kept": 2804
+ },
+ "implicit_types": {
+  "EA-EO": 6292,
+  "IA-EO": 238,
+  "EA-IO": 277,
+  "IA-IO": 53
+ },
+ "seed": 13
+}
