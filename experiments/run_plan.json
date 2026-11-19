@@ -1,2763 +1,702 @@
 {
- "round": "ds",
+ "round": "cp",
  "rounds": [
-  "ds"
+  "cp"
  ],
  "budget_hours": 9.0,
  "gpus": 2,
  "min_per_example": 0.017012538837421508,
  "n_calibrated": 230,
- "created": "2026-11-19 13:28",
+ "created": "2026-11-19 23:37",
  "sessions": [
+  {
+   "session": 1,
+   "jobs": [
+    "cp_laptop_copy:s42",
+    "cp_laptop_copy:s123",
+    "cp_rest_copy:s42",
+    "cp_rest_copy:s123"
+   ],
+   "est_hours": 8.0
+  },
+  {
+   "session": 2,
+   "jobs": [
+    "cp_laptop_copy:s2024",
+    "cp_laptop_copy:s7",
+    "cp_rest_copy:s2024",
+    "cp_rest_copy:s7"
+   ],
+   "est_hours": 8.0
+  },
+  {
+   "session": 3,
+   "jobs": [
+    "cp_laptop_copy:s99",
+    "cp_laptop_copy:s11",
+    "cp_rest_copy:s99",
+    "cp_rest_copy:s11"
+   ],
+   "est_hours": 8.0
+  },
+  {
+   "session": 4,
+   "jobs": [
+    "cp_laptop_copy:s13",
+    "cp_laptop_copy:s17",
+    "cp_rest_copy:s13",
+    "cp_rest_copy:s17"
+   ],
+   "est_hours": 8.0
+  },
+  {
+   "session": 5,
+   "jobs": [
+    "cp_laptop_copy:s19",
+    "cp_laptop_copy:s23",
+    "cp_rest_copy:s19",
+    "cp_rest_copy:s23"
+   ],
+   "est_hours": 8.0
+  },
+  {
+   "session": 6,
+   "jobs": [
+    "cp_laptop_copy:s29",
+    "cp_laptop_copy:s31",
+    "cp_rest_copy:s29",
+    "cp_rest_copy:s31"
+   ],
+   "est_hours": 8.0
+  },
+  {
+   "session": 7,
+   "jobs": [
+    "cp_laptop_copy:s37",
+    "cp_laptop_copy:s41",
+    "cp_rest_copy:s37",
+    "cp_rest_copy:s41"
+   ],
+   "est_hours": 8.0
+  },
+  {
+   "session": 8,
+   "jobs": [
+    "cp_laptop_copy:s43",
+    "cp_laptop_copy:s47",
+    "cp_rest_copy:s43",
+    "cp_rest_copy:s47"
+   ],
+   "est_hours": 8.0
+  },
   {
    "session": 9,
    "jobs": [
-    "ds_vi_f50_prop:s42",
-    "ds_vi_f50_prop:s123",
-    "ds_vi_f50_prop:s2024",
-    "ds_vi_f50_prop:s7",
-    "ds_vi_f50_prop:s99",
-    "ds_vi_f50_copy:s42",
-    "ds_laptop_f20_prop:s42",
-    "ds_laptop_f20_prop:s123"
+    "cp_laptop_copy:s53",
+    "cp_laptop_copy:s59",
+    "cp_rest_copy:s53",
+    "cp_rest_copy:s59"
    ],
-   "est_hours": 8.98
+   "est_hours": 8.0
   },
   {
    "session": 10,
    "jobs": [
-    "ds_vi_f50_copy:s123",
-    "ds_vi_f50_copy:s2024",
-    "ds_vi_f50_copy:s7",
-    "ds_vi_f50_copy:s99",
-    "ds_laptop_f50_prop:s42",
-    "ds_laptop_f50_prop:s123",
-    "ds_rest_f50_prop:s42",
-    "ds_rest_f50_prop:s123"
+    "cp_vi_copy:s42",
+    "cp_vi_copy:s123"
    ],
-   "est_hours": 8.93
+   "est_hours": 5.0
   },
   {
    "session": 11,
    "jobs": [
-    "ds_laptop_f50_prop:s2024",
-    "ds_laptop_f50_prop:s7",
-    "ds_laptop_f50_prop:s99",
-    "ds_laptop_f50_copy:s42",
-    "ds_laptop_f50_copy:s123",
-    "ds_laptop_f50_copy:s2024",
-    "ds_rest_f50_prop:s2024",
-    "ds_rest_f50_prop:s7",
-    "ds_vi_f2_prop:s42",
-    "ds_vi_f2_prop:s123"
+    "cp_vi_copy:s2024",
+    "cp_vi_copy:s7"
    ],
-   "est_hours": 9.0
+   "est_hours": 5.0
   },
   {
    "session": 12,
    "jobs": [
-    "ds_laptop_f50_copy:s7",
-    "ds_laptop_f50_copy:s99",
-    "ds_rest_f50_prop:s99",
-    "ds_rest_f50_copy:s42",
-    "ds_rest_f50_copy:s123",
-    "ds_rest_f50_copy:s2024",
-    "ds_rest_f50_copy:s7",
-    "ds_rest_f50_copy:s99",
-    "ds_vi_f20_prop:s42",
-    "ds_vi_f20_prop:s123",
-    "ds_vi_f20_prop:s2024",
-    "ds_vi_f20_prop:s7",
-    "ds_vi_f5_prop:s42",
-    "ds_vi_f5_prop:s123"
+    "cp_vi_copy:s99"
    ],
-   "est_hours": 8.98
-  },
-  {
-   "session": 13,
-   "jobs": [
-    "ds_vi_f20_prop:s99",
-    "ds_vi_f20_copy:s42",
-    "ds_vi_f20_copy:s123",
-    "ds_vi_f20_copy:s2024",
-    "ds_vi_f20_copy:s7",
-    "ds_vi_f20_copy:s99",
-    "ds_laptop_f20_prop:s2024",
-    "ds_laptop_f20_prop:s7",
-    "ds_laptop_f20_prop:s99",
-    "ds_laptop_f20_copy:s42",
-    "ds_laptop_f20_copy:s123",
-    "ds_laptop_f20_copy:s2024",
-    "ds_laptop_f20_copy:s7",
-    "ds_laptop_f20_copy:s99",
-    "ds_vi_f10_prop:s42",
-    "ds_vi_f10_prop:s123"
-   ],
-   "est_hours": 8.8
-  },
-  {
-   "session": 14,
-   "jobs": [
-    "ds_vi_f10_prop:s2024",
-    "ds_vi_f10_prop:s7",
-    "ds_vi_f10_prop:s99",
-    "ds_vi_f10_copy:s42",
-    "ds_vi_f10_copy:s123",
-    "ds_vi_f10_copy:s2024",
-    "ds_vi_f10_copy:s7",
-    "ds_vi_f10_copy:s99",
-    "ds_laptop_f10_prop:s42",
-    "ds_laptop_f10_prop:s123",
-    "ds_laptop_f10_prop:s2024",
-    "ds_laptop_f10_prop:s7",
-    "ds_laptop_f10_prop:s99",
-    "ds_laptop_f10_copy:s42",
-    "ds_laptop_f10_copy:s123",
-    "ds_laptop_f10_copy:s2024",
-    "ds_laptop_f10_copy:s7",
-    "ds_laptop_f10_copy:s99",
-    "ds_rest_f20_prop:s42",
-    "ds_rest_f20_prop:s123",
-    "ds_rest_f20_prop:s2024",
-    "ds_rest_f20_prop:s7",
-    "ds_rest_f20_prop:s99",
-    "ds_rest_f20_copy:s42",
-    "ds_rest_f20_copy:s123",
-    "ds_rest_f20_copy:s2024"
-   ],
-   "est_hours": 8.82
-  },
-  {
-   "session": 15,
-   "jobs": [
-    "ds_rest_f20_copy:s7",
-    "ds_rest_f20_copy:s99",
-    "ds_vi_f5_prop:s2024",
-    "ds_vi_f5_prop:s7",
-    "ds_vi_f5_prop:s99",
-    "ds_vi_f5_copy:s42",
-    "ds_vi_f5_copy:s123",
-    "ds_vi_f5_copy:s2024",
-    "ds_vi_f5_copy:s7",
-    "ds_vi_f5_copy:s99",
-    "ds_laptop_f5_prop:s42",
-    "ds_laptop_f5_prop:s123",
-    "ds_laptop_f5_prop:s2024",
-    "ds_laptop_f5_prop:s7",
-    "ds_laptop_f5_prop:s99",
-    "ds_laptop_f5_copy:s42",
-    "ds_laptop_f5_copy:s123",
-    "ds_laptop_f5_copy:s2024",
-    "ds_laptop_f5_copy:s7",
-    "ds_laptop_f5_copy:s99",
-    "ds_rest_f10_prop:s42",
-    "ds_rest_f10_prop:s123",
-    "ds_rest_f10_prop:s2024",
-    "ds_rest_f10_prop:s7",
-    "ds_rest_f10_prop:s99",
-    "ds_rest_f10_copy:s42",
-    "ds_rest_f10_copy:s123",
-    "ds_rest_f10_copy:s2024",
-    "ds_rest_f10_copy:s7",
-    "ds_rest_f10_copy:s99",
-    "ds_vi_f2_prop:s2024",
-    "ds_vi_f2_prop:s7",
-    "ds_vi_f2_prop:s99",
-    "ds_vi_f2_copy:s42",
-    "ds_vi_f2_copy:s123",
-    "ds_vi_f2_copy:s2024",
-    "ds_vi_f2_copy:s7",
-    "ds_vi_f2_copy:s99",
-    "ds_rest_f5_prop:s42",
-    "ds_rest_f5_prop:s123",
-    "ds_rest_f1_prop:s42",
-    "ds_rest_f1_prop:s123"
-   ],
-   "est_hours": 9.0
-  },
-  {
-   "session": 16,
-   "jobs": [
-    "ds_rest_f5_prop:s2024",
-    "ds_rest_f5_prop:s7",
-    "ds_rest_f5_prop:s99",
-    "ds_rest_f5_copy:s42",
-    "ds_rest_f5_copy:s123",
-    "ds_rest_f5_copy:s2024",
-    "ds_rest_f5_copy:s7",
-    "ds_rest_f5_copy:s99",
-    "ds_laptop_f2_prop:s42",
-    "ds_laptop_f2_prop:s123",
-    "ds_laptop_f2_prop:s2024",
-    "ds_laptop_f2_prop:s7",
-    "ds_laptop_f2_prop:s99",
-    "ds_laptop_f2_copy:s42",
-    "ds_laptop_f2_copy:s123",
-    "ds_laptop_f2_copy:s2024",
-    "ds_laptop_f2_copy:s7",
-    "ds_laptop_f2_copy:s99",
-    "ds_vi_f1_prop:s42",
-    "ds_vi_f1_prop:s123",
-    "ds_vi_f1_prop:s2024",
-    "ds_vi_f1_prop:s7",
-    "ds_vi_f1_prop:s99",
-    "ds_vi_f1_copy:s42",
-    "ds_vi_f1_copy:s123",
-    "ds_vi_f1_copy:s2024",
-    "ds_vi_f1_copy:s7",
-    "ds_vi_f1_copy:s99",
-    "ds_rest_f2_prop:s42",
-    "ds_rest_f2_prop:s123",
-    "ds_rest_f2_prop:s2024",
-    "ds_rest_f2_prop:s7",
-    "ds_rest_f2_prop:s99",
-    "ds_rest_f2_copy:s42",
-    "ds_rest_f2_copy:s123",
-    "ds_rest_f2_copy:s2024",
-    "ds_rest_f2_copy:s7",
-    "ds_rest_f2_copy:s99",
-    "ds_laptop_f1_prop:s42",
-    "ds_laptop_f1_prop:s123",
-    "ds_laptop_f1_prop:s2024",
-    "ds_laptop_f1_prop:s7",
-    "ds_laptop_f1_prop:s99",
-    "ds_laptop_f1_copy:s42",
-    "ds_laptop_f1_copy:s123",
-    "ds_laptop_f1_copy:s2024",
-    "ds_laptop_f1_copy:s7",
-    "ds_laptop_f1_copy:s99",
-    "ds_rest_f1_prop:s2024",
-    "ds_rest_f1_prop:s7",
-    "ds_rest_f1_prop:s99",
-    "ds_rest_f1_copy:s42",
-    "ds_rest_f1_copy:s123",
-    "ds_rest_f1_copy:s2024",
-    "ds_rest_f1_copy:s7",
-    "ds_rest_f1_copy:s99"
-   ],
-   "est_hours": 8.32
+   "est_hours": 5.0
   }
  ],
  "jobs": {
-  "ds_vi_f1_prop:s42": {
-   "id": "ds_vi_f1_prop:s42",
-   "run": "ds_vi_f1_prop",
+  "cp_vi_copy:s42": {
+   "id": "cp_vi_copy:s42",
+   "run": "cp_vi_copy",
    "seed": 42,
    "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f1_prop --seeds 42 --train_path data/subsets/vi/f1/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f1/vote.jsonl --aug_path data/subsets/vi/f1/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_vi_copy --seeds 42 --train_path data/restaurant_v1/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/aug/cp_vi_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
    "examples": null,
-   "est_min": 17,
+   "est_min": 300,
    "after": [],
    "outputs": [
-    "outputs/ds_vi_f1_prop/seed_42"
+    "outputs/cp_vi_copy/seed_42"
    ],
-   "done": "outputs/ds_vi_f1_prop/seed_42/test_predictions.jsonl"
+   "done": "outputs/cp_vi_copy/seed_42/test_predictions.jsonl"
   },
-  "ds_vi_f1_prop:s123": {
-   "id": "ds_vi_f1_prop:s123",
-   "run": "ds_vi_f1_prop",
+  "cp_vi_copy:s123": {
+   "id": "cp_vi_copy:s123",
+   "run": "cp_vi_copy",
    "seed": 123,
    "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f1_prop --seeds 123 --train_path data/subsets/vi/f1/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f1/vote.jsonl --aug_path data/subsets/vi/f1/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_vi_copy --seeds 123 --train_path data/restaurant_v1/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/aug/cp_vi_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
    "examples": null,
-   "est_min": 17,
+   "est_min": 300,
    "after": [],
    "outputs": [
-    "outputs/ds_vi_f1_prop/seed_123"
+    "outputs/cp_vi_copy/seed_123"
    ],
-   "done": "outputs/ds_vi_f1_prop/seed_123/test_predictions.jsonl"
+   "done": "outputs/cp_vi_copy/seed_123/test_predictions.jsonl"
   },
-  "ds_vi_f1_prop:s2024": {
-   "id": "ds_vi_f1_prop:s2024",
-   "run": "ds_vi_f1_prop",
+  "cp_vi_copy:s2024": {
+   "id": "cp_vi_copy:s2024",
+   "run": "cp_vi_copy",
    "seed": 2024,
    "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f1_prop --seeds 2024 --train_path data/subsets/vi/f1/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f1/vote.jsonl --aug_path data/subsets/vi/f1/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_vi_copy --seeds 2024 --train_path data/restaurant_v1/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/aug/cp_vi_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
    "examples": null,
-   "est_min": 17,
+   "est_min": 300,
    "after": [],
    "outputs": [
-    "outputs/ds_vi_f1_prop/seed_2024"
+    "outputs/cp_vi_copy/seed_2024"
    ],
-   "done": "outputs/ds_vi_f1_prop/seed_2024/test_predictions.jsonl"
+   "done": "outputs/cp_vi_copy/seed_2024/test_predictions.jsonl"
   },
-  "ds_vi_f1_prop:s7": {
-   "id": "ds_vi_f1_prop:s7",
-   "run": "ds_vi_f1_prop",
+  "cp_vi_copy:s7": {
+   "id": "cp_vi_copy:s7",
+   "run": "cp_vi_copy",
    "seed": 7,
    "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f1_prop --seeds 7 --train_path data/subsets/vi/f1/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f1/vote.jsonl --aug_path data/subsets/vi/f1/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_vi_copy --seeds 7 --train_path data/restaurant_v1/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/aug/cp_vi_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
    "examples": null,
-   "est_min": 17,
+   "est_min": 300,
    "after": [],
    "outputs": [
-    "outputs/ds_vi_f1_prop/seed_7"
+    "outputs/cp_vi_copy/seed_7"
    ],
-   "done": "outputs/ds_vi_f1_prop/seed_7/test_predictions.jsonl"
+   "done": "outputs/cp_vi_copy/seed_7/test_predictions.jsonl"
   },
-  "ds_vi_f1_prop:s99": {
-   "id": "ds_vi_f1_prop:s99",
-   "run": "ds_vi_f1_prop",
+  "cp_vi_copy:s99": {
+   "id": "cp_vi_copy:s99",
+   "run": "cp_vi_copy",
    "seed": 99,
    "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f1_prop --seeds 99 --train_path data/subsets/vi/f1/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f1/vote.jsonl --aug_path data/subsets/vi/f1/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_vi_copy --seeds 99 --train_path data/restaurant_v1/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/aug/cp_vi_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
    "examples": null,
-   "est_min": 17,
+   "est_min": 300,
    "after": [],
    "outputs": [
-    "outputs/ds_vi_f1_prop/seed_99"
+    "outputs/cp_vi_copy/seed_99"
    ],
-   "done": "outputs/ds_vi_f1_prop/seed_99/test_predictions.jsonl"
+   "done": "outputs/cp_vi_copy/seed_99/test_predictions.jsonl"
   },
-  "ds_vi_f1_copy:s42": {
-   "id": "ds_vi_f1_copy:s42",
-   "run": "ds_vi_f1_copy",
+  "cp_rest_copy:s42": {
+   "id": "cp_rest_copy:s42",
+   "run": "cp_rest_copy",
    "seed": 42,
    "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f1_copy --seeds 42 --train_path data/subsets/vi/f1/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f1/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_rest_copy --seeds 42 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/rest/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/aug/cp_rest_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
    "examples": null,
-   "est_min": 17,
+   "est_min": 150,
    "after": [],
    "outputs": [
-    "outputs/ds_vi_f1_copy/seed_42"
+    "outputs/cp_rest_copy/seed_42"
    ],
-   "done": "outputs/ds_vi_f1_copy/seed_42/test_predictions.jsonl"
+   "done": "outputs/cp_rest_copy/seed_42/test_predictions.jsonl"
   },
-  "ds_vi_f1_copy:s123": {
-   "id": "ds_vi_f1_copy:s123",
-   "run": "ds_vi_f1_copy",
+  "cp_rest_copy:s123": {
+   "id": "cp_rest_copy:s123",
+   "run": "cp_rest_copy",
    "seed": 123,
    "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f1_copy --seeds 123 --train_path data/subsets/vi/f1/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f1/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_rest_copy --seeds 123 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/rest/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/aug/cp_rest_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
    "examples": null,
-   "est_min": 17,
+   "est_min": 150,
    "after": [],
    "outputs": [
-    "outputs/ds_vi_f1_copy/seed_123"
+    "outputs/cp_rest_copy/seed_123"
    ],
-   "done": "outputs/ds_vi_f1_copy/seed_123/test_predictions.jsonl"
+   "done": "outputs/cp_rest_copy/seed_123/test_predictions.jsonl"
   },
-  "ds_vi_f1_copy:s2024": {
-   "id": "ds_vi_f1_copy:s2024",
-   "run": "ds_vi_f1_copy",
+  "cp_rest_copy:s2024": {
+   "id": "cp_rest_copy:s2024",
+   "run": "cp_rest_copy",
    "seed": 2024,
    "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f1_copy --seeds 2024 --train_path data/subsets/vi/f1/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f1/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_rest_copy --seeds 2024 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/rest/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/aug/cp_rest_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
    "examples": null,
-   "est_min": 17,
+   "est_min": 150,
    "after": [],
    "outputs": [
-    "outputs/ds_vi_f1_copy/seed_2024"
+    "outputs/cp_rest_copy/seed_2024"
    ],
-   "done": "outputs/ds_vi_f1_copy/seed_2024/test_predictions.jsonl"
+   "done": "outputs/cp_rest_copy/seed_2024/test_predictions.jsonl"
   },
-  "ds_vi_f1_copy:s7": {
-   "id": "ds_vi_f1_copy:s7",
-   "run": "ds_vi_f1_copy",
+  "cp_rest_copy:s7": {
+   "id": "cp_rest_copy:s7",
+   "run": "cp_rest_copy",
    "seed": 7,
    "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f1_copy --seeds 7 --train_path data/subsets/vi/f1/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f1/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_rest_copy --seeds 7 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/rest/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/aug/cp_rest_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
    "examples": null,
-   "est_min": 17,
+   "est_min": 150,
    "after": [],
    "outputs": [
-    "outputs/ds_vi_f1_copy/seed_7"
+    "outputs/cp_rest_copy/seed_7"
    ],
-   "done": "outputs/ds_vi_f1_copy/seed_7/test_predictions.jsonl"
+   "done": "outputs/cp_rest_copy/seed_7/test_predictions.jsonl"
   },
-  "ds_vi_f1_copy:s99": {
-   "id": "ds_vi_f1_copy:s99",
-   "run": "ds_vi_f1_copy",
+  "cp_rest_copy:s99": {
+   "id": "cp_rest_copy:s99",
+   "run": "cp_rest_copy",
    "seed": 99,
    "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f1_copy --seeds 99 --train_path data/subsets/vi/f1/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f1/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_rest_copy --seeds 99 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/rest/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/aug/cp_rest_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
    "examples": null,
-   "est_min": 17,
+   "est_min": 150,
    "after": [],
    "outputs": [
-    "outputs/ds_vi_f1_copy/seed_99"
+    "outputs/cp_rest_copy/seed_99"
    ],
-   "done": "outputs/ds_vi_f1_copy/seed_99/test_predictions.jsonl"
+   "done": "outputs/cp_rest_copy/seed_99/test_predictions.jsonl"
   },
-  "ds_vi_f2_prop:s42": {
-   "id": "ds_vi_f2_prop:s42",
-   "run": "ds_vi_f2_prop",
+  "cp_rest_copy:s11": {
+   "id": "cp_rest_copy:s11",
+   "run": "cp_rest_copy",
+   "seed": 11,
+   "aug": null,
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_rest_copy --seeds 11 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/rest/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/aug/cp_rest_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "examples": null,
+   "est_min": 150,
+   "after": [],
+   "outputs": [
+    "outputs/cp_rest_copy/seed_11"
+   ],
+   "done": "outputs/cp_rest_copy/seed_11/test_predictions.jsonl"
+  },
+  "cp_rest_copy:s13": {
+   "id": "cp_rest_copy:s13",
+   "run": "cp_rest_copy",
+   "seed": 13,
+   "aug": null,
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_rest_copy --seeds 13 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/rest/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/aug/cp_rest_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "examples": null,
+   "est_min": 150,
+   "after": [],
+   "outputs": [
+    "outputs/cp_rest_copy/seed_13"
+   ],
+   "done": "outputs/cp_rest_copy/seed_13/test_predictions.jsonl"
+  },
+  "cp_rest_copy:s17": {
+   "id": "cp_rest_copy:s17",
+   "run": "cp_rest_copy",
+   "seed": 17,
+   "aug": null,
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_rest_copy --seeds 17 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/rest/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/aug/cp_rest_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "examples": null,
+   "est_min": 150,
+   "after": [],
+   "outputs": [
+    "outputs/cp_rest_copy/seed_17"
+   ],
+   "done": "outputs/cp_rest_copy/seed_17/test_predictions.jsonl"
+  },
+  "cp_rest_copy:s19": {
+   "id": "cp_rest_copy:s19",
+   "run": "cp_rest_copy",
+   "seed": 19,
+   "aug": null,
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_rest_copy --seeds 19 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/rest/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/aug/cp_rest_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "examples": null,
+   "est_min": 150,
+   "after": [],
+   "outputs": [
+    "outputs/cp_rest_copy/seed_19"
+   ],
+   "done": "outputs/cp_rest_copy/seed_19/test_predictions.jsonl"
+  },
+  "cp_rest_copy:s23": {
+   "id": "cp_rest_copy:s23",
+   "run": "cp_rest_copy",
+   "seed": 23,
+   "aug": null,
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_rest_copy --seeds 23 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/rest/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/aug/cp_rest_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "examples": null,
+   "est_min": 150,
+   "after": [],
+   "outputs": [
+    "outputs/cp_rest_copy/seed_23"
+   ],
+   "done": "outputs/cp_rest_copy/seed_23/test_predictions.jsonl"
+  },
+  "cp_rest_copy:s29": {
+   "id": "cp_rest_copy:s29",
+   "run": "cp_rest_copy",
+   "seed": 29,
+   "aug": null,
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_rest_copy --seeds 29 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/rest/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/aug/cp_rest_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "examples": null,
+   "est_min": 150,
+   "after": [],
+   "outputs": [
+    "outputs/cp_rest_copy/seed_29"
+   ],
+   "done": "outputs/cp_rest_copy/seed_29/test_predictions.jsonl"
+  },
+  "cp_rest_copy:s31": {
+   "id": "cp_rest_copy:s31",
+   "run": "cp_rest_copy",
+   "seed": 31,
+   "aug": null,
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_rest_copy --seeds 31 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/rest/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/aug/cp_rest_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "examples": null,
+   "est_min": 150,
+   "after": [],
+   "outputs": [
+    "outputs/cp_rest_copy/seed_31"
+   ],
+   "done": "outputs/cp_rest_copy/seed_31/test_predictions.jsonl"
+  },
+  "cp_rest_copy:s37": {
+   "id": "cp_rest_copy:s37",
+   "run": "cp_rest_copy",
+   "seed": 37,
+   "aug": null,
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_rest_copy --seeds 37 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/rest/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/aug/cp_rest_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "examples": null,
+   "est_min": 150,
+   "after": [],
+   "outputs": [
+    "outputs/cp_rest_copy/seed_37"
+   ],
+   "done": "outputs/cp_rest_copy/seed_37/test_predictions.jsonl"
+  },
+  "cp_rest_copy:s41": {
+   "id": "cp_rest_copy:s41",
+   "run": "cp_rest_copy",
+   "seed": 41,
+   "aug": null,
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_rest_copy --seeds 41 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/rest/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/aug/cp_rest_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "examples": null,
+   "est_min": 150,
+   "after": [],
+   "outputs": [
+    "outputs/cp_rest_copy/seed_41"
+   ],
+   "done": "outputs/cp_rest_copy/seed_41/test_predictions.jsonl"
+  },
+  "cp_rest_copy:s43": {
+   "id": "cp_rest_copy:s43",
+   "run": "cp_rest_copy",
+   "seed": 43,
+   "aug": null,
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_rest_copy --seeds 43 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/rest/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/aug/cp_rest_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "examples": null,
+   "est_min": 150,
+   "after": [],
+   "outputs": [
+    "outputs/cp_rest_copy/seed_43"
+   ],
+   "done": "outputs/cp_rest_copy/seed_43/test_predictions.jsonl"
+  },
+  "cp_rest_copy:s47": {
+   "id": "cp_rest_copy:s47",
+   "run": "cp_rest_copy",
+   "seed": 47,
+   "aug": null,
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_rest_copy --seeds 47 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/rest/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/aug/cp_rest_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "examples": null,
+   "est_min": 150,
+   "after": [],
+   "outputs": [
+    "outputs/cp_rest_copy/seed_47"
+   ],
+   "done": "outputs/cp_rest_copy/seed_47/test_predictions.jsonl"
+  },
+  "cp_rest_copy:s53": {
+   "id": "cp_rest_copy:s53",
+   "run": "cp_rest_copy",
+   "seed": 53,
+   "aug": null,
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_rest_copy --seeds 53 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/rest/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/aug/cp_rest_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "examples": null,
+   "est_min": 150,
+   "after": [],
+   "outputs": [
+    "outputs/cp_rest_copy/seed_53"
+   ],
+   "done": "outputs/cp_rest_copy/seed_53/test_predictions.jsonl"
+  },
+  "cp_rest_copy:s59": {
+   "id": "cp_rest_copy:s59",
+   "run": "cp_rest_copy",
+   "seed": 59,
+   "aug": null,
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_rest_copy --seeds 59 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/rest/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/aug/cp_rest_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "examples": null,
+   "est_min": 150,
+   "after": [],
+   "outputs": [
+    "outputs/cp_rest_copy/seed_59"
+   ],
+   "done": "outputs/cp_rest_copy/seed_59/test_predictions.jsonl"
+  },
+  "cp_laptop_copy:s42": {
+   "id": "cp_laptop_copy:s42",
+   "run": "cp_laptop_copy",
    "seed": 42,
    "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f2_prop --seeds 42 --train_path data/subsets/vi/f2/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f2/vote.jsonl --aug_path data/subsets/vi/f2/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_laptop_copy --seeds 42 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/laptop/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/aug/cp_laptop_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
    "examples": null,
-   "est_min": 20,
+   "est_min": 330,
    "after": [],
    "outputs": [
-    "outputs/ds_vi_f2_prop/seed_42"
+    "outputs/cp_laptop_copy/seed_42"
    ],
-   "done": "outputs/ds_vi_f2_prop/seed_42/test_predictions.jsonl"
+   "done": "outputs/cp_laptop_copy/seed_42/test_predictions.jsonl"
   },
-  "ds_vi_f2_prop:s123": {
-   "id": "ds_vi_f2_prop:s123",
-   "run": "ds_vi_f2_prop",
+  "cp_laptop_copy:s123": {
+   "id": "cp_laptop_copy:s123",
+   "run": "cp_laptop_copy",
    "seed": 123,
    "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f2_prop --seeds 123 --train_path data/subsets/vi/f2/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f2/vote.jsonl --aug_path data/subsets/vi/f2/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_laptop_copy --seeds 123 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/laptop/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/aug/cp_laptop_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
    "examples": null,
-   "est_min": 20,
+   "est_min": 330,
    "after": [],
    "outputs": [
-    "outputs/ds_vi_f2_prop/seed_123"
+    "outputs/cp_laptop_copy/seed_123"
    ],
-   "done": "outputs/ds_vi_f2_prop/seed_123/test_predictions.jsonl"
+   "done": "outputs/cp_laptop_copy/seed_123/test_predictions.jsonl"
   },
-  "ds_vi_f2_prop:s2024": {
-   "id": "ds_vi_f2_prop:s2024",
-   "run": "ds_vi_f2_prop",
+  "cp_laptop_copy:s2024": {
+   "id": "cp_laptop_copy:s2024",
+   "run": "cp_laptop_copy",
    "seed": 2024,
    "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f2_prop --seeds 2024 --train_path data/subsets/vi/f2/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f2/vote.jsonl --aug_path data/subsets/vi/f2/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_laptop_copy --seeds 2024 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/laptop/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/aug/cp_laptop_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
    "examples": null,
-   "est_min": 20,
+   "est_min": 330,
    "after": [],
    "outputs": [
-    "outputs/ds_vi_f2_prop/seed_2024"
+    "outputs/cp_laptop_copy/seed_2024"
    ],
-   "done": "outputs/ds_vi_f2_prop/seed_2024/test_predictions.jsonl"
+   "done": "outputs/cp_laptop_copy/seed_2024/test_predictions.jsonl"
   },
-  "ds_vi_f2_prop:s7": {
-   "id": "ds_vi_f2_prop:s7",
-   "run": "ds_vi_f2_prop",
+  "cp_laptop_copy:s7": {
+   "id": "cp_laptop_copy:s7",
+   "run": "cp_laptop_copy",
    "seed": 7,
    "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f2_prop --seeds 7 --train_path data/subsets/vi/f2/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f2/vote.jsonl --aug_path data/subsets/vi/f2/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_laptop_copy --seeds 7 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/laptop/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/aug/cp_laptop_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
    "examples": null,
-   "est_min": 20,
+   "est_min": 330,
    "after": [],
    "outputs": [
-    "outputs/ds_vi_f2_prop/seed_7"
+    "outputs/cp_laptop_copy/seed_7"
    ],
-   "done": "outputs/ds_vi_f2_prop/seed_7/test_predictions.jsonl"
+   "done": "outputs/cp_laptop_copy/seed_7/test_predictions.jsonl"
   },
-  "ds_vi_f2_prop:s99": {
-   "id": "ds_vi_f2_prop:s99",
-   "run": "ds_vi_f2_prop",
+  "cp_laptop_copy:s99": {
+   "id": "cp_laptop_copy:s99",
+   "run": "cp_laptop_copy",
    "seed": 99,
    "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f2_prop --seeds 99 --train_path data/subsets/vi/f2/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f2/vote.jsonl --aug_path data/subsets/vi/f2/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_laptop_copy --seeds 99 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/laptop/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/aug/cp_laptop_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
    "examples": null,
-   "est_min": 20,
+   "est_min": 330,
    "after": [],
    "outputs": [
-    "outputs/ds_vi_f2_prop/seed_99"
+    "outputs/cp_laptop_copy/seed_99"
    ],
-   "done": "outputs/ds_vi_f2_prop/seed_99/test_predictions.jsonl"
+   "done": "outputs/cp_laptop_copy/seed_99/test_predictions.jsonl"
   },
-  "ds_vi_f2_copy:s42": {
-   "id": "ds_vi_f2_copy:s42",
-   "run": "ds_vi_f2_copy",
-   "seed": 42,
+  "cp_laptop_copy:s11": {
+   "id": "cp_laptop_copy:s11",
+   "run": "cp_laptop_copy",
+   "seed": 11,
    "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f2_copy --seeds 42 --train_path data/subsets/vi/f2/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f2/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_laptop_copy --seeds 11 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/laptop/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/aug/cp_laptop_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
    "examples": null,
-   "est_min": 20,
+   "est_min": 330,
    "after": [],
    "outputs": [
-    "outputs/ds_vi_f2_copy/seed_42"
+    "outputs/cp_laptop_copy/seed_11"
    ],
-   "done": "outputs/ds_vi_f2_copy/seed_42/test_predictions.jsonl"
+   "done": "outputs/cp_laptop_copy/seed_11/test_predictions.jsonl"
   },
-  "ds_vi_f2_copy:s123": {
-   "id": "ds_vi_f2_copy:s123",
-   "run": "ds_vi_f2_copy",
-   "seed": 123,
+  "cp_laptop_copy:s13": {
+   "id": "cp_laptop_copy:s13",
+   "run": "cp_laptop_copy",
+   "seed": 13,
    "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f2_copy --seeds 123 --train_path data/subsets/vi/f2/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f2/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_laptop_copy --seeds 13 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/laptop/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/aug/cp_laptop_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
    "examples": null,
-   "est_min": 20,
+   "est_min": 330,
    "after": [],
    "outputs": [
-    "outputs/ds_vi_f2_copy/seed_123"
+    "outputs/cp_laptop_copy/seed_13"
    ],
-   "done": "outputs/ds_vi_f2_copy/seed_123/test_predictions.jsonl"
+   "done": "outputs/cp_laptop_copy/seed_13/test_predictions.jsonl"
   },
-  "ds_vi_f2_copy:s2024": {
-   "id": "ds_vi_f2_copy:s2024",
-   "run": "ds_vi_f2_copy",
-   "seed": 2024,
+  "cp_laptop_copy:s17": {
+   "id": "cp_laptop_copy:s17",
+   "run": "cp_laptop_copy",
+   "seed": 17,
    "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f2_copy --seeds 2024 --train_path data/subsets/vi/f2/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f2/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_laptop_copy --seeds 17 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/laptop/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/aug/cp_laptop_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
    "examples": null,
-   "est_min": 20,
+   "est_min": 330,
    "after": [],
    "outputs": [
-    "outputs/ds_vi_f2_copy/seed_2024"
+    "outputs/cp_laptop_copy/seed_17"
    ],
-   "done": "outputs/ds_vi_f2_copy/seed_2024/test_predictions.jsonl"
+   "done": "outputs/cp_laptop_copy/seed_17/test_predictions.jsonl"
   },
-  "ds_vi_f2_copy:s7": {
-   "id": "ds_vi_f2_copy:s7",
-   "run": "ds_vi_f2_copy",
-   "seed": 7,
+  "cp_laptop_copy:s19": {
+   "id": "cp_laptop_copy:s19",
+   "run": "cp_laptop_copy",
+   "seed": 19,
    "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f2_copy --seeds 7 --train_path data/subsets/vi/f2/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f2/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_laptop_copy --seeds 19 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/laptop/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/aug/cp_laptop_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
    "examples": null,
-   "est_min": 20,
+   "est_min": 330,
    "after": [],
    "outputs": [
-    "outputs/ds_vi_f2_copy/seed_7"
+    "outputs/cp_laptop_copy/seed_19"
    ],
-   "done": "outputs/ds_vi_f2_copy/seed_7/test_predictions.jsonl"
+   "done": "outputs/cp_laptop_copy/seed_19/test_predictions.jsonl"
   },
-  "ds_vi_f2_copy:s99": {
-   "id": "ds_vi_f2_copy:s99",
-   "run": "ds_vi_f2_copy",
-   "seed": 99,
+  "cp_laptop_copy:s23": {
+   "id": "cp_laptop_copy:s23",
+   "run": "cp_laptop_copy",
+   "seed": 23,
    "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f2_copy --seeds 99 --train_path data/subsets/vi/f2/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f2/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_laptop_copy --seeds 23 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/laptop/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/aug/cp_laptop_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
    "examples": null,
-   "est_min": 20,
+   "est_min": 330,
    "after": [],
    "outputs": [
-    "outputs/ds_vi_f2_copy/seed_99"
+    "outputs/cp_laptop_copy/seed_23"
    ],
-   "done": "outputs/ds_vi_f2_copy/seed_99/test_predictions.jsonl"
+   "done": "outputs/cp_laptop_copy/seed_23/test_predictions.jsonl"
   },
-  "ds_vi_f5_prop:s42": {
-   "id": "ds_vi_f5_prop:s42",
-   "run": "ds_vi_f5_prop",
-   "seed": 42,
+  "cp_laptop_copy:s29": {
+   "id": "cp_laptop_copy:s29",
+   "run": "cp_laptop_copy",
+   "seed": 29,
    "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f5_prop --seeds 42 --train_path data/subsets/vi/f5/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f5/vote.jsonl --aug_path data/subsets/vi/f5/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_laptop_copy --seeds 29 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/laptop/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/aug/cp_laptop_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
    "examples": null,
-   "est_min": 29,
+   "est_min": 330,
    "after": [],
    "outputs": [
-    "outputs/ds_vi_f5_prop/seed_42"
+    "outputs/cp_laptop_copy/seed_29"
    ],
-   "done": "outputs/ds_vi_f5_prop/seed_42/test_predictions.jsonl"
+   "done": "outputs/cp_laptop_copy/seed_29/test_predictions.jsonl"
   },
-  "ds_vi_f5_prop:s123": {
-   "id": "ds_vi_f5_prop:s123",
-   "run": "ds_vi_f5_prop",
-   "seed": 123,
+  "cp_laptop_copy:s31": {
+   "id": "cp_laptop_copy:s31",
+   "run": "cp_laptop_copy",
+   "seed": 31,
    "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f5_prop --seeds 123 --train_path data/subsets/vi/f5/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f5/vote.jsonl --aug_path data/subsets/vi/f5/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_laptop_copy --seeds 31 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/laptop/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/aug/cp_laptop_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
    "examples": null,
-   "est_min": 29,
+   "est_min": 330,
    "after": [],
    "outputs": [
-    "outputs/ds_vi_f5_prop/seed_123"
+    "outputs/cp_laptop_copy/seed_31"
    ],
-   "done": "outputs/ds_vi_f5_prop/seed_123/test_predictions.jsonl"
+   "done": "outputs/cp_laptop_copy/seed_31/test_predictions.jsonl"
   },
-  "ds_vi_f5_prop:s2024": {
-   "id": "ds_vi_f5_prop:s2024",
-   "run": "ds_vi_f5_prop",
-   "seed": 2024,
+  "cp_laptop_copy:s37": {
+   "id": "cp_laptop_copy:s37",
+   "run": "cp_laptop_copy",
+   "seed": 37,
    "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f5_prop --seeds 2024 --train_path data/subsets/vi/f5/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f5/vote.jsonl --aug_path data/subsets/vi/f5/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_laptop_copy --seeds 37 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/laptop/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/aug/cp_laptop_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
    "examples": null,
-   "est_min": 29,
+   "est_min": 330,
    "after": [],
    "outputs": [
-    "outputs/ds_vi_f5_prop/seed_2024"
+    "outputs/cp_laptop_copy/seed_37"
    ],
-   "done": "outputs/ds_vi_f5_prop/seed_2024/test_predictions.jsonl"
+   "done": "outputs/cp_laptop_copy/seed_37/test_predictions.jsonl"
   },
-  "ds_vi_f5_prop:s7": {
-   "id": "ds_vi_f5_prop:s7",
-   "run": "ds_vi_f5_prop",
-   "seed": 7,
+  "cp_laptop_copy:s41": {
+   "id": "cp_laptop_copy:s41",
+   "run": "cp_laptop_copy",
+   "seed": 41,
    "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f5_prop --seeds 7 --train_path data/subsets/vi/f5/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f5/vote.jsonl --aug_path data/subsets/vi/f5/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_laptop_copy --seeds 41 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/laptop/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/aug/cp_laptop_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
    "examples": null,
-   "est_min": 29,
+   "est_min": 330,
    "after": [],
    "outputs": [
-    "outputs/ds_vi_f5_prop/seed_7"
+    "outputs/cp_laptop_copy/seed_41"
    ],
-   "done": "outputs/ds_vi_f5_prop/seed_7/test_predictions.jsonl"
+   "done": "outputs/cp_laptop_copy/seed_41/test_predictions.jsonl"
   },
-  "ds_vi_f5_prop:s99": {
-   "id": "ds_vi_f5_prop:s99",
-   "run": "ds_vi_f5_prop",
-   "seed": 99,
+  "cp_laptop_copy:s43": {
+   "id": "cp_laptop_copy:s43",
+   "run": "cp_laptop_copy",
+   "seed": 43,
    "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f5_prop --seeds 99 --train_path data/subsets/vi/f5/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f5/vote.jsonl --aug_path data/subsets/vi/f5/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_laptop_copy --seeds 43 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/laptop/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/aug/cp_laptop_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
    "examples": null,
-   "est_min": 29,
+   "est_min": 330,
    "after": [],
    "outputs": [
-    "outputs/ds_vi_f5_prop/seed_99"
+    "outputs/cp_laptop_copy/seed_43"
    ],
-   "done": "outputs/ds_vi_f5_prop/seed_99/test_predictions.jsonl"
+   "done": "outputs/cp_laptop_copy/seed_43/test_predictions.jsonl"
   },
-  "ds_vi_f5_copy:s42": {
-   "id": "ds_vi_f5_copy:s42",
-   "run": "ds_vi_f5_copy",
-   "seed": 42,
+  "cp_laptop_copy:s47": {
+   "id": "cp_laptop_copy:s47",
+   "run": "cp_laptop_copy",
+   "seed": 47,
    "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f5_copy --seeds 42 --train_path data/subsets/vi/f5/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f5/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_laptop_copy --seeds 47 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/laptop/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/aug/cp_laptop_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
    "examples": null,
-   "est_min": 29,
+   "est_min": 330,
    "after": [],
    "outputs": [
-    "outputs/ds_vi_f5_copy/seed_42"
+    "outputs/cp_laptop_copy/seed_47"
    ],
-   "done": "outputs/ds_vi_f5_copy/seed_42/test_predictions.jsonl"
+   "done": "outputs/cp_laptop_copy/seed_47/test_predictions.jsonl"
   },
-  "ds_vi_f5_copy:s123": {
-   "id": "ds_vi_f5_copy:s123",
-   "run": "ds_vi_f5_copy",
-   "seed": 123,
+  "cp_laptop_copy:s53": {
+   "id": "cp_laptop_copy:s53",
+   "run": "cp_laptop_copy",
+   "seed": 53,
    "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f5_copy --seeds 123 --train_path data/subsets/vi/f5/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f5/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_laptop_copy --seeds 53 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/laptop/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/aug/cp_laptop_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
    "examples": null,
-   "est_min": 29,
+   "est_min": 330,
    "after": [],
    "outputs": [
-    "outputs/ds_vi_f5_copy/seed_123"
+    "outputs/cp_laptop_copy/seed_53"
    ],
-   "done": "outputs/ds_vi_f5_copy/seed_123/test_predictions.jsonl"
+   "done": "outputs/cp_laptop_copy/seed_53/test_predictions.jsonl"
   },
-  "ds_vi_f5_copy:s2024": {
-   "id": "ds_vi_f5_copy:s2024",
-   "run": "ds_vi_f5_copy",
-   "seed": 2024,
+  "cp_laptop_copy:s59": {
+   "id": "cp_laptop_copy:s59",
+   "run": "cp_laptop_copy",
+   "seed": 59,
    "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f5_copy --seeds 2024 --train_path data/subsets/vi/f5/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f5/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_laptop_copy --seeds 59 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/laptop/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/aug/cp_laptop_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
    "examples": null,
-   "est_min": 29,
+   "est_min": 330,
    "after": [],
    "outputs": [
-    "outputs/ds_vi_f5_copy/seed_2024"
+    "outputs/cp_laptop_copy/seed_59"
    ],
-   "done": "outputs/ds_vi_f5_copy/seed_2024/test_predictions.jsonl"
-  },
-  "ds_vi_f5_copy:s7": {
-   "id": "ds_vi_f5_copy:s7",
-   "run": "ds_vi_f5_copy",
-   "seed": 7,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f5_copy --seeds 7 --train_path data/subsets/vi/f5/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f5/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 29,
-   "after": [],
-   "outputs": [
-    "outputs/ds_vi_f5_copy/seed_7"
-   ],
-   "done": "outputs/ds_vi_f5_copy/seed_7/test_predictions.jsonl"
-  },
-  "ds_vi_f5_copy:s99": {
-   "id": "ds_vi_f5_copy:s99",
-   "run": "ds_vi_f5_copy",
-   "seed": 99,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f5_copy --seeds 99 --train_path data/subsets/vi/f5/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f5/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 29,
-   "after": [],
-   "outputs": [
-    "outputs/ds_vi_f5_copy/seed_99"
-   ],
-   "done": "outputs/ds_vi_f5_copy/seed_99/test_predictions.jsonl"
-  },
-  "ds_vi_f10_prop:s42": {
-   "id": "ds_vi_f10_prop:s42",
-   "run": "ds_vi_f10_prop",
-   "seed": 42,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f10_prop --seeds 42 --train_path data/subsets/vi/f10/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f10/vote.jsonl --aug_path data/subsets/vi/f10/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 43,
-   "after": [],
-   "outputs": [
-    "outputs/ds_vi_f10_prop/seed_42"
-   ],
-   "done": "outputs/ds_vi_f10_prop/seed_42/test_predictions.jsonl"
-  },
-  "ds_vi_f10_prop:s123": {
-   "id": "ds_vi_f10_prop:s123",
-   "run": "ds_vi_f10_prop",
-   "seed": 123,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f10_prop --seeds 123 --train_path data/subsets/vi/f10/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f10/vote.jsonl --aug_path data/subsets/vi/f10/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 43,
-   "after": [],
-   "outputs": [
-    "outputs/ds_vi_f10_prop/seed_123"
-   ],
-   "done": "outputs/ds_vi_f10_prop/seed_123/test_predictions.jsonl"
-  },
-  "ds_vi_f10_prop:s2024": {
-   "id": "ds_vi_f10_prop:s2024",
-   "run": "ds_vi_f10_prop",
-   "seed": 2024,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f10_prop --seeds 2024 --train_path data/subsets/vi/f10/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f10/vote.jsonl --aug_path data/subsets/vi/f10/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 43,
-   "after": [],
-   "outputs": [
-    "outputs/ds_vi_f10_prop/seed_2024"
-   ],
-   "done": "outputs/ds_vi_f10_prop/seed_2024/test_predictions.jsonl"
-  },
-  "ds_vi_f10_prop:s7": {
-   "id": "ds_vi_f10_prop:s7",
-   "run": "ds_vi_f10_prop",
-   "seed": 7,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f10_prop --seeds 7 --train_path data/subsets/vi/f10/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f10/vote.jsonl --aug_path data/subsets/vi/f10/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 43,
-   "after": [],
-   "outputs": [
-    "outputs/ds_vi_f10_prop/seed_7"
-   ],
-   "done": "outputs/ds_vi_f10_prop/seed_7/test_predictions.jsonl"
-  },
-  "ds_vi_f10_prop:s99": {
-   "id": "ds_vi_f10_prop:s99",
-   "run": "ds_vi_f10_prop",
-   "seed": 99,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f10_prop --seeds 99 --train_path data/subsets/vi/f10/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f10/vote.jsonl --aug_path data/subsets/vi/f10/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 43,
-   "after": [],
-   "outputs": [
-    "outputs/ds_vi_f10_prop/seed_99"
-   ],
-   "done": "outputs/ds_vi_f10_prop/seed_99/test_predictions.jsonl"
-  },
-  "ds_vi_f10_copy:s42": {
-   "id": "ds_vi_f10_copy:s42",
-   "run": "ds_vi_f10_copy",
-   "seed": 42,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f10_copy --seeds 42 --train_path data/subsets/vi/f10/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f10/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 43,
-   "after": [],
-   "outputs": [
-    "outputs/ds_vi_f10_copy/seed_42"
-   ],
-   "done": "outputs/ds_vi_f10_copy/seed_42/test_predictions.jsonl"
-  },
-  "ds_vi_f10_copy:s123": {
-   "id": "ds_vi_f10_copy:s123",
-   "run": "ds_vi_f10_copy",
-   "seed": 123,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f10_copy --seeds 123 --train_path data/subsets/vi/f10/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f10/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 43,
-   "after": [],
-   "outputs": [
-    "outputs/ds_vi_f10_copy/seed_123"
-   ],
-   "done": "outputs/ds_vi_f10_copy/seed_123/test_predictions.jsonl"
-  },
-  "ds_vi_f10_copy:s2024": {
-   "id": "ds_vi_f10_copy:s2024",
-   "run": "ds_vi_f10_copy",
-   "seed": 2024,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f10_copy --seeds 2024 --train_path data/subsets/vi/f10/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f10/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 43,
-   "after": [],
-   "outputs": [
-    "outputs/ds_vi_f10_copy/seed_2024"
-   ],
-   "done": "outputs/ds_vi_f10_copy/seed_2024/test_predictions.jsonl"
-  },
-  "ds_vi_f10_copy:s7": {
-   "id": "ds_vi_f10_copy:s7",
-   "run": "ds_vi_f10_copy",
-   "seed": 7,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f10_copy --seeds 7 --train_path data/subsets/vi/f10/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f10/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 43,
-   "after": [],
-   "outputs": [
-    "outputs/ds_vi_f10_copy/seed_7"
-   ],
-   "done": "outputs/ds_vi_f10_copy/seed_7/test_predictions.jsonl"
-  },
-  "ds_vi_f10_copy:s99": {
-   "id": "ds_vi_f10_copy:s99",
-   "run": "ds_vi_f10_copy",
-   "seed": 99,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f10_copy --seeds 99 --train_path data/subsets/vi/f10/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f10/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 43,
-   "after": [],
-   "outputs": [
-    "outputs/ds_vi_f10_copy/seed_99"
-   ],
-   "done": "outputs/ds_vi_f10_copy/seed_99/test_predictions.jsonl"
-  },
-  "ds_vi_f20_prop:s42": {
-   "id": "ds_vi_f20_prop:s42",
-   "run": "ds_vi_f20_prop",
-   "seed": 42,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f20_prop --seeds 42 --train_path data/subsets/vi/f20/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f20/vote.jsonl --aug_path data/subsets/vi/f20/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 71,
-   "after": [],
-   "outputs": [
-    "outputs/ds_vi_f20_prop/seed_42"
-   ],
-   "done": "outputs/ds_vi_f20_prop/seed_42/test_predictions.jsonl"
-  },
-  "ds_vi_f20_prop:s123": {
-   "id": "ds_vi_f20_prop:s123",
-   "run": "ds_vi_f20_prop",
-   "seed": 123,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f20_prop --seeds 123 --train_path data/subsets/vi/f20/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f20/vote.jsonl --aug_path data/subsets/vi/f20/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 71,
-   "after": [],
-   "outputs": [
-    "outputs/ds_vi_f20_prop/seed_123"
-   ],
-   "done": "outputs/ds_vi_f20_prop/seed_123/test_predictions.jsonl"
-  },
-  "ds_vi_f20_prop:s2024": {
-   "id": "ds_vi_f20_prop:s2024",
-   "run": "ds_vi_f20_prop",
-   "seed": 2024,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f20_prop --seeds 2024 --train_path data/subsets/vi/f20/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f20/vote.jsonl --aug_path data/subsets/vi/f20/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 71,
-   "after": [],
-   "outputs": [
-    "outputs/ds_vi_f20_prop/seed_2024"
-   ],
-   "done": "outputs/ds_vi_f20_prop/seed_2024/test_predictions.jsonl"
-  },
-  "ds_vi_f20_prop:s7": {
-   "id": "ds_vi_f20_prop:s7",
-   "run": "ds_vi_f20_prop",
-   "seed": 7,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f20_prop --seeds 7 --train_path data/subsets/vi/f20/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f20/vote.jsonl --aug_path data/subsets/vi/f20/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 71,
-   "after": [],
-   "outputs": [
-    "outputs/ds_vi_f20_prop/seed_7"
-   ],
-   "done": "outputs/ds_vi_f20_prop/seed_7/test_predictions.jsonl"
-  },
-  "ds_vi_f20_prop:s99": {
-   "id": "ds_vi_f20_prop:s99",
-   "run": "ds_vi_f20_prop",
-   "seed": 99,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f20_prop --seeds 99 --train_path data/subsets/vi/f20/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f20/vote.jsonl --aug_path data/subsets/vi/f20/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 71,
-   "after": [],
-   "outputs": [
-    "outputs/ds_vi_f20_prop/seed_99"
-   ],
-   "done": "outputs/ds_vi_f20_prop/seed_99/test_predictions.jsonl"
-  },
-  "ds_vi_f20_copy:s42": {
-   "id": "ds_vi_f20_copy:s42",
-   "run": "ds_vi_f20_copy",
-   "seed": 42,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f20_copy --seeds 42 --train_path data/subsets/vi/f20/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f20/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 71,
-   "after": [],
-   "outputs": [
-    "outputs/ds_vi_f20_copy/seed_42"
-   ],
-   "done": "outputs/ds_vi_f20_copy/seed_42/test_predictions.jsonl"
-  },
-  "ds_vi_f20_copy:s123": {
-   "id": "ds_vi_f20_copy:s123",
-   "run": "ds_vi_f20_copy",
-   "seed": 123,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f20_copy --seeds 123 --train_path data/subsets/vi/f20/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f20/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 71,
-   "after": [],
-   "outputs": [
-    "outputs/ds_vi_f20_copy/seed_123"
-   ],
-   "done": "outputs/ds_vi_f20_copy/seed_123/test_predictions.jsonl"
-  },
-  "ds_vi_f20_copy:s2024": {
-   "id": "ds_vi_f20_copy:s2024",
-   "run": "ds_vi_f20_copy",
-   "seed": 2024,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f20_copy --seeds 2024 --train_path data/subsets/vi/f20/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f20/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 71,
-   "after": [],
-   "outputs": [
-    "outputs/ds_vi_f20_copy/seed_2024"
-   ],
-   "done": "outputs/ds_vi_f20_copy/seed_2024/test_predictions.jsonl"
-  },
-  "ds_vi_f20_copy:s7": {
-   "id": "ds_vi_f20_copy:s7",
-   "run": "ds_vi_f20_copy",
-   "seed": 7,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f20_copy --seeds 7 --train_path data/subsets/vi/f20/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f20/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 71,
-   "after": [],
-   "outputs": [
-    "outputs/ds_vi_f20_copy/seed_7"
-   ],
-   "done": "outputs/ds_vi_f20_copy/seed_7/test_predictions.jsonl"
-  },
-  "ds_vi_f20_copy:s99": {
-   "id": "ds_vi_f20_copy:s99",
-   "run": "ds_vi_f20_copy",
-   "seed": 99,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f20_copy --seeds 99 --train_path data/subsets/vi/f20/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f20/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 71,
-   "after": [],
-   "outputs": [
-    "outputs/ds_vi_f20_copy/seed_99"
-   ],
-   "done": "outputs/ds_vi_f20_copy/seed_99/test_predictions.jsonl"
-  },
-  "ds_vi_f50_prop:s42": {
-   "id": "ds_vi_f50_prop:s42",
-   "run": "ds_vi_f50_prop",
-   "seed": 42,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f50_prop --seeds 42 --train_path data/subsets/vi/f50/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f50/vote.jsonl --aug_path data/subsets/vi/f50/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 157,
-   "after": [],
-   "outputs": [
-    "outputs/ds_vi_f50_prop/seed_42"
-   ],
-   "done": "outputs/ds_vi_f50_prop/seed_42/test_predictions.jsonl"
-  },
-  "ds_vi_f50_prop:s123": {
-   "id": "ds_vi_f50_prop:s123",
-   "run": "ds_vi_f50_prop",
-   "seed": 123,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f50_prop --seeds 123 --train_path data/subsets/vi/f50/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f50/vote.jsonl --aug_path data/subsets/vi/f50/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 157,
-   "after": [],
-   "outputs": [
-    "outputs/ds_vi_f50_prop/seed_123"
-   ],
-   "done": "outputs/ds_vi_f50_prop/seed_123/test_predictions.jsonl"
-  },
-  "ds_vi_f50_prop:s2024": {
-   "id": "ds_vi_f50_prop:s2024",
-   "run": "ds_vi_f50_prop",
-   "seed": 2024,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f50_prop --seeds 2024 --train_path data/subsets/vi/f50/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f50/vote.jsonl --aug_path data/subsets/vi/f50/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 157,
-   "after": [],
-   "outputs": [
-    "outputs/ds_vi_f50_prop/seed_2024"
-   ],
-   "done": "outputs/ds_vi_f50_prop/seed_2024/test_predictions.jsonl"
-  },
-  "ds_vi_f50_prop:s7": {
-   "id": "ds_vi_f50_prop:s7",
-   "run": "ds_vi_f50_prop",
-   "seed": 7,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f50_prop --seeds 7 --train_path data/subsets/vi/f50/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f50/vote.jsonl --aug_path data/subsets/vi/f50/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 157,
-   "after": [],
-   "outputs": [
-    "outputs/ds_vi_f50_prop/seed_7"
-   ],
-   "done": "outputs/ds_vi_f50_prop/seed_7/test_predictions.jsonl"
-  },
-  "ds_vi_f50_prop:s99": {
-   "id": "ds_vi_f50_prop:s99",
-   "run": "ds_vi_f50_prop",
-   "seed": 99,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f50_prop --seeds 99 --train_path data/subsets/vi/f50/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f50/vote.jsonl --aug_path data/subsets/vi/f50/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 157,
-   "after": [],
-   "outputs": [
-    "outputs/ds_vi_f50_prop/seed_99"
-   ],
-   "done": "outputs/ds_vi_f50_prop/seed_99/test_predictions.jsonl"
-  },
-  "ds_vi_f50_copy:s42": {
-   "id": "ds_vi_f50_copy:s42",
-   "run": "ds_vi_f50_copy",
-   "seed": 42,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f50_copy --seeds 42 --train_path data/subsets/vi/f50/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f50/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 157,
-   "after": [],
-   "outputs": [
-    "outputs/ds_vi_f50_copy/seed_42"
-   ],
-   "done": "outputs/ds_vi_f50_copy/seed_42/test_predictions.jsonl"
-  },
-  "ds_vi_f50_copy:s123": {
-   "id": "ds_vi_f50_copy:s123",
-   "run": "ds_vi_f50_copy",
-   "seed": 123,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f50_copy --seeds 123 --train_path data/subsets/vi/f50/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f50/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 157,
-   "after": [],
-   "outputs": [
-    "outputs/ds_vi_f50_copy/seed_123"
-   ],
-   "done": "outputs/ds_vi_f50_copy/seed_123/test_predictions.jsonl"
-  },
-  "ds_vi_f50_copy:s2024": {
-   "id": "ds_vi_f50_copy:s2024",
-   "run": "ds_vi_f50_copy",
-   "seed": 2024,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f50_copy --seeds 2024 --train_path data/subsets/vi/f50/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f50/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 157,
-   "after": [],
-   "outputs": [
-    "outputs/ds_vi_f50_copy/seed_2024"
-   ],
-   "done": "outputs/ds_vi_f50_copy/seed_2024/test_predictions.jsonl"
-  },
-  "ds_vi_f50_copy:s7": {
-   "id": "ds_vi_f50_copy:s7",
-   "run": "ds_vi_f50_copy",
-   "seed": 7,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f50_copy --seeds 7 --train_path data/subsets/vi/f50/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f50/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 157,
-   "after": [],
-   "outputs": [
-    "outputs/ds_vi_f50_copy/seed_7"
-   ],
-   "done": "outputs/ds_vi_f50_copy/seed_7/test_predictions.jsonl"
-  },
-  "ds_vi_f50_copy:s99": {
-   "id": "ds_vi_f50_copy:s99",
-   "run": "ds_vi_f50_copy",
-   "seed": 99,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_vi_f50_copy --seeds 99 --train_path data/subsets/vi/f50/train.jsonl --test_path data/restaurant_v1/test.jsonl --lr 1e-4 --aug_path data/subsets/vi/f50/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 157,
-   "after": [],
-   "outputs": [
-    "outputs/ds_vi_f50_copy/seed_99"
-   ],
-   "done": "outputs/ds_vi_f50_copy/seed_99/test_predictions.jsonl"
-  },
-  "ds_rest_f1_prop:s42": {
-   "id": "ds_rest_f1_prop:s42",
-   "run": "ds_rest_f1_prop",
-   "seed": 42,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f1_prop --seeds 42 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f1/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f1/vote.jsonl --aug_path data/subsets/rest/f1/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 16,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f1_prop/seed_42"
-   ],
-   "done": "outputs/ds_rest_f1_prop/seed_42/test_predictions.jsonl"
-  },
-  "ds_rest_f1_prop:s123": {
-   "id": "ds_rest_f1_prop:s123",
-   "run": "ds_rest_f1_prop",
-   "seed": 123,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f1_prop --seeds 123 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f1/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f1/vote.jsonl --aug_path data/subsets/rest/f1/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 16,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f1_prop/seed_123"
-   ],
-   "done": "outputs/ds_rest_f1_prop/seed_123/test_predictions.jsonl"
-  },
-  "ds_rest_f1_prop:s2024": {
-   "id": "ds_rest_f1_prop:s2024",
-   "run": "ds_rest_f1_prop",
-   "seed": 2024,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f1_prop --seeds 2024 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f1/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f1/vote.jsonl --aug_path data/subsets/rest/f1/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 16,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f1_prop/seed_2024"
-   ],
-   "done": "outputs/ds_rest_f1_prop/seed_2024/test_predictions.jsonl"
-  },
-  "ds_rest_f1_prop:s7": {
-   "id": "ds_rest_f1_prop:s7",
-   "run": "ds_rest_f1_prop",
-   "seed": 7,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f1_prop --seeds 7 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f1/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f1/vote.jsonl --aug_path data/subsets/rest/f1/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 16,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f1_prop/seed_7"
-   ],
-   "done": "outputs/ds_rest_f1_prop/seed_7/test_predictions.jsonl"
-  },
-  "ds_rest_f1_prop:s99": {
-   "id": "ds_rest_f1_prop:s99",
-   "run": "ds_rest_f1_prop",
-   "seed": 99,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f1_prop --seeds 99 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f1/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f1/vote.jsonl --aug_path data/subsets/rest/f1/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 16,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f1_prop/seed_99"
-   ],
-   "done": "outputs/ds_rest_f1_prop/seed_99/test_predictions.jsonl"
-  },
-  "ds_rest_f1_copy:s42": {
-   "id": "ds_rest_f1_copy:s42",
-   "run": "ds_rest_f1_copy",
-   "seed": 42,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f1_copy --seeds 42 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f1/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f1/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 16,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f1_copy/seed_42"
-   ],
-   "done": "outputs/ds_rest_f1_copy/seed_42/test_predictions.jsonl"
-  },
-  "ds_rest_f1_copy:s123": {
-   "id": "ds_rest_f1_copy:s123",
-   "run": "ds_rest_f1_copy",
-   "seed": 123,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f1_copy --seeds 123 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f1/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f1/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 16,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f1_copy/seed_123"
-   ],
-   "done": "outputs/ds_rest_f1_copy/seed_123/test_predictions.jsonl"
-  },
-  "ds_rest_f1_copy:s2024": {
-   "id": "ds_rest_f1_copy:s2024",
-   "run": "ds_rest_f1_copy",
-   "seed": 2024,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f1_copy --seeds 2024 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f1/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f1/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 16,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f1_copy/seed_2024"
-   ],
-   "done": "outputs/ds_rest_f1_copy/seed_2024/test_predictions.jsonl"
-  },
-  "ds_rest_f1_copy:s7": {
-   "id": "ds_rest_f1_copy:s7",
-   "run": "ds_rest_f1_copy",
-   "seed": 7,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f1_copy --seeds 7 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f1/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f1/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 16,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f1_copy/seed_7"
-   ],
-   "done": "outputs/ds_rest_f1_copy/seed_7/test_predictions.jsonl"
-  },
-  "ds_rest_f1_copy:s99": {
-   "id": "ds_rest_f1_copy:s99",
-   "run": "ds_rest_f1_copy",
-   "seed": 99,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f1_copy --seeds 99 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f1/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f1/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 16,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f1_copy/seed_99"
-   ],
-   "done": "outputs/ds_rest_f1_copy/seed_99/test_predictions.jsonl"
-  },
-  "ds_rest_f2_prop:s42": {
-   "id": "ds_rest_f2_prop:s42",
-   "run": "ds_rest_f2_prop",
-   "seed": 42,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f2_prop --seeds 42 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f2/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f2/vote.jsonl --aug_path data/subsets/rest/f2/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 17,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f2_prop/seed_42"
-   ],
-   "done": "outputs/ds_rest_f2_prop/seed_42/test_predictions.jsonl"
-  },
-  "ds_rest_f2_prop:s123": {
-   "id": "ds_rest_f2_prop:s123",
-   "run": "ds_rest_f2_prop",
-   "seed": 123,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f2_prop --seeds 123 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f2/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f2/vote.jsonl --aug_path data/subsets/rest/f2/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 17,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f2_prop/seed_123"
-   ],
-   "done": "outputs/ds_rest_f2_prop/seed_123/test_predictions.jsonl"
-  },
-  "ds_rest_f2_prop:s2024": {
-   "id": "ds_rest_f2_prop:s2024",
-   "run": "ds_rest_f2_prop",
-   "seed": 2024,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f2_prop --seeds 2024 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f2/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f2/vote.jsonl --aug_path data/subsets/rest/f2/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 17,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f2_prop/seed_2024"
-   ],
-   "done": "outputs/ds_rest_f2_prop/seed_2024/test_predictions.jsonl"
-  },
-  "ds_rest_f2_prop:s7": {
-   "id": "ds_rest_f2_prop:s7",
-   "run": "ds_rest_f2_prop",
-   "seed": 7,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f2_prop --seeds 7 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f2/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f2/vote.jsonl --aug_path data/subsets/rest/f2/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 17,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f2_prop/seed_7"
-   ],
-   "done": "outputs/ds_rest_f2_prop/seed_7/test_predictions.jsonl"
-  },
-  "ds_rest_f2_prop:s99": {
-   "id": "ds_rest_f2_prop:s99",
-   "run": "ds_rest_f2_prop",
-   "seed": 99,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f2_prop --seeds 99 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f2/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f2/vote.jsonl --aug_path data/subsets/rest/f2/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 17,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f2_prop/seed_99"
-   ],
-   "done": "outputs/ds_rest_f2_prop/seed_99/test_predictions.jsonl"
-  },
-  "ds_rest_f2_copy:s42": {
-   "id": "ds_rest_f2_copy:s42",
-   "run": "ds_rest_f2_copy",
-   "seed": 42,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f2_copy --seeds 42 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f2/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f2/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 17,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f2_copy/seed_42"
-   ],
-   "done": "outputs/ds_rest_f2_copy/seed_42/test_predictions.jsonl"
-  },
-  "ds_rest_f2_copy:s123": {
-   "id": "ds_rest_f2_copy:s123",
-   "run": "ds_rest_f2_copy",
-   "seed": 123,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f2_copy --seeds 123 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f2/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f2/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 17,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f2_copy/seed_123"
-   ],
-   "done": "outputs/ds_rest_f2_copy/seed_123/test_predictions.jsonl"
-  },
-  "ds_rest_f2_copy:s2024": {
-   "id": "ds_rest_f2_copy:s2024",
-   "run": "ds_rest_f2_copy",
-   "seed": 2024,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f2_copy --seeds 2024 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f2/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f2/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 17,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f2_copy/seed_2024"
-   ],
-   "done": "outputs/ds_rest_f2_copy/seed_2024/test_predictions.jsonl"
-  },
-  "ds_rest_f2_copy:s7": {
-   "id": "ds_rest_f2_copy:s7",
-   "run": "ds_rest_f2_copy",
-   "seed": 7,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f2_copy --seeds 7 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f2/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f2/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 17,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f2_copy/seed_7"
-   ],
-   "done": "outputs/ds_rest_f2_copy/seed_7/test_predictions.jsonl"
-  },
-  "ds_rest_f2_copy:s99": {
-   "id": "ds_rest_f2_copy:s99",
-   "run": "ds_rest_f2_copy",
-   "seed": 99,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f2_copy --seeds 99 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f2/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f2/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 17,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f2_copy/seed_99"
-   ],
-   "done": "outputs/ds_rest_f2_copy/seed_99/test_predictions.jsonl"
-  },
-  "ds_rest_f5_prop:s42": {
-   "id": "ds_rest_f5_prop:s42",
-   "run": "ds_rest_f5_prop",
-   "seed": 42,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f5_prop --seeds 42 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f5/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f5/vote.jsonl --aug_path data/subsets/rest/f5/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 20,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f5_prop/seed_42"
-   ],
-   "done": "outputs/ds_rest_f5_prop/seed_42/test_predictions.jsonl"
-  },
-  "ds_rest_f5_prop:s123": {
-   "id": "ds_rest_f5_prop:s123",
-   "run": "ds_rest_f5_prop",
-   "seed": 123,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f5_prop --seeds 123 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f5/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f5/vote.jsonl --aug_path data/subsets/rest/f5/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 20,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f5_prop/seed_123"
-   ],
-   "done": "outputs/ds_rest_f5_prop/seed_123/test_predictions.jsonl"
-  },
-  "ds_rest_f5_prop:s2024": {
-   "id": "ds_rest_f5_prop:s2024",
-   "run": "ds_rest_f5_prop",
-   "seed": 2024,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f5_prop --seeds 2024 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f5/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f5/vote.jsonl --aug_path data/subsets/rest/f5/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 20,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f5_prop/seed_2024"
-   ],
-   "done": "outputs/ds_rest_f5_prop/seed_2024/test_predictions.jsonl"
-  },
-  "ds_rest_f5_prop:s7": {
-   "id": "ds_rest_f5_prop:s7",
-   "run": "ds_rest_f5_prop",
-   "seed": 7,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f5_prop --seeds 7 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f5/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f5/vote.jsonl --aug_path data/subsets/rest/f5/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 20,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f5_prop/seed_7"
-   ],
-   "done": "outputs/ds_rest_f5_prop/seed_7/test_predictions.jsonl"
-  },
-  "ds_rest_f5_prop:s99": {
-   "id": "ds_rest_f5_prop:s99",
-   "run": "ds_rest_f5_prop",
-   "seed": 99,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f5_prop --seeds 99 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f5/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f5/vote.jsonl --aug_path data/subsets/rest/f5/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 20,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f5_prop/seed_99"
-   ],
-   "done": "outputs/ds_rest_f5_prop/seed_99/test_predictions.jsonl"
-  },
-  "ds_rest_f5_copy:s42": {
-   "id": "ds_rest_f5_copy:s42",
-   "run": "ds_rest_f5_copy",
-   "seed": 42,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f5_copy --seeds 42 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f5/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f5/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 20,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f5_copy/seed_42"
-   ],
-   "done": "outputs/ds_rest_f5_copy/seed_42/test_predictions.jsonl"
-  },
-  "ds_rest_f5_copy:s123": {
-   "id": "ds_rest_f5_copy:s123",
-   "run": "ds_rest_f5_copy",
-   "seed": 123,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f5_copy --seeds 123 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f5/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f5/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 20,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f5_copy/seed_123"
-   ],
-   "done": "outputs/ds_rest_f5_copy/seed_123/test_predictions.jsonl"
-  },
-  "ds_rest_f5_copy:s2024": {
-   "id": "ds_rest_f5_copy:s2024",
-   "run": "ds_rest_f5_copy",
-   "seed": 2024,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f5_copy --seeds 2024 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f5/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f5/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 20,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f5_copy/seed_2024"
-   ],
-   "done": "outputs/ds_rest_f5_copy/seed_2024/test_predictions.jsonl"
-  },
-  "ds_rest_f5_copy:s7": {
-   "id": "ds_rest_f5_copy:s7",
-   "run": "ds_rest_f5_copy",
-   "seed": 7,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f5_copy --seeds 7 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f5/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f5/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 20,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f5_copy/seed_7"
-   ],
-   "done": "outputs/ds_rest_f5_copy/seed_7/test_predictions.jsonl"
-  },
-  "ds_rest_f5_copy:s99": {
-   "id": "ds_rest_f5_copy:s99",
-   "run": "ds_rest_f5_copy",
-   "seed": 99,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f5_copy --seeds 99 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f5/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f5/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 20,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f5_copy/seed_99"
-   ],
-   "done": "outputs/ds_rest_f5_copy/seed_99/test_predictions.jsonl"
-  },
-  "ds_rest_f10_prop:s42": {
-   "id": "ds_rest_f10_prop:s42",
-   "run": "ds_rest_f10_prop",
-   "seed": 42,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f10_prop --seeds 42 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f10/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f10/vote.jsonl --aug_path data/subsets/rest/f10/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 26,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f10_prop/seed_42"
-   ],
-   "done": "outputs/ds_rest_f10_prop/seed_42/test_predictions.jsonl"
-  },
-  "ds_rest_f10_prop:s123": {
-   "id": "ds_rest_f10_prop:s123",
-   "run": "ds_rest_f10_prop",
-   "seed": 123,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f10_prop --seeds 123 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f10/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f10/vote.jsonl --aug_path data/subsets/rest/f10/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 26,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f10_prop/seed_123"
-   ],
-   "done": "outputs/ds_rest_f10_prop/seed_123/test_predictions.jsonl"
-  },
-  "ds_rest_f10_prop:s2024": {
-   "id": "ds_rest_f10_prop:s2024",
-   "run": "ds_rest_f10_prop",
-   "seed": 2024,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f10_prop --seeds 2024 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f10/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f10/vote.jsonl --aug_path data/subsets/rest/f10/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 26,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f10_prop/seed_2024"
-   ],
-   "done": "outputs/ds_rest_f10_prop/seed_2024/test_predictions.jsonl"
-  },
-  "ds_rest_f10_prop:s7": {
-   "id": "ds_rest_f10_prop:s7",
-   "run": "ds_rest_f10_prop",
-   "seed": 7,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f10_prop --seeds 7 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f10/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f10/vote.jsonl --aug_path data/subsets/rest/f10/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 26,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f10_prop/seed_7"
-   ],
-   "done": "outputs/ds_rest_f10_prop/seed_7/test_predictions.jsonl"
-  },
-  "ds_rest_f10_prop:s99": {
-   "id": "ds_rest_f10_prop:s99",
-   "run": "ds_rest_f10_prop",
-   "seed": 99,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f10_prop --seeds 99 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f10/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f10/vote.jsonl --aug_path data/subsets/rest/f10/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 26,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f10_prop/seed_99"
-   ],
-   "done": "outputs/ds_rest_f10_prop/seed_99/test_predictions.jsonl"
-  },
-  "ds_rest_f10_copy:s42": {
-   "id": "ds_rest_f10_copy:s42",
-   "run": "ds_rest_f10_copy",
-   "seed": 42,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f10_copy --seeds 42 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f10/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f10/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 26,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f10_copy/seed_42"
-   ],
-   "done": "outputs/ds_rest_f10_copy/seed_42/test_predictions.jsonl"
-  },
-  "ds_rest_f10_copy:s123": {
-   "id": "ds_rest_f10_copy:s123",
-   "run": "ds_rest_f10_copy",
-   "seed": 123,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f10_copy --seeds 123 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f10/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f10/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 26,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f10_copy/seed_123"
-   ],
-   "done": "outputs/ds_rest_f10_copy/seed_123/test_predictions.jsonl"
-  },
-  "ds_rest_f10_copy:s2024": {
-   "id": "ds_rest_f10_copy:s2024",
-   "run": "ds_rest_f10_copy",
-   "seed": 2024,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f10_copy --seeds 2024 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f10/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f10/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 26,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f10_copy/seed_2024"
-   ],
-   "done": "outputs/ds_rest_f10_copy/seed_2024/test_predictions.jsonl"
-  },
-  "ds_rest_f10_copy:s7": {
-   "id": "ds_rest_f10_copy:s7",
-   "run": "ds_rest_f10_copy",
-   "seed": 7,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f10_copy --seeds 7 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f10/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f10/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 26,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f10_copy/seed_7"
-   ],
-   "done": "outputs/ds_rest_f10_copy/seed_7/test_predictions.jsonl"
-  },
-  "ds_rest_f10_copy:s99": {
-   "id": "ds_rest_f10_copy:s99",
-   "run": "ds_rest_f10_copy",
-   "seed": 99,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f10_copy --seeds 99 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f10/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f10/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 26,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f10_copy/seed_99"
-   ],
-   "done": "outputs/ds_rest_f10_copy/seed_99/test_predictions.jsonl"
-  },
-  "ds_rest_f20_prop:s42": {
-   "id": "ds_rest_f20_prop:s42",
-   "run": "ds_rest_f20_prop",
-   "seed": 42,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f20_prop --seeds 42 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f20/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f20/vote.jsonl --aug_path data/subsets/rest/f20/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 38,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f20_prop/seed_42"
-   ],
-   "done": "outputs/ds_rest_f20_prop/seed_42/test_predictions.jsonl"
-  },
-  "ds_rest_f20_prop:s123": {
-   "id": "ds_rest_f20_prop:s123",
-   "run": "ds_rest_f20_prop",
-   "seed": 123,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f20_prop --seeds 123 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f20/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f20/vote.jsonl --aug_path data/subsets/rest/f20/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 38,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f20_prop/seed_123"
-   ],
-   "done": "outputs/ds_rest_f20_prop/seed_123/test_predictions.jsonl"
-  },
-  "ds_rest_f20_prop:s2024": {
-   "id": "ds_rest_f20_prop:s2024",
-   "run": "ds_rest_f20_prop",
-   "seed": 2024,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f20_prop --seeds 2024 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f20/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f20/vote.jsonl --aug_path data/subsets/rest/f20/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 38,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f20_prop/seed_2024"
-   ],
-   "done": "outputs/ds_rest_f20_prop/seed_2024/test_predictions.jsonl"
-  },
-  "ds_rest_f20_prop:s7": {
-   "id": "ds_rest_f20_prop:s7",
-   "run": "ds_rest_f20_prop",
-   "seed": 7,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f20_prop --seeds 7 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f20/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f20/vote.jsonl --aug_path data/subsets/rest/f20/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 38,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f20_prop/seed_7"
-   ],
-   "done": "outputs/ds_rest_f20_prop/seed_7/test_predictions.jsonl"
-  },
-  "ds_rest_f20_prop:s99": {
-   "id": "ds_rest_f20_prop:s99",
-   "run": "ds_rest_f20_prop",
-   "seed": 99,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f20_prop --seeds 99 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f20/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f20/vote.jsonl --aug_path data/subsets/rest/f20/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 38,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f20_prop/seed_99"
-   ],
-   "done": "outputs/ds_rest_f20_prop/seed_99/test_predictions.jsonl"
-  },
-  "ds_rest_f20_copy:s42": {
-   "id": "ds_rest_f20_copy:s42",
-   "run": "ds_rest_f20_copy",
-   "seed": 42,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f20_copy --seeds 42 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f20/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f20/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 38,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f20_copy/seed_42"
-   ],
-   "done": "outputs/ds_rest_f20_copy/seed_42/test_predictions.jsonl"
-  },
-  "ds_rest_f20_copy:s123": {
-   "id": "ds_rest_f20_copy:s123",
-   "run": "ds_rest_f20_copy",
-   "seed": 123,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f20_copy --seeds 123 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f20/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f20/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 38,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f20_copy/seed_123"
-   ],
-   "done": "outputs/ds_rest_f20_copy/seed_123/test_predictions.jsonl"
-  },
-  "ds_rest_f20_copy:s2024": {
-   "id": "ds_rest_f20_copy:s2024",
-   "run": "ds_rest_f20_copy",
-   "seed": 2024,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f20_copy --seeds 2024 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f20/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f20/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 38,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f20_copy/seed_2024"
-   ],
-   "done": "outputs/ds_rest_f20_copy/seed_2024/test_predictions.jsonl"
-  },
-  "ds_rest_f20_copy:s7": {
-   "id": "ds_rest_f20_copy:s7",
-   "run": "ds_rest_f20_copy",
-   "seed": 7,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f20_copy --seeds 7 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f20/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f20/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 38,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f20_copy/seed_7"
-   ],
-   "done": "outputs/ds_rest_f20_copy/seed_7/test_predictions.jsonl"
-  },
-  "ds_rest_f20_copy:s99": {
-   "id": "ds_rest_f20_copy:s99",
-   "run": "ds_rest_f20_copy",
-   "seed": 99,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f20_copy --seeds 99 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f20/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f20/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 38,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f20_copy/seed_99"
-   ],
-   "done": "outputs/ds_rest_f20_copy/seed_99/test_predictions.jsonl"
-  },
-  "ds_rest_f50_prop:s42": {
-   "id": "ds_rest_f50_prop:s42",
-   "run": "ds_rest_f50_prop",
-   "seed": 42,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f50_prop --seeds 42 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f50/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f50/vote.jsonl --aug_path data/subsets/rest/f50/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 73,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f50_prop/seed_42"
-   ],
-   "done": "outputs/ds_rest_f50_prop/seed_42/test_predictions.jsonl"
-  },
-  "ds_rest_f50_prop:s123": {
-   "id": "ds_rest_f50_prop:s123",
-   "run": "ds_rest_f50_prop",
-   "seed": 123,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f50_prop --seeds 123 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f50/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f50/vote.jsonl --aug_path data/subsets/rest/f50/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 73,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f50_prop/seed_123"
-   ],
-   "done": "outputs/ds_rest_f50_prop/seed_123/test_predictions.jsonl"
-  },
-  "ds_rest_f50_prop:s2024": {
-   "id": "ds_rest_f50_prop:s2024",
-   "run": "ds_rest_f50_prop",
-   "seed": 2024,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f50_prop --seeds 2024 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f50/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f50/vote.jsonl --aug_path data/subsets/rest/f50/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 73,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f50_prop/seed_2024"
-   ],
-   "done": "outputs/ds_rest_f50_prop/seed_2024/test_predictions.jsonl"
-  },
-  "ds_rest_f50_prop:s7": {
-   "id": "ds_rest_f50_prop:s7",
-   "run": "ds_rest_f50_prop",
-   "seed": 7,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f50_prop --seeds 7 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f50/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f50/vote.jsonl --aug_path data/subsets/rest/f50/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 73,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f50_prop/seed_7"
-   ],
-   "done": "outputs/ds_rest_f50_prop/seed_7/test_predictions.jsonl"
-  },
-  "ds_rest_f50_prop:s99": {
-   "id": "ds_rest_f50_prop:s99",
-   "run": "ds_rest_f50_prop",
-   "seed": 99,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f50_prop --seeds 99 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f50/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f50/vote.jsonl --aug_path data/subsets/rest/f50/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 73,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f50_prop/seed_99"
-   ],
-   "done": "outputs/ds_rest_f50_prop/seed_99/test_predictions.jsonl"
-  },
-  "ds_rest_f50_copy:s42": {
-   "id": "ds_rest_f50_copy:s42",
-   "run": "ds_rest_f50_copy",
-   "seed": 42,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f50_copy --seeds 42 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f50/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f50/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 73,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f50_copy/seed_42"
-   ],
-   "done": "outputs/ds_rest_f50_copy/seed_42/test_predictions.jsonl"
-  },
-  "ds_rest_f50_copy:s123": {
-   "id": "ds_rest_f50_copy:s123",
-   "run": "ds_rest_f50_copy",
-   "seed": 123,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f50_copy --seeds 123 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f50/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f50/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 73,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f50_copy/seed_123"
-   ],
-   "done": "outputs/ds_rest_f50_copy/seed_123/test_predictions.jsonl"
-  },
-  "ds_rest_f50_copy:s2024": {
-   "id": "ds_rest_f50_copy:s2024",
-   "run": "ds_rest_f50_copy",
-   "seed": 2024,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f50_copy --seeds 2024 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f50/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f50/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 73,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f50_copy/seed_2024"
-   ],
-   "done": "outputs/ds_rest_f50_copy/seed_2024/test_predictions.jsonl"
-  },
-  "ds_rest_f50_copy:s7": {
-   "id": "ds_rest_f50_copy:s7",
-   "run": "ds_rest_f50_copy",
-   "seed": 7,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f50_copy --seeds 7 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f50/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f50/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 73,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f50_copy/seed_7"
-   ],
-   "done": "outputs/ds_rest_f50_copy/seed_7/test_predictions.jsonl"
-  },
-  "ds_rest_f50_copy:s99": {
-   "id": "ds_rest_f50_copy:s99",
-   "run": "ds_rest_f50_copy",
-   "seed": 99,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_rest_f50_copy --seeds 99 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/rest/f50/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/subsets/rest/f50/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 73,
-   "after": [],
-   "outputs": [
-    "outputs/ds_rest_f50_copy/seed_99"
-   ],
-   "done": "outputs/ds_rest_f50_copy/seed_99/test_predictions.jsonl"
-  },
-  "ds_laptop_f1_prop:s42": {
-   "id": "ds_laptop_f1_prop:s42",
-   "run": "ds_laptop_f1_prop",
-   "seed": 42,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f1_prop --seeds 42 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f1/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f1/vote.jsonl --aug_path data/subsets/laptop/f1/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 17,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f1_prop/seed_42"
-   ],
-   "done": "outputs/ds_laptop_f1_prop/seed_42/test_predictions.jsonl"
-  },
-  "ds_laptop_f1_prop:s123": {
-   "id": "ds_laptop_f1_prop:s123",
-   "run": "ds_laptop_f1_prop",
-   "seed": 123,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f1_prop --seeds 123 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f1/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f1/vote.jsonl --aug_path data/subsets/laptop/f1/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 17,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f1_prop/seed_123"
-   ],
-   "done": "outputs/ds_laptop_f1_prop/seed_123/test_predictions.jsonl"
-  },
-  "ds_laptop_f1_prop:s2024": {
-   "id": "ds_laptop_f1_prop:s2024",
-   "run": "ds_laptop_f1_prop",
-   "seed": 2024,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f1_prop --seeds 2024 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f1/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f1/vote.jsonl --aug_path data/subsets/laptop/f1/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 17,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f1_prop/seed_2024"
-   ],
-   "done": "outputs/ds_laptop_f1_prop/seed_2024/test_predictions.jsonl"
-  },
-  "ds_laptop_f1_prop:s7": {
-   "id": "ds_laptop_f1_prop:s7",
-   "run": "ds_laptop_f1_prop",
-   "seed": 7,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f1_prop --seeds 7 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f1/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f1/vote.jsonl --aug_path data/subsets/laptop/f1/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 17,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f1_prop/seed_7"
-   ],
-   "done": "outputs/ds_laptop_f1_prop/seed_7/test_predictions.jsonl"
-  },
-  "ds_laptop_f1_prop:s99": {
-   "id": "ds_laptop_f1_prop:s99",
-   "run": "ds_laptop_f1_prop",
-   "seed": 99,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f1_prop --seeds 99 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f1/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f1/vote.jsonl --aug_path data/subsets/laptop/f1/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 17,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f1_prop/seed_99"
-   ],
-   "done": "outputs/ds_laptop_f1_prop/seed_99/test_predictions.jsonl"
-  },
-  "ds_laptop_f1_copy:s42": {
-   "id": "ds_laptop_f1_copy:s42",
-   "run": "ds_laptop_f1_copy",
-   "seed": 42,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f1_copy --seeds 42 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f1/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f1/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 17,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f1_copy/seed_42"
-   ],
-   "done": "outputs/ds_laptop_f1_copy/seed_42/test_predictions.jsonl"
-  },
-  "ds_laptop_f1_copy:s123": {
-   "id": "ds_laptop_f1_copy:s123",
-   "run": "ds_laptop_f1_copy",
-   "seed": 123,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f1_copy --seeds 123 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f1/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f1/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 17,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f1_copy/seed_123"
-   ],
-   "done": "outputs/ds_laptop_f1_copy/seed_123/test_predictions.jsonl"
-  },
-  "ds_laptop_f1_copy:s2024": {
-   "id": "ds_laptop_f1_copy:s2024",
-   "run": "ds_laptop_f1_copy",
-   "seed": 2024,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f1_copy --seeds 2024 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f1/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f1/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 17,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f1_copy/seed_2024"
-   ],
-   "done": "outputs/ds_laptop_f1_copy/seed_2024/test_predictions.jsonl"
-  },
-  "ds_laptop_f1_copy:s7": {
-   "id": "ds_laptop_f1_copy:s7",
-   "run": "ds_laptop_f1_copy",
-   "seed": 7,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f1_copy --seeds 7 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f1/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f1/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 17,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f1_copy/seed_7"
-   ],
-   "done": "outputs/ds_laptop_f1_copy/seed_7/test_predictions.jsonl"
-  },
-  "ds_laptop_f1_copy:s99": {
-   "id": "ds_laptop_f1_copy:s99",
-   "run": "ds_laptop_f1_copy",
-   "seed": 99,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f1_copy --seeds 99 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f1/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f1/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 17,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f1_copy/seed_99"
-   ],
-   "done": "outputs/ds_laptop_f1_copy/seed_99/test_predictions.jsonl"
-  },
-  "ds_laptop_f2_prop:s42": {
-   "id": "ds_laptop_f2_prop:s42",
-   "run": "ds_laptop_f2_prop",
-   "seed": 42,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f2_prop --seeds 42 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f2/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f2/vote.jsonl --aug_path data/subsets/laptop/f2/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 20,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f2_prop/seed_42"
-   ],
-   "done": "outputs/ds_laptop_f2_prop/seed_42/test_predictions.jsonl"
-  },
-  "ds_laptop_f2_prop:s123": {
-   "id": "ds_laptop_f2_prop:s123",
-   "run": "ds_laptop_f2_prop",
-   "seed": 123,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f2_prop --seeds 123 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f2/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f2/vote.jsonl --aug_path data/subsets/laptop/f2/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 20,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f2_prop/seed_123"
-   ],
-   "done": "outputs/ds_laptop_f2_prop/seed_123/test_predictions.jsonl"
-  },
-  "ds_laptop_f2_prop:s2024": {
-   "id": "ds_laptop_f2_prop:s2024",
-   "run": "ds_laptop_f2_prop",
-   "seed": 2024,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f2_prop --seeds 2024 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f2/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f2/vote.jsonl --aug_path data/subsets/laptop/f2/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 20,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f2_prop/seed_2024"
-   ],
-   "done": "outputs/ds_laptop_f2_prop/seed_2024/test_predictions.jsonl"
-  },
-  "ds_laptop_f2_prop:s7": {
-   "id": "ds_laptop_f2_prop:s7",
-   "run": "ds_laptop_f2_prop",
-   "seed": 7,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f2_prop --seeds 7 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f2/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f2/vote.jsonl --aug_path data/subsets/laptop/f2/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 20,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f2_prop/seed_7"
-   ],
-   "done": "outputs/ds_laptop_f2_prop/seed_7/test_predictions.jsonl"
-  },
-  "ds_laptop_f2_prop:s99": {
-   "id": "ds_laptop_f2_prop:s99",
-   "run": "ds_laptop_f2_prop",
-   "seed": 99,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f2_prop --seeds 99 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f2/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f2/vote.jsonl --aug_path data/subsets/laptop/f2/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 20,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f2_prop/seed_99"
-   ],
-   "done": "outputs/ds_laptop_f2_prop/seed_99/test_predictions.jsonl"
-  },
-  "ds_laptop_f2_copy:s42": {
-   "id": "ds_laptop_f2_copy:s42",
-   "run": "ds_laptop_f2_copy",
-   "seed": 42,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f2_copy --seeds 42 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f2/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f2/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 20,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f2_copy/seed_42"
-   ],
-   "done": "outputs/ds_laptop_f2_copy/seed_42/test_predictions.jsonl"
-  },
-  "ds_laptop_f2_copy:s123": {
-   "id": "ds_laptop_f2_copy:s123",
-   "run": "ds_laptop_f2_copy",
-   "seed": 123,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f2_copy --seeds 123 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f2/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f2/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 20,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f2_copy/seed_123"
-   ],
-   "done": "outputs/ds_laptop_f2_copy/seed_123/test_predictions.jsonl"
-  },
-  "ds_laptop_f2_copy:s2024": {
-   "id": "ds_laptop_f2_copy:s2024",
-   "run": "ds_laptop_f2_copy",
-   "seed": 2024,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f2_copy --seeds 2024 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f2/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f2/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 20,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f2_copy/seed_2024"
-   ],
-   "done": "outputs/ds_laptop_f2_copy/seed_2024/test_predictions.jsonl"
-  },
-  "ds_laptop_f2_copy:s7": {
-   "id": "ds_laptop_f2_copy:s7",
-   "run": "ds_laptop_f2_copy",
-   "seed": 7,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f2_copy --seeds 7 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f2/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f2/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 20,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f2_copy/seed_7"
-   ],
-   "done": "outputs/ds_laptop_f2_copy/seed_7/test_predictions.jsonl"
-  },
-  "ds_laptop_f2_copy:s99": {
-   "id": "ds_laptop_f2_copy:s99",
-   "run": "ds_laptop_f2_copy",
-   "seed": 99,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f2_copy --seeds 99 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f2/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f2/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 20,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f2_copy/seed_99"
-   ],
-   "done": "outputs/ds_laptop_f2_copy/seed_99/test_predictions.jsonl"
-  },
-  "ds_laptop_f5_prop:s42": {
-   "id": "ds_laptop_f5_prop:s42",
-   "run": "ds_laptop_f5_prop",
-   "seed": 42,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f5_prop --seeds 42 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f5/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f5/vote.jsonl --aug_path data/subsets/laptop/f5/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 28,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f5_prop/seed_42"
-   ],
-   "done": "outputs/ds_laptop_f5_prop/seed_42/test_predictions.jsonl"
-  },
-  "ds_laptop_f5_prop:s123": {
-   "id": "ds_laptop_f5_prop:s123",
-   "run": "ds_laptop_f5_prop",
-   "seed": 123,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f5_prop --seeds 123 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f5/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f5/vote.jsonl --aug_path data/subsets/laptop/f5/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 28,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f5_prop/seed_123"
-   ],
-   "done": "outputs/ds_laptop_f5_prop/seed_123/test_predictions.jsonl"
-  },
-  "ds_laptop_f5_prop:s2024": {
-   "id": "ds_laptop_f5_prop:s2024",
-   "run": "ds_laptop_f5_prop",
-   "seed": 2024,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f5_prop --seeds 2024 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f5/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f5/vote.jsonl --aug_path data/subsets/laptop/f5/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 28,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f5_prop/seed_2024"
-   ],
-   "done": "outputs/ds_laptop_f5_prop/seed_2024/test_predictions.jsonl"
-  },
-  "ds_laptop_f5_prop:s7": {
-   "id": "ds_laptop_f5_prop:s7",
-   "run": "ds_laptop_f5_prop",
-   "seed": 7,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f5_prop --seeds 7 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f5/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f5/vote.jsonl --aug_path data/subsets/laptop/f5/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 28,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f5_prop/seed_7"
-   ],
-   "done": "outputs/ds_laptop_f5_prop/seed_7/test_predictions.jsonl"
-  },
-  "ds_laptop_f5_prop:s99": {
-   "id": "ds_laptop_f5_prop:s99",
-   "run": "ds_laptop_f5_prop",
-   "seed": 99,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f5_prop --seeds 99 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f5/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f5/vote.jsonl --aug_path data/subsets/laptop/f5/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 28,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f5_prop/seed_99"
-   ],
-   "done": "outputs/ds_laptop_f5_prop/seed_99/test_predictions.jsonl"
-  },
-  "ds_laptop_f5_copy:s42": {
-   "id": "ds_laptop_f5_copy:s42",
-   "run": "ds_laptop_f5_copy",
-   "seed": 42,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f5_copy --seeds 42 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f5/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f5/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 28,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f5_copy/seed_42"
-   ],
-   "done": "outputs/ds_laptop_f5_copy/seed_42/test_predictions.jsonl"
-  },
-  "ds_laptop_f5_copy:s123": {
-   "id": "ds_laptop_f5_copy:s123",
-   "run": "ds_laptop_f5_copy",
-   "seed": 123,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f5_copy --seeds 123 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f5/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f5/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 28,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f5_copy/seed_123"
-   ],
-   "done": "outputs/ds_laptop_f5_copy/seed_123/test_predictions.jsonl"
-  },
-  "ds_laptop_f5_copy:s2024": {
-   "id": "ds_laptop_f5_copy:s2024",
-   "run": "ds_laptop_f5_copy",
-   "seed": 2024,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f5_copy --seeds 2024 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f5/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f5/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 28,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f5_copy/seed_2024"
-   ],
-   "done": "outputs/ds_laptop_f5_copy/seed_2024/test_predictions.jsonl"
-  },
-  "ds_laptop_f5_copy:s7": {
-   "id": "ds_laptop_f5_copy:s7",
-   "run": "ds_laptop_f5_copy",
-   "seed": 7,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f5_copy --seeds 7 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f5/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f5/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 28,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f5_copy/seed_7"
-   ],
-   "done": "outputs/ds_laptop_f5_copy/seed_7/test_predictions.jsonl"
-  },
-  "ds_laptop_f5_copy:s99": {
-   "id": "ds_laptop_f5_copy:s99",
-   "run": "ds_laptop_f5_copy",
-   "seed": 99,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f5_copy --seeds 99 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f5/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f5/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 28,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f5_copy/seed_99"
-   ],
-   "done": "outputs/ds_laptop_f5_copy/seed_99/test_predictions.jsonl"
-  },
-  "ds_laptop_f10_prop:s42": {
-   "id": "ds_laptop_f10_prop:s42",
-   "run": "ds_laptop_f10_prop",
-   "seed": 42,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f10_prop --seeds 42 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f10/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f10/vote.jsonl --aug_path data/subsets/laptop/f10/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 41,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f10_prop/seed_42"
-   ],
-   "done": "outputs/ds_laptop_f10_prop/seed_42/test_predictions.jsonl"
-  },
-  "ds_laptop_f10_prop:s123": {
-   "id": "ds_laptop_f10_prop:s123",
-   "run": "ds_laptop_f10_prop",
-   "seed": 123,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f10_prop --seeds 123 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f10/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f10/vote.jsonl --aug_path data/subsets/laptop/f10/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 41,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f10_prop/seed_123"
-   ],
-   "done": "outputs/ds_laptop_f10_prop/seed_123/test_predictions.jsonl"
-  },
-  "ds_laptop_f10_prop:s2024": {
-   "id": "ds_laptop_f10_prop:s2024",
-   "run": "ds_laptop_f10_prop",
-   "seed": 2024,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f10_prop --seeds 2024 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f10/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f10/vote.jsonl --aug_path data/subsets/laptop/f10/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 41,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f10_prop/seed_2024"
-   ],
-   "done": "outputs/ds_laptop_f10_prop/seed_2024/test_predictions.jsonl"
-  },
-  "ds_laptop_f10_prop:s7": {
-   "id": "ds_laptop_f10_prop:s7",
-   "run": "ds_laptop_f10_prop",
-   "seed": 7,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f10_prop --seeds 7 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f10/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f10/vote.jsonl --aug_path data/subsets/laptop/f10/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 41,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f10_prop/seed_7"
-   ],
-   "done": "outputs/ds_laptop_f10_prop/seed_7/test_predictions.jsonl"
-  },
-  "ds_laptop_f10_prop:s99": {
-   "id": "ds_laptop_f10_prop:s99",
-   "run": "ds_laptop_f10_prop",
-   "seed": 99,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f10_prop --seeds 99 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f10/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f10/vote.jsonl --aug_path data/subsets/laptop/f10/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 41,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f10_prop/seed_99"
-   ],
-   "done": "outputs/ds_laptop_f10_prop/seed_99/test_predictions.jsonl"
-  },
-  "ds_laptop_f10_copy:s42": {
-   "id": "ds_laptop_f10_copy:s42",
-   "run": "ds_laptop_f10_copy",
-   "seed": 42,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f10_copy --seeds 42 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f10/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f10/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 41,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f10_copy/seed_42"
-   ],
-   "done": "outputs/ds_laptop_f10_copy/seed_42/test_predictions.jsonl"
-  },
-  "ds_laptop_f10_copy:s123": {
-   "id": "ds_laptop_f10_copy:s123",
-   "run": "ds_laptop_f10_copy",
-   "seed": 123,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f10_copy --seeds 123 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f10/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f10/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 41,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f10_copy/seed_123"
-   ],
-   "done": "outputs/ds_laptop_f10_copy/seed_123/test_predictions.jsonl"
-  },
-  "ds_laptop_f10_copy:s2024": {
-   "id": "ds_laptop_f10_copy:s2024",
-   "run": "ds_laptop_f10_copy",
-   "seed": 2024,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f10_copy --seeds 2024 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f10/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f10/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 41,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f10_copy/seed_2024"
-   ],
-   "done": "outputs/ds_laptop_f10_copy/seed_2024/test_predictions.jsonl"
-  },
-  "ds_laptop_f10_copy:s7": {
-   "id": "ds_laptop_f10_copy:s7",
-   "run": "ds_laptop_f10_copy",
-   "seed": 7,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f10_copy --seeds 7 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f10/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f10/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 41,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f10_copy/seed_7"
-   ],
-   "done": "outputs/ds_laptop_f10_copy/seed_7/test_predictions.jsonl"
-  },
-  "ds_laptop_f10_copy:s99": {
-   "id": "ds_laptop_f10_copy:s99",
-   "run": "ds_laptop_f10_copy",
-   "seed": 99,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f10_copy --seeds 99 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f10/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f10/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 41,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f10_copy/seed_99"
-   ],
-   "done": "outputs/ds_laptop_f10_copy/seed_99/test_predictions.jsonl"
-  },
-  "ds_laptop_f20_prop:s42": {
-   "id": "ds_laptop_f20_prop:s42",
-   "run": "ds_laptop_f20_prop",
-   "seed": 42,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f20_prop --seeds 42 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f20/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f20/vote.jsonl --aug_path data/subsets/laptop/f20/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 68,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f20_prop/seed_42"
-   ],
-   "done": "outputs/ds_laptop_f20_prop/seed_42/test_predictions.jsonl"
-  },
-  "ds_laptop_f20_prop:s123": {
-   "id": "ds_laptop_f20_prop:s123",
-   "run": "ds_laptop_f20_prop",
-   "seed": 123,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f20_prop --seeds 123 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f20/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f20/vote.jsonl --aug_path data/subsets/laptop/f20/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 68,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f20_prop/seed_123"
-   ],
-   "done": "outputs/ds_laptop_f20_prop/seed_123/test_predictions.jsonl"
-  },
-  "ds_laptop_f20_prop:s2024": {
-   "id": "ds_laptop_f20_prop:s2024",
-   "run": "ds_laptop_f20_prop",
-   "seed": 2024,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f20_prop --seeds 2024 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f20/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f20/vote.jsonl --aug_path data/subsets/laptop/f20/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 68,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f20_prop/seed_2024"
-   ],
-   "done": "outputs/ds_laptop_f20_prop/seed_2024/test_predictions.jsonl"
-  },
-  "ds_laptop_f20_prop:s7": {
-   "id": "ds_laptop_f20_prop:s7",
-   "run": "ds_laptop_f20_prop",
-   "seed": 7,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f20_prop --seeds 7 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f20/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f20/vote.jsonl --aug_path data/subsets/laptop/f20/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 68,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f20_prop/seed_7"
-   ],
-   "done": "outputs/ds_laptop_f20_prop/seed_7/test_predictions.jsonl"
-  },
-  "ds_laptop_f20_prop:s99": {
-   "id": "ds_laptop_f20_prop:s99",
-   "run": "ds_laptop_f20_prop",
-   "seed": 99,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f20_prop --seeds 99 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f20/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f20/vote.jsonl --aug_path data/subsets/laptop/f20/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 68,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f20_prop/seed_99"
-   ],
-   "done": "outputs/ds_laptop_f20_prop/seed_99/test_predictions.jsonl"
-  },
-  "ds_laptop_f20_copy:s42": {
-   "id": "ds_laptop_f20_copy:s42",
-   "run": "ds_laptop_f20_copy",
-   "seed": 42,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f20_copy --seeds 42 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f20/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f20/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 68,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f20_copy/seed_42"
-   ],
-   "done": "outputs/ds_laptop_f20_copy/seed_42/test_predictions.jsonl"
-  },
-  "ds_laptop_f20_copy:s123": {
-   "id": "ds_laptop_f20_copy:s123",
-   "run": "ds_laptop_f20_copy",
-   "seed": 123,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f20_copy --seeds 123 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f20/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f20/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 68,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f20_copy/seed_123"
-   ],
-   "done": "outputs/ds_laptop_f20_copy/seed_123/test_predictions.jsonl"
-  },
-  "ds_laptop_f20_copy:s2024": {
-   "id": "ds_laptop_f20_copy:s2024",
-   "run": "ds_laptop_f20_copy",
-   "seed": 2024,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f20_copy --seeds 2024 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f20/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f20/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 68,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f20_copy/seed_2024"
-   ],
-   "done": "outputs/ds_laptop_f20_copy/seed_2024/test_predictions.jsonl"
-  },
-  "ds_laptop_f20_copy:s7": {
-   "id": "ds_laptop_f20_copy:s7",
-   "run": "ds_laptop_f20_copy",
-   "seed": 7,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f20_copy --seeds 7 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f20/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f20/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 68,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f20_copy/seed_7"
-   ],
-   "done": "outputs/ds_laptop_f20_copy/seed_7/test_predictions.jsonl"
-  },
-  "ds_laptop_f20_copy:s99": {
-   "id": "ds_laptop_f20_copy:s99",
-   "run": "ds_laptop_f20_copy",
-   "seed": 99,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f20_copy --seeds 99 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f20/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f20/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 68,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f20_copy/seed_99"
-   ],
-   "done": "outputs/ds_laptop_f20_copy/seed_99/test_predictions.jsonl"
-  },
-  "ds_laptop_f50_prop:s42": {
-   "id": "ds_laptop_f50_prop:s42",
-   "run": "ds_laptop_f50_prop",
-   "seed": 42,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f50_prop --seeds 42 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f50/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f50/vote.jsonl --aug_path data/subsets/laptop/f50/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 149,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f50_prop/seed_42"
-   ],
-   "done": "outputs/ds_laptop_f50_prop/seed_42/test_predictions.jsonl"
-  },
-  "ds_laptop_f50_prop:s123": {
-   "id": "ds_laptop_f50_prop:s123",
-   "run": "ds_laptop_f50_prop",
-   "seed": 123,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f50_prop --seeds 123 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f50/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f50/vote.jsonl --aug_path data/subsets/laptop/f50/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 149,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f50_prop/seed_123"
-   ],
-   "done": "outputs/ds_laptop_f50_prop/seed_123/test_predictions.jsonl"
-  },
-  "ds_laptop_f50_prop:s2024": {
-   "id": "ds_laptop_f50_prop:s2024",
-   "run": "ds_laptop_f50_prop",
-   "seed": 2024,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f50_prop --seeds 2024 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f50/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f50/vote.jsonl --aug_path data/subsets/laptop/f50/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 149,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f50_prop/seed_2024"
-   ],
-   "done": "outputs/ds_laptop_f50_prop/seed_2024/test_predictions.jsonl"
-  },
-  "ds_laptop_f50_prop:s7": {
-   "id": "ds_laptop_f50_prop:s7",
-   "run": "ds_laptop_f50_prop",
-   "seed": 7,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f50_prop --seeds 7 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f50/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f50/vote.jsonl --aug_path data/subsets/laptop/f50/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 149,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f50_prop/seed_7"
-   ],
-   "done": "outputs/ds_laptop_f50_prop/seed_7/test_predictions.jsonl"
-  },
-  "ds_laptop_f50_prop:s99": {
-   "id": "ds_laptop_f50_prop:s99",
-   "run": "ds_laptop_f50_prop",
-   "seed": 99,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f50_prop --seeds 99 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f50/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f50/vote.jsonl --aug_path data/subsets/laptop/f50/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 149,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f50_prop/seed_99"
-   ],
-   "done": "outputs/ds_laptop_f50_prop/seed_99/test_predictions.jsonl"
-  },
-  "ds_laptop_f50_copy:s42": {
-   "id": "ds_laptop_f50_copy:s42",
-   "run": "ds_laptop_f50_copy",
-   "seed": 42,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f50_copy --seeds 42 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f50/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f50/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 149,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f50_copy/seed_42"
-   ],
-   "done": "outputs/ds_laptop_f50_copy/seed_42/test_predictions.jsonl"
-  },
-  "ds_laptop_f50_copy:s123": {
-   "id": "ds_laptop_f50_copy:s123",
-   "run": "ds_laptop_f50_copy",
-   "seed": 123,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f50_copy --seeds 123 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f50/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f50/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 149,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f50_copy/seed_123"
-   ],
-   "done": "outputs/ds_laptop_f50_copy/seed_123/test_predictions.jsonl"
-  },
-  "ds_laptop_f50_copy:s2024": {
-   "id": "ds_laptop_f50_copy:s2024",
-   "run": "ds_laptop_f50_copy",
-   "seed": 2024,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f50_copy --seeds 2024 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f50/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f50/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 149,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f50_copy/seed_2024"
-   ],
-   "done": "outputs/ds_laptop_f50_copy/seed_2024/test_predictions.jsonl"
-  },
-  "ds_laptop_f50_copy:s7": {
-   "id": "ds_laptop_f50_copy:s7",
-   "run": "ds_laptop_f50_copy",
-   "seed": 7,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f50_copy --seeds 7 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f50/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f50/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 149,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f50_copy/seed_7"
-   ],
-   "done": "outputs/ds_laptop_f50_copy/seed_7/test_predictions.jsonl"
-  },
-  "ds_laptop_f50_copy:s99": {
-   "id": "ds_laptop_f50_copy:s99",
-   "run": "ds_laptop_f50_copy",
-   "seed": 99,
-   "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/ds_laptop_f50_copy --seeds 99 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/subsets/laptop/f50/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/subsets/laptop/f50/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
-   "examples": null,
-   "est_min": 149,
-   "after": [],
-   "outputs": [
-    "outputs/ds_laptop_f50_copy/seed_99"
-   ],
-   "done": "outputs/ds_laptop_f50_copy/seed_99/test_predictions.jsonl"
+   "done": "outputs/cp_laptop_copy/seed_59/test_predictions.jsonl"
   }
  }
 }
