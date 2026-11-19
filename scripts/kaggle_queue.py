@@ -197,7 +197,7 @@ def cmd_plan(a):
     ledger = ROOT / "outputs/_ingested.txt"
     used = re.findall(rf"(?:^|\s)results_{re.escape(tag)}_s(\d+)\.zip", ledger.read_text() if ledger.exists() else "")
     used += [p.stem.rsplit("_s", 1)[1] for p in TIMES.glob(f"{tag}_s*.tsv") if p.stem.rsplit("_s", 1)[0] == tag]
-    first = max(map(int, used), default=0) + 1
+    first = max(max(map(int, used), default=0) + 1, a.first)  # --first: after sessions released but not yet ingested
     plan = {"round": tag, "rounds": rids, "budget_hours": a.budget_hours, "gpus": a.gpus, "min_per_example": mpe,
             "n_calibrated": n, "created": time.strftime("%Y-%m-%d %H:%M"),
             "sessions": [{"session": first + i, "jobs": s["jobs"], "est_hours": round(max(s["lanes"]) / 60, 2)}
@@ -399,6 +399,7 @@ def main():
     p = sub.add_parser("plan"); p.add_argument("--round", required=True)
     p.add_argument("--budget-hours", type=float, default=10.5); p.add_argument("--gpus", type=int, default=2)
     p.add_argument("--only", default="", help="comma-separated job id prefixes to plan (others are left out)")
+    p.add_argument("--first", type=int, default=0, help="lowest session number (when earlier sessions of the round are still out)")
     p = sub.add_parser("run"); p.add_argument("--session", type=int, required=True)
     p.add_argument("--budget-hours", type=float, default=0)
     sub.add_parser("ingest")
