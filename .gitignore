@@ -35,3 +35,6 @@ runs_inbox/*.zip
 llm/wheels/
 dist/
 .venv-asqp/
+
+# INLG 2025 source archive (third-party code, kept locally)
+INLG_2025_src.zip
