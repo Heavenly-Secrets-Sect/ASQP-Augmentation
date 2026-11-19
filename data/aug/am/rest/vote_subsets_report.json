@@ -1,0 +1,42 @@
+{
+ "train_path": "data/aug/cv_rest_vote.jsonl",
+ "seed": 13,
+ "n_train": 10977,
+ "subsets": {
+  "10": {
+   "n": 1098,
+   "quads": 1994,
+   "categories_present": 12,
+   "categories_in_train": 12,
+   "tv_distance_to_train": 0.0049
+  },
+  "20": {
+   "n": 2196,
+   "quads": 3983,
+   "categories_present": 12,
+   "categories_in_train": 12,
+   "tv_distance_to_train": 0.0086
+  },
+  "30": {
+   "n": 3294,
+   "quads": 5950,
+   "categories_present": 12,
+   "categories_in_train": 12,
+   "tv_distance_to_train": 0.0086
+  },
+  "50": {
+   "n": 5489,
+   "quads": 9925,
+   "categories_present": 12,
+   "categories_in_train": 12,
+   "tv_distance_to_train": 0.0058
+  },
+  "80": {
+   "n": 8782,
+   "quads": 15892,
+   "categories_present": 12,
+   "categories_in_train": 12,
+   "tv_distance_to_train": 0.0017
+  }
+ }
+}

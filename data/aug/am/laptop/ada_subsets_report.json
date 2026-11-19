@@ -1,0 +1,42 @@
+{
+ "train_path": "data/aug/acos_laptop_ada_joint.jsonl",
+ "seed": 13,
+ "n_train": 9197,
+ "subsets": {
+  "10": {
+   "n": 920,
+   "quads": 3957,
+   "categories_present": 98,
+   "categories_in_train": 114,
+   "tv_distance_to_train": 0.0463
+  },
+  "20": {
+   "n": 1840,
+   "quads": 7968,
+   "categories_present": 101,
+   "categories_in_train": 114,
+   "tv_distance_to_train": 0.0309
+  },
+  "30": {
+   "n": 2760,
+   "quads": 11903,
+   "categories_present": 105,
+   "categories_in_train": 114,
+   "tv_distance_to_train": 0.0189
+  },
+  "50": {
+   "n": 4599,
+   "quads": 19784,
+   "categories_present": 111,
+   "categories_in_train": 114,
+   "tv_distance_to_train": 0.0136
+  },
+  "80": {
+   "n": 7358,
+   "quads": 31624,
+   "categories_present": 114,
+   "categories_in_train": 114,
+   "tv_distance_to_train": 0.0064
+  }
+ }
+}

@@ -1,0 +1,42 @@
+{
+ "train_path": "data/aug/ada_joint.jsonl",
+ "seed": 13,
+ "n_train": 3632,
+ "subsets": {
+  "10": {
+   "n": 364,
+   "quads": 2405,
+   "categories_present": 12,
+   "categories_in_train": 12,
+   "tv_distance_to_train": 0.0241
+  },
+  "20": {
+   "n": 727,
+   "quads": 4880,
+   "categories_present": 12,
+   "categories_in_train": 12,
+   "tv_distance_to_train": 0.0208
+  },
+  "30": {
+   "n": 1090,
+   "quads": 7316,
+   "categories_present": 12,
+   "categories_in_train": 12,
+   "tv_distance_to_train": 0.0107
+  },
+  "50": {
+   "n": 1816,
+   "quads": 12115,
+   "categories_present": 12,
+   "categories_in_train": 12,
+   "tv_distance_to_train": 0.0075
+  },
+  "80": {
+   "n": 2906,
+   "quads": 19345,
+   "categories_present": 12,
+   "categories_in_train": 12,
+   "tv_distance_to_train": 0.0029
+  }
+ }
+}

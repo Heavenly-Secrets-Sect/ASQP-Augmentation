@@ -1,0 +1,42 @@
+{
+ "train_path": "data/aug/cv_laptop_vote.jsonl",
+ "seed": 13,
+ "n_train": 17954,
+ "subsets": {
+  "10": {
+   "n": 1796,
+   "quads": 2486,
+   "categories_present": 74,
+   "categories_in_train": 97,
+   "tv_distance_to_train": 0.0246
+  },
+  "20": {
+   "n": 3591,
+   "quads": 4987,
+   "categories_present": 78,
+   "categories_in_train": 97,
+   "tv_distance_to_train": 0.0131
+  },
+  "30": {
+   "n": 5387,
+   "quads": 7447,
+   "categories_present": 83,
+   "categories_in_train": 97,
+   "tv_distance_to_train": 0.0119
+  },
+  "50": {
+   "n": 8977,
+   "quads": 12447,
+   "categories_present": 90,
+   "categories_in_train": 97,
+   "tv_distance_to_train": 0.0077
+  },
+  "80": {
+   "n": 14364,
+   "quads": 19886,
+   "categories_present": 97,
+   "categories_in_train": 97,
+   "tv_distance_to_train": 0.0044
+  }
+ }
+}

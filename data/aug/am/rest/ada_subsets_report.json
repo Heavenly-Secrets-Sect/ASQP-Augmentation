@@ -1,0 +1,42 @@
+{
+ "train_path": "data/aug/acos_rest_ada_joint.jsonl",
+ "seed": 13,
+ "n_train": 2648,
+ "subsets": {
+  "10": {
+   "n": 265,
+   "quads": 1027,
+   "categories_present": 12,
+   "categories_in_train": 12,
+   "tv_distance_to_train": 0.0294
+  },
+  "20": {
+   "n": 530,
+   "quads": 2056,
+   "categories_present": 12,
+   "categories_in_train": 12,
+   "tv_distance_to_train": 0.0128
+  },
+  "30": {
+   "n": 795,
+   "quads": 3107,
+   "categories_present": 12,
+   "categories_in_train": 12,
+   "tv_distance_to_train": 0.016
+  },
+  "50": {
+   "n": 1324,
+   "quads": 5192,
+   "categories_present": 12,
+   "categories_in_train": 12,
+   "tv_distance_to_train": 0.0128
+  },
+  "80": {
+   "n": 2119,
+   "quads": 8338,
+   "categories_present": 12,
+   "categories_in_train": 12,
+   "tv_distance_to_train": 0.009
+  }
+ }
+}
