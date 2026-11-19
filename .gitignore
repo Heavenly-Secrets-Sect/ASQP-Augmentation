@@ -38,3 +38,22 @@ dist/
 
 # INLG 2025 source archive (third-party code, kept locally)
 INLG_2025_src.zip
+
+# intermediate augmentation files kept locally (teacher views, pools of finished rounds); their products are committed
+data/aug/ac_ens/
+data/aug/adat_inner/vi_s99.jsonl
+data/aug/cv_mvpt/
+data/aug/ens_inner/
+data/aug/ens_train/
+data/aug/llm_smoke/
+data/aug/mvd_inner/
+data/aug/mvpt_inner/
+data/aug/pa_adat/
+data/aug/pa_ens/
+data/aug/pm_mvpt/
+data/aug/st_inner/pl_0.jsonl
+data/aug/st_inner/pl_1.jsonl
+data/aug/st_inner/scored.jsonl
+data/aug/syn_infill_s0.jsonl
+data/aug/syn_infill_s1.jsonl
+data/subsets/*/f*/labels/
