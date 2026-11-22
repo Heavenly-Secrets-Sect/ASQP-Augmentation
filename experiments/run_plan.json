@@ -1,81 +1,213 @@
 {
- "round": "cp",
+ "round": "am",
  "rounds": [
-  "cp"
+  "am"
  ],
  "budget_hours": 9.0,
  "gpus": 2,
  "min_per_example": 0.017012538837421508,
  "n_calibrated": 230,
- "created": "2026-11-22 23:01",
+ "created": "2026-11-22 23:02",
  "sessions": [
   {
-   "session": 13,
+   "session": 20,
    "jobs": [
-    "cp_laptop_copy:s29",
-    "cp_laptop_copy:s31",
-    "cp_rest_copy:s29",
-    "cp_rest_copy:s31"
+    "am_laptop_p80_prop:s42",
+    "am_laptop_p80_prop:s123",
+    "am_laptop_p50_prop:s42",
+    "am_laptop_p50_prop:s123"
    ],
-   "est_hours": 8.0
+   "est_hours": 7.85
+  },
+  {
+   "session": 21,
+   "jobs": [
+    "am_laptop_p80_prop:s2024",
+    "am_laptop_p80_prop:s7",
+    "am_laptop_p50_prop:s2024",
+    "am_laptop_p50_prop:s7"
+   ],
+   "est_hours": 7.85
+  },
+  {
+   "session": 22,
+   "jobs": [
+    "am_laptop_p80_prop:s99",
+    "am_laptop_p80_copy:s42",
+    "am_laptop_p50_prop:s99",
+    "am_laptop_p50_copy:s42"
+   ],
+   "est_hours": 7.85
   }
  ],
  "jobs": {
-  "cp_rest_copy:s29": {
-   "id": "cp_rest_copy:s29",
-   "run": "cp_rest_copy",
-   "seed": 29,
+  "am_laptop_p50_prop:s42": {
+   "id": "am_laptop_p50_prop:s42",
+   "run": "am_laptop_p50_prop",
+   "seed": 42,
    "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_rest_copy --seeds 29 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/rest/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/aug/cp_rest_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/am_laptop_p50_prop --seeds 42 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/laptop/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/aug/am/laptop/p50/vote.jsonl --aug_path data/aug/am/laptop/p50/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
    "examples": null,
-   "est_min": 150,
+   "est_min": 191,
    "after": [],
    "outputs": [
-    "outputs/cp_rest_copy/seed_29"
+    "outputs/am_laptop_p50_prop/seed_42"
    ],
-   "done": "outputs/cp_rest_copy/seed_29/test_predictions.jsonl"
+   "done": "outputs/am_laptop_p50_prop/seed_42/test_predictions.jsonl"
   },
-  "cp_rest_copy:s31": {
-   "id": "cp_rest_copy:s31",
-   "run": "cp_rest_copy",
-   "seed": 31,
+  "am_laptop_p50_prop:s123": {
+   "id": "am_laptop_p50_prop:s123",
+   "run": "am_laptop_p50_prop",
+   "seed": 123,
    "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_rest_copy --seeds 31 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/rest/train.jsonl --dev_path data/acos/rest/dev.jsonl --test_path data/acos/rest/test.jsonl --aug_path data/aug/cp_rest_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/am_laptop_p50_prop --seeds 123 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/laptop/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/aug/am/laptop/p50/vote.jsonl --aug_path data/aug/am/laptop/p50/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
    "examples": null,
-   "est_min": 150,
+   "est_min": 191,
    "after": [],
    "outputs": [
-    "outputs/cp_rest_copy/seed_31"
+    "outputs/am_laptop_p50_prop/seed_123"
    ],
-   "done": "outputs/cp_rest_copy/seed_31/test_predictions.jsonl"
+   "done": "outputs/am_laptop_p50_prop/seed_123/test_predictions.jsonl"
   },
-  "cp_laptop_copy:s29": {
-   "id": "cp_laptop_copy:s29",
-   "run": "cp_laptop_copy",
-   "seed": 29,
+  "am_laptop_p50_prop:s2024": {
+   "id": "am_laptop_p50_prop:s2024",
+   "run": "am_laptop_p50_prop",
+   "seed": 2024,
    "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_laptop_copy --seeds 29 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/laptop/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/aug/cp_laptop_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/am_laptop_p50_prop --seeds 2024 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/laptop/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/aug/am/laptop/p50/vote.jsonl --aug_path data/aug/am/laptop/p50/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
    "examples": null,
-   "est_min": 330,
+   "est_min": 191,
    "after": [],
    "outputs": [
-    "outputs/cp_laptop_copy/seed_29"
+    "outputs/am_laptop_p50_prop/seed_2024"
    ],
-   "done": "outputs/cp_laptop_copy/seed_29/test_predictions.jsonl"
+   "done": "outputs/am_laptop_p50_prop/seed_2024/test_predictions.jsonl"
   },
-  "cp_laptop_copy:s31": {
-   "id": "cp_laptop_copy:s31",
-   "run": "cp_laptop_copy",
-   "seed": 31,
+  "am_laptop_p50_prop:s7": {
+   "id": "am_laptop_p50_prop:s7",
+   "run": "am_laptop_p50_prop",
+   "seed": 7,
    "aug": null,
-   "command": "python -u src/train_paraphrase.py --output_dir outputs/cp_laptop_copy --seeds 31 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/laptop/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/aug/cp_laptop_copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/am_laptop_p50_prop --seeds 7 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/laptop/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/aug/am/laptop/p50/vote.jsonl --aug_path data/aug/am/laptop/p50/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
    "examples": null,
-   "est_min": 330,
+   "est_min": 191,
    "after": [],
    "outputs": [
-    "outputs/cp_laptop_copy/seed_31"
+    "outputs/am_laptop_p50_prop/seed_7"
    ],
-   "done": "outputs/cp_laptop_copy/seed_31/test_predictions.jsonl"
+   "done": "outputs/am_laptop_p50_prop/seed_7/test_predictions.jsonl"
+  },
+  "am_laptop_p50_prop:s99": {
+   "id": "am_laptop_p50_prop:s99",
+   "run": "am_laptop_p50_prop",
+   "seed": 99,
+   "aug": null,
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/am_laptop_p50_prop --seeds 99 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/laptop/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/aug/am/laptop/p50/vote.jsonl --aug_path data/aug/am/laptop/p50/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "examples": null,
+   "est_min": 191,
+   "after": [],
+   "outputs": [
+    "outputs/am_laptop_p50_prop/seed_99"
+   ],
+   "done": "outputs/am_laptop_p50_prop/seed_99/test_predictions.jsonl"
+  },
+  "am_laptop_p50_copy:s42": {
+   "id": "am_laptop_p50_copy:s42",
+   "run": "am_laptop_p50_copy",
+   "seed": 42,
+   "aug": null,
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/am_laptop_p50_copy --seeds 42 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/laptop/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/aug/am/laptop/p50/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "examples": null,
+   "est_min": 191,
+   "after": [],
+   "outputs": [
+    "outputs/am_laptop_p50_copy/seed_42"
+   ],
+   "done": "outputs/am_laptop_p50_copy/seed_42/test_predictions.jsonl"
+  },
+  "am_laptop_p80_prop:s42": {
+   "id": "am_laptop_p80_prop:s42",
+   "run": "am_laptop_p80_prop",
+   "seed": 42,
+   "aug": null,
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/am_laptop_p80_prop --seeds 42 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/laptop/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/aug/am/laptop/p80/vote.jsonl --aug_path data/aug/am/laptop/p80/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "examples": null,
+   "est_min": 280,
+   "after": [],
+   "outputs": [
+    "outputs/am_laptop_p80_prop/seed_42"
+   ],
+   "done": "outputs/am_laptop_p80_prop/seed_42/test_predictions.jsonl"
+  },
+  "am_laptop_p80_prop:s123": {
+   "id": "am_laptop_p80_prop:s123",
+   "run": "am_laptop_p80_prop",
+   "seed": 123,
+   "aug": null,
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/am_laptop_p80_prop --seeds 123 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/laptop/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/aug/am/laptop/p80/vote.jsonl --aug_path data/aug/am/laptop/p80/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "examples": null,
+   "est_min": 280,
+   "after": [],
+   "outputs": [
+    "outputs/am_laptop_p80_prop/seed_123"
+   ],
+   "done": "outputs/am_laptop_p80_prop/seed_123/test_predictions.jsonl"
+  },
+  "am_laptop_p80_prop:s2024": {
+   "id": "am_laptop_p80_prop:s2024",
+   "run": "am_laptop_p80_prop",
+   "seed": 2024,
+   "aug": null,
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/am_laptop_p80_prop --seeds 2024 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/laptop/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/aug/am/laptop/p80/vote.jsonl --aug_path data/aug/am/laptop/p80/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "examples": null,
+   "est_min": 280,
+   "after": [],
+   "outputs": [
+    "outputs/am_laptop_p80_prop/seed_2024"
+   ],
+   "done": "outputs/am_laptop_p80_prop/seed_2024/test_predictions.jsonl"
+  },
+  "am_laptop_p80_prop:s7": {
+   "id": "am_laptop_p80_prop:s7",
+   "run": "am_laptop_p80_prop",
+   "seed": 7,
+   "aug": null,
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/am_laptop_p80_prop --seeds 7 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/laptop/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/aug/am/laptop/p80/vote.jsonl --aug_path data/aug/am/laptop/p80/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "examples": null,
+   "est_min": 280,
+   "after": [],
+   "outputs": [
+    "outputs/am_laptop_p80_prop/seed_7"
+   ],
+   "done": "outputs/am_laptop_p80_prop/seed_7/test_predictions.jsonl"
+  },
+  "am_laptop_p80_prop:s99": {
+   "id": "am_laptop_p80_prop:s99",
+   "run": "am_laptop_p80_prop",
+   "seed": 99,
+   "aug": null,
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/am_laptop_p80_prop --seeds 99 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/laptop/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/aug/am/laptop/p80/vote.jsonl --aug_path data/aug/am/laptop/p80/ada_joint.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "examples": null,
+   "est_min": 280,
+   "after": [],
+   "outputs": [
+    "outputs/am_laptop_p80_prop/seed_99"
+   ],
+   "done": "outputs/am_laptop_p80_prop/seed_99/test_predictions.jsonl"
+  },
+  "am_laptop_p80_copy:s42": {
+   "id": "am_laptop_p80_copy:s42",
+   "run": "am_laptop_p80_copy",
+   "seed": 42,
+   "aug": null,
+   "command": "python -u src/train_paraphrase.py --output_dir outputs/am_laptop_p80_copy --seeds 42 --lang en --model_name google-t5/t5-base --lr 1e-4 --train_path data/acos/laptop/train.jsonl --dev_path data/acos/laptop/dev.jsonl --test_path data/acos/laptop/test.jsonl --aug_path data/aug/am/laptop/p80/copy.jsonl --tuple_order text --batch_size 8 --grad_accum 2",
+   "examples": null,
+   "est_min": 280,
+   "after": [],
+   "outputs": [
+    "outputs/am_laptop_p80_copy/seed_42"
+   ],
+   "done": "outputs/am_laptop_p80_copy/seed_42/test_predictions.jsonl"
   }
  }
 }
