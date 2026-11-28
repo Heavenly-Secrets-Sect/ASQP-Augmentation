@@ -24,6 +24,8 @@ source .venv-asqp/bin/activate
 nohup python llm/pipeline.py run > run_all.log 2>&1 &
 ```
 
-Chạy hết mất khoảng 3 ngày. Muốn xem tiến độ thì `tail -f run_all.log`. Nếu bị ngắt giữa chừng, cứ chạy lại đúng lệnh trên, phần nào xong rồi sẽ tự bỏ qua.
+Có 120 lần train: 8 nhánh × 3 bộ dữ liệu × 5 seed. Thứ tự chạy là baseline, phương pháp đề xuất, Copy trước, rồi đến 5 phương pháp literature (EDA, Concat, ADA, GenDA, RC). Như vậy, nếu phải dừng sớm, phần so sánh chính vẫn đã xong. Ước tính khoảng 175 giờ trên một A100 80GB (7–8 ngày); riêng nhánh đề xuất và Copy mất khoảng 100 giờ.
+
+Muốn xem tiến độ thì `tail -f run_all.log`, hoặc `python llm/pipeline.py plan` để xem bước nào đã xong. Nếu bị ngắt giữa chừng, cứ chạy lại đúng lệnh trên, phần nào xong rồi sẽ tự bỏ qua. Muốn chạy một phần, ví dụ chỉ nhánh đề xuất trên Vi: `python llm/pipeline.py run --only vi_prop`.
 
 Khi chạy xong sẽ có file `results_llm_*.zip` ở thư mục gốc, gửi lại file đó là được.

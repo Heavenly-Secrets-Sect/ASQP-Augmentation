@@ -1,14 +1,15 @@
-"""Gemma-7B + LoRA, ASQP as code generation (the INLG 2025 recipe), and the steps of the ensemble-distillation
-augmentation (teachers label an unlabelled pool, majority vote, student on gold + voted pool).
+"""Gemma-7B + LoRA, ASQP as code generation (the INLG 2025 recipe), trained on the same data sets as the Paraphrase
+study (arms(): baseline, proposed = gold + MvP-teacher vote + ADA joint, Copy, EDA, Concat, ADA, GenDA, RC).
 The model is a profile (--profile, env ASQP_PROFILE): gemma (default, everything below) or qwen
 (Qwen/Qwen2.5-14B-Instruct as in the authors' LLM_QWen.ipynb: "json_format" prompt, one JSON list per review with
 ASCII escapes, "null" for implicit spans, effective batch 8; LoRA, lr, epochs, NEFTune and beam 5 as for gemma).
 
     python llm/inlg.py preflight --model google/gemma-7b --cache_dir /path/to/models      # checks only
-    python llm/inlg.py train --dataset vi --seed 42 --out_dir outputs/llm/vi_none/seed_42 --keep_adapter
-    python llm/inlg.py label --dataset vi --adapter outputs/llm/vi_none/seed_42/adapter --out data/aug/llm/vi_s42.jsonl
-    python src/aug/mvd.py select --in a.jsonl,b.jsonl,... --n 100000 --out data/aug/llm/vi_ens.jsonl     # CPU vote
-    python llm/inlg.py train --dataset vi --seed 42 --aug_path data/aug/llm/vi_ens.jsonl --tuple_order text ...
+    python llm/inlg.py train --dataset vi --seed 42 --out_dir outputs/llm/vi_none/seed_42
+    python llm/inlg.py train --dataset vi --seed 42 --out_dir outputs/llm/vi_prop/seed_42 --tuple_order text \
+        --aug_path data/aug/cv_vi_vote.jsonl data/aug/ada_joint.jsonl
+    python llm/inlg.py train --dataset vi --seed 42 --out_dir outputs/llm/vi_rc/seed_42 --train_path data/aug/rc_train.jsonl
+    (llm/pipeline.py runs every arm x dataset x seed; the label subcommand, teachers labelling a pool, is kept but unused)
 
 Recipe (from the authors' notebook LLM_Gemma.ipynb, prompt "coding_format"): google/gemma-7b (base) in bf16; LoRA r 8,
 alpha 16, rsLoRA, dropout 0.1 on every linear layer; AdamW lr 2e-4, weight decay 0.01, cosine schedule, 4 warmup
@@ -58,6 +59,26 @@ DATASETS = {
     "laptop": {"dir": "data/acos/laptop", "pool": "data/aug/acos_laptop_pool_train.jsonl", "lang": "en",
                "domain": "laptop", "sizes": {"train": 2934, "dev": 326, "test": 816, "pool": 21095}},
 }
+
+
+def aug_file(d, name):
+    """Augmented file of the main study (data/aug): Vi-AbSQA uses the plain name, ACOS the acos_<d>_ prefix."""
+    return f"data/aug/{name}.jsonl" if d == "vi" else f"data/aug/acos_{d}_{name}.jsonl"
+
+
+def arms(d):
+    """The training sets of the LLM study, the same files as the Paraphrase / Extract-Classify tables:
+    arm -> (train file or None = gold train, augmented files, target order)."""
+    return {
+        "none": (None, [], "gold"),                                                     # baseline
+        "prop": (None, [f"data/aug/cv_{d}_vote.jsonl", aug_file(d, "ada_joint")], "text"),  # proposed
+        "copy": (None, [f"data/aug/cp_{d}_copy.jsonl"], "text"),                        # gold duplicated, same size
+        "eda": (None, [aug_file(d, "eda")], "gold"),
+        "concat": (None, [aug_file(d, "concat")], "gold"),
+        "ada": (None, [aug_file(d, "ada_joint")], "gold"),
+        "genda": (None, [aug_file(d, "genda")], "gold"),
+        "rc": (aug_file(d, "rc_train"), [], "gold"),                                    # Review Combination
+    }
 PROMPT_GEMMA = '''<start_of_turn>user
 def extract_quadruplet_list_from_review(input_review):
     """Extract list of quadruplet sentiments from the input review for the {domain} domain. """
@@ -366,8 +387,12 @@ def generate(model, tok, prompts, a, beams, batch_size, device):
 
 # ---------------------------------------------------------------- train
 
+def train_file(d, a):
+    return ROOT / a.train_path if getattr(a, "train_path", "") else ds_path(d, "train")
+
+
 def build_examples(d, a, labels):
-    train = load_jsonl(ds_path(d, "train"))[:a.limit_train or None]
+    train = load_jsonl(train_file(d, a))[:a.limit_train or None]
     aug = []
     for p in a.aug_path or []:
         aug += load_jsonl(ROOT / p if not Path(p).is_absolute() else p)
@@ -574,7 +599,7 @@ def cmd_train(a):
     cfg = {"args": vars(a), "seed": a.seed, "n_train": n_train, "n_aug": n_aug, "n_train_total": len(rows),
            "steps_per_epoch": steps_per_epoch, "optimizer_steps": total, "truncated": trunc,
            "data_sha256": {str(p): sha256(ROOT / p if not Path(p).is_absolute() else p)
-                           for p in [str(ds_path(d, "train").relative_to(ROOT))] + list(a.aug_path or [])},
+                           for p in [str(train_file(d, a).relative_to(ROOT))] + list(a.aug_path or [])},
            "profile": dict((k, v) for k, v in PROFILE.items() if k != "prompt"),
            "prompt_example": prompt(d, test[0]["text"]) + labels.target(test[0]["quads"]) + END,
            "seconds_train": train_seconds, "seconds_test": time.time() - t1, "oom_fallbacks": oom,
@@ -697,8 +722,8 @@ def cmd_preflight(a):
         tok = None
     manifest = json.load(open(ROOT / "llm" / "MANIFEST.json")) if (ROOT / "llm" / "MANIFEST.json").exists() else {}
     for d, info in DATASETS.items():
-        for split in ("train", "dev", "test", "pool"):
-            p = ROOT / info["pool"] if split == "pool" else ds_path(d, split)
+        for split in ("train", "dev", "test"):
+            p = ds_path(d, split)
             if not p.exists():
                 check(f"{d}/{split}", False, f"missing {p}")
                 continue
@@ -707,6 +732,12 @@ def cmd_preflight(a):
             ok = n == info["sizes"][split] and (rel not in manifest or manifest[rel] == sha256(p))
             check(f"{d}/{split}", ok, f"{n} rows (expected {info['sizes'][split]})"
                   + ("" if rel not in manifest else ", sha256 " + ("ok" if manifest[rel] == sha256(p) else "DIFFERS")))
+        for arm, (tp, aug, _) in arms(d).items():
+            for rel in ([tp] if tp else []) + aug:
+                p = ROOT / rel
+                ok = p.exists() and (rel not in manifest or manifest[rel] == sha256(p))
+                check(f"{d}_{arm} data", ok, rel + ("" if p.exists() else " missing") +
+                      ("" if not p.exists() or rel not in manifest else ", sha256 " + ("ok" if ok else "DIFFERS")))
         n, bad, ex = round_trip(d)
         check(f"{d} target round trip", bad == 0, f"{n} reviews x 2 orders, {bad} mismatches" + (f": {ex}" if ex else ""))
         if tok is not None:
@@ -748,6 +779,7 @@ def main():
     p.add_argument("--dataset", choices=sorted(DATASETS), required=True)
     p.add_argument("--seed", type=int, required=True)
     p.add_argument("--out_dir", required=True)
+    p.add_argument("--train_path", default="", help="replaces the gold train file (RC); default: the dataset's train")
     p.add_argument("--aug_path", nargs="*", default=[])
     p.add_argument("--tuple_order", choices=["gold", "text"], default="gold")
     p.add_argument("--epochs", type=int, default=5)

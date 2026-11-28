@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # Build the offline package for a server without Internet (run on a machine WITH Internet, from the repo root):
 #   bash llm/build_package.sh            -> dist/asqp_llm_package.zip
-# Contents: code (llm/, src/asqp_common.py, src/aug/{mvd,st_scorer}.py), data (3 datasets + 3 unlabelled pools),
+# Contents: code (llm/, src/asqp_common.py, src/aug/{mvd,st_scorer}.py), data (3 datasets + the training files of
+# every arm, inlg.arms),
 # Linux x86_64 wheels for Python 3.10-3.12 (llm/wheels), llm/MANIFEST.json (sha256 of every data file).
 set -euo pipefail
 cd "$(dirname "$0")/.."
@@ -16,7 +17,8 @@ done
 DATA="data/restaurant_v1/train.jsonl data/restaurant_v1/dev.jsonl data/restaurant_v1/test.jsonl
 data/acos/rest/train.jsonl data/acos/rest/dev.jsonl data/acos/rest/test.jsonl
 data/acos/laptop/train.jsonl data/acos/laptop/dev.jsonl data/acos/laptop/test.jsonl
-data/aug/st_pool_train.jsonl data/aug/acos_rest_pool_train.jsonl data/aug/acos_laptop_pool_train.jsonl"
+$(python3 -c 'import sys; sys.path.insert(0, "llm"); from inlg import arms
+print(" ".join(sorted({f for d in ("vi", "rest", "laptop") for tp, aug, _ in arms(d).values() for f in ([tp] if tp else []) + aug})))')"
 python3 - $DATA <<'PY'
 import hashlib, json, sys
 m = {p: hashlib.sha256(open(p, "rb").read()).hexdigest() for p in sys.argv[1:]}

@@ -7,15 +7,16 @@ skips only the steps that need it. Logs in <root>/_logs/<step>.log, times in <ro
     python llm/pipeline.py run --datasets vi --only vi_none   # a subset (step names start with the given prefix)
     python llm/pipeline.py pack                          # results_llm_<host>_<time>.zip (no model weights)
 
-Per dataset d (in this order):
-  d_none   seed s  M0 = INLG Gemma-7B baseline (gold order); its LoRA adapter is kept: the 5 teachers
-  d_label  seed s  the teacher greedy-labels the unlabelled pool       -> data/aug/llm/d_s<seed>.jsonl
-  d_select         quads with >= 3 of 5 votes and grounded spans        -> data/aug/llm/d_ens.jsonl (CPU)
-  d_ens_pos seed s M1 = gold + voted pool, text order (the method)
-  d_pos    seed s  M2 = gold, text order only
+Steps, one training run each (arm x dataset x seed), in this order so the main comparison is complete first:
+  none   baseline: gold train, gold order
+  prop   the proposed method: gold + the MvP-teacher vote of the Paraphrase study + ADA joint, text order
+  copy   control: gold + gold duplicated to the size of prop (same number of steps, no new information), text order
+  eda, concat, ada, genda   literature: gold + that method's augmented file, gold order
+  rc     literature (Review Combination): its combined training file instead of gold train, gold order
+The data files are those of the Paraphrase / Extract-Classify tables (inlg.arms); nothing is labelled on the server.
 Model options (--profile, --model, --cache_dir, --backend) are passed to every step; defaults from the environment
 variables ASQP_PROFILE, ASQP_MODEL, ASQP_CACHE_DIR, ASQP_BACKEND (see llm/README.md). --profile qwen writes to
-outputs/llm_qwen and data/aug/llm_qwen, so a Gemma study and a Qwen study can live side by side.
+outputs/llm_qwen, so a Gemma study and a Qwen study can live side by side.
 """
 import argparse
 import json
@@ -30,41 +31,26 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 PY = sys.executable
 SEEDS = [42, 123, 2024, 7, 99]
+ORDER = ["none", "prop", "copy", "eda", "concat", "ada", "genda", "rc"]
+sys.path.insert(0, str(ROOT / "llm"))
+from inlg import arms  # noqa: E402
 
 
 def steps(a):
-    out, aug = Path(a.root), Path(a.aug_root)
+    out = Path(a.root)
     lim_train = ["--limit_train", "16", "--limit_test", "8", "--epochs", "1"] if a.smoke else []
-    lim_pool = ["--limit", "16"] if a.smoke else []
     model = ["--profile", a.profile, "--backend", a.backend, "--offline", str(a.offline)] + \
         (["--model", a.model] if a.model else []) + (["--cache_dir", a.cache_dir] if a.cache_dir else [])
     train = [PY, "-u", "llm/inlg.py", "train"] + model + lim_train + a.train_args
     res = []
-    for d in a.datasets:
-        labels = []
-        for s in a.seeds:
-            run = out / f"{d}_none" / f"seed_{s}"
-            res.append({"name": f"{d}_none:s{s}", "after": [], "done": run / "metrics.json",
-                        "cmd": train + ["--dataset", d, "--seed", str(s), "--out_dir", str(run), "--keep_adapter"]})
-            lab = aug / f"{d}_s{s}.jsonl"
-            labels.append(str(lab))
-            res.append({"name": f"{d}_label:s{s}", "after": [f"{d}_none:s{s}"], "done": lab,
-                        "cmd": [PY, "-u", "llm/inlg.py", "label"] + model + lim_pool +
-                        ["--dataset", d, "--adapter", str(run / "adapter"), "--out", str(lab)]})
-        ens = aug / f"{d}_ens.jsonl"
-        res.append({"name": f"{d}_select", "after": [f"{d}_label:s{s}" for s in a.seeds], "done": ens,
-                    "cmd": [PY, "-u", "src/aug/mvd.py", "select", "--in", ",".join(labels), "--n", "100000",
-                            "--out", str(ens)]})
-        for s in a.seeds:
-            run = out / f"{d}_ens_pos" / f"seed_{s}"
-            res.append({"name": f"{d}_ens_pos:s{s}", "after": [f"{d}_select"], "done": run / "metrics.json",
-                        "cmd": train + ["--dataset", d, "--seed", str(s), "--out_dir", str(run), "--tuple_order",
-                                        "text", "--aug_path", str(ens)]})
-        for s in a.seeds:
-            run = out / f"{d}_pos" / f"seed_{s}"
-            res.append({"name": f"{d}_pos:s{s}", "after": [], "done": run / "metrics.json",
-                        "cmd": train + ["--dataset", d, "--seed", str(s), "--out_dir", str(run), "--tuple_order",
-                                        "text"]})
+    for arm in ORDER:
+        for d in a.datasets:
+            tp, aug, order = arms(d)[arm]
+            for s in a.seeds:
+                run = out / f"{d}_{arm}" / f"seed_{s}"
+                res.append({"name": f"{d}_{arm}:s{s}", "after": [], "done": run / "metrics.json",
+                            "cmd": train + ["--dataset", d, "--seed", str(s), "--out_dir", str(run), "--tuple_order", order]
+                            + (["--train_path", tp] if tp else []) + (["--aug_path", *aug] if aug else [])})
     if a.only:
         keep = [s for s in res if any(s["name"].startswith(p) for p in a.only.split(","))]
         names = {s["name"] for s in keep}
@@ -123,13 +109,13 @@ def cmd_run(a):
 
 
 def cmd_pack(a):
-    """Zip run outputs and label files, without adapters, resume states or weights."""
+    """Zip run outputs, without adapters, resume states or weights."""
     os.chdir(ROOT)
     tag = "" if a.profile == "gemma" else f"_{a.profile}"
     name = ROOT / f"results_llm{tag}_{socket.gethostname()}_{time.strftime('%Y%m%d_%H%M')}.zip"
     n = 0
     with zipfile.ZipFile(name, "w", zipfile.ZIP_DEFLATED) as z:
-        for base in (Path(a.root), Path(a.aug_root)):
+        for base in (Path(a.root),):
             if not base.exists():
                 continue
             for p in sorted(base.rglob("*")):
@@ -144,7 +130,7 @@ def main():
     ap.add_argument("cmd", choices=["plan", "run", "pack"])
     ap.add_argument("--datasets", default="vi,rest,laptop")
     ap.add_argument("--seeds", default=",".join(map(str, SEEDS)))
-    ap.add_argument("--only", default="", help="comma-separated step name prefixes, e.g. vi_none,vi_label")
+    ap.add_argument("--only", default="", help="comma-separated step name prefixes, e.g. vi_none,vi_prop")
     ap.add_argument("--smoke", action="store_true", help="tiny run of the whole chain into outputs/llm_smoke")
     ap.add_argument("--profile", choices=["gemma", "qwen"], default=os.environ.get("ASQP_PROFILE", "gemma"),
                     help="gemma = INLG Gemma-7B (default); qwen = Qwen2.5-14B-Instruct (LLM_QWen.ipynb)")
@@ -161,7 +147,6 @@ def main():
         a.seeds = a.seeds[:1]
     tag = "" if a.profile == "gemma" else f"_{a.profile}"  # gemma keeps the original folders
     a.root = f"outputs/llm{tag}_smoke" if a.smoke else f"outputs/llm{tag}"
-    a.aug_root = f"data/aug/llm{tag}_smoke" if a.smoke else f"data/aug/llm{tag}"
     {"plan": cmd_plan, "run": cmd_run, "pack": cmd_pack}[a.cmd](a)
 
 
