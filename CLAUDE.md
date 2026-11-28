@@ -17,7 +17,7 @@ Nghiên cứu các phương pháp tăng cường dữ liệu (data augmentation)
 - **Mỗi release tối đa 12 session** (giới hạn của bot); số session lớn hơn phải chia thành nhiều release.
 - Round cần `OPENAI_API_KEY` **không chạy được qua CI** (launcher không truyền secret Kaggle): chạy tay. **Không bao giờ gõ khóa vào ô lệnh của notebook**, không in `.env`. Mỗi script GPT bị chặn theo `OPENAI_MAX_USD` (mặc định 10 mỗi tháng, ghi ở `outputs/_openai_ledger.tsv`); đừng vòng qua giới hạn này.
 - **Dữ liệu trong git:** sản phẩm cuối của augmentation (`data/aug/*.jsonl` kèm `.report.json`) được commit; các **file trung gian** (`data/aug/cv_mvpt/`, `pm_mvpt/`, `pa_ens/`, `pa_adat/`, `ac_ens/`, `*_inner/`, `data/subsets/*/f*/labels/`...) cố ý **chỉ nằm cục bộ** và nằm trong `.gitignore` (commit `105dc7f`), vì thực nghiệm không cần chúng. Đừng `git add -f` chúng, đừng xóa chúng mà chưa hỏi (chúng chỉ có một bản trên máy này).
-- Không commit `.env`, zip kết quả (`results_*.zip`, `session_*.zip`, `runs_inbox/*.zip`), `INLG_2025_src.zip` và PDF paper của người khác (đã ignore hoặc nên chuyển sang Zotero).
+- Không commit `.env`, zip kết quả (`results_*.zip`, `session_*.zip`, `runs_inbox/*.zip`), `INLG_2025_src.zip` và PDF paper của người khác (đã ignore hoặc nên chuyển sang Zotero). Từ archive INLG chỉ hai notebook ASQP được đưa lên `third_party/inlg2025/` (đã xóa output); `train2.csv`, `test_2.csv`, `finetune_laya(1).ipynb` thuộc bài toán khác, có thể là dữ liệu nội bộ: **không bao giờ đưa lên**.
 - Không push, xóa kết quả hay tạo release khi chưa được hỏi.
 
 ## Điều cần biết
